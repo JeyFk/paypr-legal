@@ -9,12 +9,18 @@
   :root { --green:#0C8D59; --ink:#16201b; --mut:#5a6b62; --line:#e4ebe7; }
   body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
          color:var(--ink); background:#f6f9f7; text-align:center; }
-  .wrap { max-width:560px; margin:0 auto; padding:80px 22px; }
+  .wrap { max-width:560px; margin:0 auto; padding:80px 22px 0; }
   .mark { width:76px; height:76px; border-radius:20px; margin:0 auto 20px; object-fit:cover; display:block; }
   h1 { font-size:32px; margin:0 0 6px; }
-  p.tag { color:var(--mut); font-size:18px; margin:0 0 36px; }
+  p.tag { color:var(--mut); font-size:18px; margin:0 0 12px; }
+  .links { margin-top:8px; }
   .links a { display:inline-block; margin:8px 10px; color:var(--green); font-weight:600; text-decoration:none; }
-  footer { color:var(--mut); font-size:13px; margin-top:48px; }
+  footer { color:var(--mut); font-size:13px; margin:48px 0 60px; }
+  .shots { display:flex; gap:18px; overflow-x:auto; padding:36px 22px 12px; scroll-snap-type:x mandatory;
+           -webkit-overflow-scrolling:touch; }
+  .shots img { width:240px; flex:0 0 auto; border-radius:22px; scroll-snap-align:center;
+               box-shadow:0 12px 34px rgba(12,141,89,0.18); }
+  @media (min-width:920px){ .shots { justify-content:center; } }
 </style>
 </head>
 <body>
@@ -22,6 +28,17 @@
     <img class="mark" src="icon.png" alt="Paypr icon">
     <h1>Paypr</h1>
     <p class="tag">The simple way to track hours and what you owe the people who work for you.</p>
+  </div>
+
+  <div class="shots">
+    <img src="shots/1-home.png" alt="Home screen showing who you owe">
+    <img src="shots/2-log-time.png" alt="Logging hours worked">
+    <img src="shots/3-summary.png" alt="Weekly and monthly spending summary">
+    <img src="shots/4-settle-up.png" alt="Settle up and mark as paid">
+    <img src="shots/5-history.png" alt="Payment history">
+  </div>
+
+  <div class="wrap" style="padding-top:0">
     <div class="links">
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy Policy</a>
