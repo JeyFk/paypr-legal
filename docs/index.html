@@ -3,49 +3,347 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paypr — Hourly Pay Tracker</title>
-<link rel="icon" type="image/png" href="icon.png">
+
+<!-- ============================================================= -->
+<!-- PRIMARY SEO TAGS                                               -->
+<!-- Target query: "nanny pay tracker" / "track what you owe nanny" -->
+<!-- ============================================================= -->
+<title>Paypr — Nanny &amp; Household Pay Tracker | Know What You Owe</title>
+<meta name="description" content="The simple iPhone app to track hours and pay for your nanny, babysitter, tutor or cleaner. Log time in seconds, always know what you owe. Free to start.">
+<link rel="canonical" href="https://usepaypr.com/">
+<meta name="theme-color" content="#0B0D12">
+<meta name="apple-itunes-app" content="app-id=6778970494">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paypr">
+<meta property="og:title" content="Paypr — Nanny &amp; Household Pay Tracker">
+<meta property="og:description" content="Track hours and pay for your nanny, sitter, tutor or cleaner. Always know exactly what you owe, and settle up on payday.">
+<meta property="og:url" content="https://usepaypr.com/">
+<meta property="og:image" content="https://usepaypr.com/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paypr — Nanny &amp; Household Pay Tracker">
+<meta name="twitter:description" content="Track hours and pay for the people who work for you. Always know what you owe.">
+<meta name="twitter:image" content="https://usepaypr.com/icon.png">
+
+<!-- ============================================================= -->
+<!-- STRUCTURED DATA — SoftwareApplication (rich app snippet)       -->
+<!-- ============================================================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Paypr: Hourly Pay Tracker",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "ProductivityApplication",
+  "description": "Track hours and pay for your nanny, babysitter, tutor or house cleaner. Log time in seconds, always know what you owe, and settle up on payday.",
+  "url": "https://usepaypr.com/",
+  "image": "https://usepaypr.com/icon.png",
+  "author": { "@type": "Organization", "name": "QAtion" },
+  "offers": [
+    { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free — track 1 person" },
+    { "@type": "Offer", "price": "2.99", "priceCurrency": "USD", "name": "Paypr Pro — Monthly" },
+    { "@type": "Offer", "price": "7.99", "priceCurrency": "USD", "name": "Paypr Pro — Lifetime" }
+  ]
+}
+</script>
+
+<!-- STRUCTURED DATA — FAQPage (eligible for FAQ rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I track what I owe my nanny?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Add your nanny once with their hourly rate, then log the hours they work each day by dragging across a timeline or tapping a quick entry. Paypr keeps a running balance of what you owe so payday is never a guess." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Paypr free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can track one person free forever. Paypr Pro unlocks unlimited people, weekly/monthly/yearly summaries and CSV export for $2.99/month or $7.99 once for lifetime." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Paypr for a babysitter, tutor or cleaner?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paypr works for anyone you pay by the hour — nanny, babysitter, sitter, tutor, house cleaner, housekeeper or any helper. Set each person's rate and track their hours and payments separately." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data private?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your records stay on your device and sync through your own private iCloud account. No ads, no data selling, and analytics never include names, amounts or balances." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Paypr help at tax time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Paypr Pro exports clean CSV records of hours worked and payments made per person — handy for keeping tidy nanny-tax records." }
+    }
+  ]
+}
+</script>
+
 <style>
-  :root { --green:#0C8D59; --ink:#16201b; --mut:#5a6b62; --line:#e4ebe7; }
-  body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         color:var(--ink); background:#f6f9f7; text-align:center; }
-  .wrap { max-width:560px; margin:0 auto; padding:80px 22px 0; }
-  .mark { width:76px; height:76px; border-radius:20px; margin:0 auto 20px; object-fit:cover; display:block; }
-  h1 { font-size:32px; margin:0 0 6px; }
-  p.tag { color:var(--mut); font-size:18px; margin:0 0 12px; }
-  .links { margin-top:8px; }
-  .links a { display:inline-block; margin:8px 10px; color:var(--green); font-weight:600; text-decoration:none; }
-  footer { color:var(--mut); font-size:13px; margin:48px 0 60px; }
-  .shots { display:flex; gap:18px; overflow-x:auto; padding:36px 22px 12px; scroll-snap-type:x mandatory;
-           -webkit-overflow-scrolling:touch; }
-  .shots img { width:240px; flex:0 0 auto; border-radius:22px; scroll-snap-align:center;
-               box-shadow:0 12px 34px rgba(12,141,89,0.18); }
-  @media (min-width:920px){ .shots { justify-content:center; } }
+  :root{
+    --bg:#0B0D12; --card:rgba(255,255,255,.05); --stroke:rgba(255,255,255,.10);
+    --ink:#F5F7FA; --muted:#9AA3B2; --accent:#4A90E2; --accent-2:#5FA8FF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  a{color:var(--accent-2);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .bg-glow{position:fixed;inset:0;z-index:-1;
+    background:radial-gradient(60% 50% at 50% -10%,rgba(74,144,226,.28),transparent 70%),var(--bg);}
+
+  /* nav */
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px}
+  .brand img{width:36px;height:36px;border-radius:9px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;
+    padding:12px 22px;border-radius:12px;transition:.2s;white-space:nowrap}
+  .btn:hover{background:var(--accent-2);transform:translateY(-1px)}
+  .btn.ghost{background:var(--card);border:1px solid var(--stroke);color:var(--ink)}
+
+  /* hero */
+  header{padding:56px 0 40px;text-align:center}
+  h1{font-size:clamp(34px,6vw,58px);line-height:1.08;letter-spacing:-.02em;font-weight:800;
+    max-width:16ch;margin:0 auto 20px}
+  h1 .hl{color:var(--accent-2)}
+  .sub{font-size:clamp(17px,2.4vw,21px);color:var(--muted);max-width:52ch;margin:0 auto 30px}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+  .fine{color:var(--muted);font-size:14px}
+
+  /* shots */
+  .shots{display:flex;gap:18px;overflow-x:auto;padding:44px 0 8px;scroll-snap-type:x mandatory}
+  .shots img{height:520px;border-radius:26px;border:1px solid var(--stroke);
+    scroll-snap-align:center;box-shadow:0 30px 80px -30px rgba(0,0,0,.7);flex:0 0 auto}
+
+  /* sections */
+  section{padding:64px 0}
+  h2{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.02em;margin-bottom:14px}
+  .lead{color:var(--muted);font-size:18px;max-width:60ch;margin-bottom:36px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:26px}
+  .card h3{font-size:19px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15px}
+  .ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    background:rgba(74,144,226,.16);margin-bottom:16px;font-size:22px}
+
+  /* who-for pills */
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .pill{background:var(--card);border:1px solid var(--stroke);border-radius:999px;
+    padding:9px 16px;font-size:15px;color:var(--ink)}
+
+  /* pricing */
+  .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:760px;margin:0 auto}
+  .price{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:28px;text-align:center}
+  .price.best{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .price .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;
+    color:var(--accent-2);background:rgba(74,144,226,.14);padding:4px 12px;border-radius:999px;margin-bottom:12px}
+  .price .amt{font-size:34px;font-weight:800;margin:6px 0}
+  .price .per{color:var(--muted);font-size:14px}
+
+  /* faq */
+  details{background:var(--card);border:1px solid var(--stroke);border-radius:14px;
+    padding:18px 22px;margin-bottom:12px;cursor:pointer}
+  details summary{font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";color:var(--accent-2);font-size:22px;font-weight:400}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:12px}
+
+  /* final cta */
+  .final{text-align:center;background:linear-gradient(180deg,rgba(74,144,226,.14),transparent);
+    border:1px solid var(--stroke);border-radius:26px;padding:56px 24px;margin:24px 0}
+
+  footer{border-top:1px solid var(--stroke);padding:34px 0;color:var(--muted);font-size:14px;
+    display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+  footer a{color:var(--muted)}
+  footer nav{padding:0;gap:18px;display:flex;flex-wrap:wrap}
+  @media(max-width:640px){ .shots img{height:440px} }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <img class="mark" src="icon.png" alt="Paypr icon">
-    <h1>Paypr</h1>
-    <p class="tag">The simple way to track hours and what you owe the people who work for you.</p>
-  </div>
+<div class="bg-glow"></div>
 
+<div class="wrap">
+  <nav>
+    <div class="brand"><img src="icon.png" alt="Paypr app icon"> Paypr</div>
+    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download</a>
+  </nav>
+</div>
+
+<header class="wrap">
+  <h1>Always know <span class="hl">what you owe</span> your nanny</h1>
+  <p class="sub">Paypr is the simple iPhone app for tracking hours and pay for the people who work for you — nanny, babysitter, tutor or house cleaner. Log time in seconds, watch the balance, and settle up on payday.</p>
+  <div class="cta-row">
+    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
+    <a class="btn ghost" href="#how">See how it works</a>
+  </div>
+  <p class="fine">Free to start · No spreadsheets · Private by design</p>
+</header>
+
+<div class="wrap">
   <div class="shots">
-    <img src="shots/1-home.png" alt="Home screen showing who you owe">
-    <img src="shots/2-log-time.png" alt="Logging hours worked">
-    <img src="shots/3-summary.png" alt="Weekly and monthly spending summary">
-    <img src="shots/4-settle-up.png" alt="Settle up and mark as paid">
-    <img src="shots/5-history.png" alt="Payment history">
+    <img src="shots/1-home.png" alt="Paypr home screen showing who you owe and weekly hours" loading="lazy">
+    <img src="shots/2-log-time.png" alt="Logging a nanny's hours worked in Paypr" loading="lazy">
+    <img src="shots/3-summary.png" alt="Weekly and monthly spending summary in Paypr" loading="lazy">
+    <img src="shots/4-settle-up.png" alt="Settle up and mark a payment as paid" loading="lazy">
+    <img src="shots/5-history.png" alt="Full payment and hours history in Paypr" loading="lazy">
   </div>
+</div>
 
-  <div class="wrap" style="padding-top:0">
-    <div class="links">
+<section id="how" class="wrap">
+  <h2>Track hours and pay in three taps</h2>
+  <p class="lead">Built for busy families who employ household help and just want to know, at a glance, who they owe and how much.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="ico">⏱️</div>
+      <h3>Log hours in seconds</h3>
+      <p>Drag across a day on the timeline, or tap a quick entry. Each person's balance updates instantly at their hourly rate.</p>
+    </div>
+    <div class="card">
+      <div class="ico">💰</div>
+      <h3>Know what you owe</h3>
+      <p>A clean running tally of time worked and money owed — so payday is never a guessing game.</p>
+    </div>
+    <div class="card">
+      <div class="ico">✅</div>
+      <h3>Settle up &amp; mark paid</h3>
+      <p>Record full or partial payments and watch each balance settle. Keep a tidy, searchable history.</p>
+    </div>
+    <div class="card">
+      <div class="ico">📊</div>
+      <h3>See the bigger picture</h3>
+      <p>Weekly, monthly and yearly spending summaries with per-person breakdowns (Paypr Pro).</p>
+    </div>
+    <div class="card">
+      <div class="ico">📄</div>
+      <h3>Export for tax time</h3>
+      <p>Export clean CSV records of hours and payments — handy for keeping tidy nanny-tax records (Pro).</p>
+    </div>
+    <div class="card">
+      <div class="ico">🔒</div>
+      <h3>Private by design</h3>
+      <p>Your records live on your device and your own iCloud. No ads, no data selling — we never see them.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>For everyone you pay by the hour</h2>
+  <p class="lead">One app for all your household help — set each person's rate once and track them separately.</p>
+  <div class="pills">
+    <span class="pill">Nanny</span>
+    <span class="pill">Babysitter</span>
+    <span class="pill">Sitter</span>
+    <span class="pill">Tutor</span>
+    <span class="pill">House cleaner</span>
+    <span class="pill">Housekeeper</span>
+    <span class="pill">Au pair</span>
+    <span class="pill">Caregiver</span>
+    <span class="pill">Gardener</span>
+    <span class="pill">Any hourly helper</span>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Simple pricing</h2>
+  <p class="lead">Track one person free, forever. Upgrade any time for unlimited people, summaries and export.</p>
+  <div class="price-grid">
+    <div class="price">
+      <div class="tag">FREE</div>
+      <div class="amt">$0</div>
+      <p class="per">Track 1 person, forever</p>
+    </div>
+    <div class="price">
+      <div class="tag">PRO · MONTHLY</div>
+      <div class="amt">$2.99</div>
+      <p class="per">per month · unlimited people</p>
+    </div>
+    <div class="price best">
+      <div class="tag">PRO · LIFETIME</div>
+      <div class="amt">$7.99</div>
+      <p class="per">one-time · best value</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Questions, answered</h2>
+  <details open>
+    <summary>How do I track what I owe my nanny?</summary>
+    <p>Add your nanny once with their hourly rate, then log the hours they work each day by dragging across a timeline or tapping a quick entry. Paypr keeps a running balance of what you owe, so payday is never a guess.</p>
+  </details>
+  <details>
+    <summary>Is Paypr free?</summary>
+    <p>Yes. You can track one person free forever. Paypr Pro unlocks unlimited people, weekly/monthly/yearly summaries and CSV export for $2.99/month or $7.99 once for lifetime.</p>
+  </details>
+  <details>
+    <summary>Can I use Paypr for a babysitter, tutor or cleaner?</summary>
+    <p>Yes. Paypr works for anyone you pay by the hour — nanny, babysitter, sitter, tutor, house cleaner, housekeeper or any helper. Set each person's rate and track their hours and payments separately.</p>
+  </details>
+  <details>
+    <summary>Is my data private?</summary>
+    <p>Yes. Your records stay on your device and sync through your own private iCloud account. No ads, no data selling, and analytics never include names, amounts or balances.</p>
+  </details>
+  <details>
+    <summary>Does Paypr help at tax time?</summary>
+    <p>Paypr Pro exports clean CSV records of hours worked and payments made per person — handy for keeping tidy nanny-tax records.</p>
+  </details>
+</section>
+
+<section class="wrap">
+  <h2>Guides &amp; tools</h2>
+  <p class="lead">Free resources for anyone who employs household help.</p>
+  <div class="grid">
+    <a class="card" href="nanny-pay-calculator.html" style="color:inherit">
+      <div class="ico">🧮</div>
+      <h3>Nanny pay calculator</h3>
+      <p>Turn an hourly rate into weekly, monthly and yearly cost — with overtime.</p>
+    </a>
+    <a class="card" href="how-much-to-pay-a-nanny.html" style="color:inherit">
+      <div class="ico">💵</div>
+      <h3>How much to pay a nanny</h3>
+      <p>2026 rates, what raises them, overtime rules, and how to set a fair number.</p>
+    </a>
+    <a class="card" href="how-to-track-what-you-owe-your-nanny.html" style="color:inherit">
+      <div class="ico">📒</div>
+      <h3>How to track what you owe</h3>
+      <p>Five methods compared — notebook, spreadsheet, app — and what to record.</p>
+    </a>
+    <a class="card" href="babysitter-hourly-rates.html" style="color:inherit">
+      <div class="ico">🏙️</div>
+      <h3>Babysitter rates by city</h3>
+      <p>What's fair to pay a sitter in 2026, city by city and by number of kids.</p>
+    </a>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="final">
+    <h2>Stop guessing what you owe</h2>
+    <p class="lead" style="margin:12px auto 26px">Download Paypr and keep a clean tally of every hour and every payment.</p>
+    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <footer>
+    <div>© 2026 QAtion · Paypr</div>
+    <nav>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
       <a href="mailto:payprfeedback@gmail.com">Contact</a>
-    </div>
-    <footer>© 2026 QAtion · Paypr</footer>
-  </div>
+    </nav>
+  </footer>
+</div>
+
 </body>
 </html>
