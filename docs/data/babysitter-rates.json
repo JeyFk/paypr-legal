@@ -1,0 +1,5775 @@
+{
+  "meta": {
+    "source": "U.S. Bureau of Labor Statistics, OEWS",
+    "source_url": "https://www.bls.gov/oes/",
+    "occupation_code": "39-9011",
+    "occupation_title": "Childcare Workers",
+    "reference_year": 2024,
+    "generated": "2026-07-17",
+    "units": "USD per hour",
+    "note": "OEWS wage-employment figures for childcare workers. Informal on-demand babysitter rates typically run higher; label accordingly.",
+    "metro_count": 384
+  },
+  "metros": {
+    "abilene-tx": {
+      "area_title": "Abilene, TX",
+      "state": "TX",
+      "area_code": "10180",
+      "employment": 230,
+      "hourly": {
+        "mean": 12.88,
+        "p10": 9.8,
+        "p25": 10.44,
+        "median": 12.67,
+        "p75": 15.11,
+        "p90": 16.43
+      },
+      "capped": false
+    },
+    "aguadilla-pr": {
+      "area_title": "Aguadilla, PR",
+      "state": "PR",
+      "area_code": "10380",
+      "employment": 110,
+      "hourly": {
+        "mean": 11.09,
+        "p10": 9.5,
+        "p25": 9.7,
+        "median": 9.7,
+        "p75": 14.28,
+        "p90": 14.5
+      },
+      "capped": false
+    },
+    "akron-oh": {
+      "area_title": "Akron, OH",
+      "state": "OH",
+      "area_code": "10420",
+      "employment": 730,
+      "hourly": {
+        "mean": 15.21,
+        "p10": 11.08,
+        "p25": 12.28,
+        "median": 13.68,
+        "p75": 17.58,
+        "p90": 21.95
+      },
+      "capped": false
+    },
+    "albany-ga": {
+      "area_title": "Albany, GA",
+      "state": "GA",
+      "area_code": "10500",
+      "employment": 480,
+      "hourly": {
+        "mean": 12.5,
+        "p10": 8.9,
+        "p25": 10.49,
+        "median": 12.71,
+        "p75": 13.94,
+        "p90": 15.55
+      },
+      "capped": false
+    },
+    "albany-or": {
+      "area_title": "Albany, OR",
+      "state": "OR",
+      "area_code": "10540",
+      "employment": 130,
+      "hourly": {
+        "mean": 16.11,
+        "p10": 14.5,
+        "p25": 15.0,
+        "median": 15.15,
+        "p75": 17.17,
+        "p90": 18.23
+      },
+      "capped": false
+    },
+    "albany-schenectady-troy-ny": {
+      "area_title": "Albany-Schenectady-Troy, NY",
+      "state": "NY",
+      "area_code": "10580",
+      "employment": 2290,
+      "hourly": {
+        "mean": 17.73,
+        "p10": 15.1,
+        "p25": 15.57,
+        "median": 16.94,
+        "p75": 18.67,
+        "p90": 21.49
+      },
+      "capped": false
+    },
+    "albuquerque-nm": {
+      "area_title": "Albuquerque, NM",
+      "state": "NM",
+      "area_code": "10740",
+      "employment": 1830,
+      "hourly": {
+        "mean": 16.47,
+        "p10": 13.89,
+        "p25": 14.21,
+        "median": 16.83,
+        "p75": 17.41,
+        "p90": 19.34
+      },
+      "capped": false
+    },
+    "alexandria-la": {
+      "area_title": "Alexandria, LA",
+      "state": "LA",
+      "area_code": "10780",
+      "employment": 320,
+      "hourly": {
+        "mean": 11.45,
+        "p10": 8.69,
+        "p25": 9.92,
+        "median": 10.4,
+        "p75": 13.52,
+        "p90": 15.08
+      },
+      "capped": false
+    },
+    "allentown-bethlehem-easton-pa-nj": {
+      "area_title": "Allentown-Bethlehem-Easton, PA-NJ",
+      "state": "PA",
+      "area_code": "10900",
+      "employment": 1140,
+      "hourly": {
+        "mean": 14.62,
+        "p10": 10.93,
+        "p25": 11.59,
+        "median": 14.92,
+        "p75": 16.18,
+        "p90": 17.63
+      },
+      "capped": false
+    },
+    "altoona-pa": {
+      "area_title": "Altoona, PA",
+      "state": "PA",
+      "area_code": "11020",
+      "employment": 190,
+      "hourly": {
+        "mean": 12.29,
+        "p10": 8.62,
+        "p25": 9.94,
+        "median": 12.75,
+        "p75": 13.89,
+        "p90": 16.02
+      },
+      "capped": false
+    },
+    "amarillo-tx": {
+      "area_title": "Amarillo, TX",
+      "state": "TX",
+      "area_code": "11100",
+      "employment": 420,
+      "hourly": {
+        "mean": 12.44,
+        "p10": 9.0,
+        "p25": 10.43,
+        "median": 12.58,
+        "p75": 13.96,
+        "p90": 16.35
+      },
+      "capped": false
+    },
+    "ames-ia": {
+      "area_title": "Ames, IA",
+      "state": "IA",
+      "area_code": "11180",
+      "employment": 200,
+      "hourly": {
+        "mean": 14.37,
+        "p10": 10.44,
+        "p25": 11.89,
+        "median": 13.26,
+        "p75": 14.53,
+        "p90": 22.51
+      },
+      "capped": false
+    },
+    "amherst-town-northampton-ma": {
+      "area_title": "Amherst Town-Northampton, MA",
+      "state": "MA",
+      "area_code": "11200",
+      "employment": 250,
+      "hourly": {
+        "mean": 19.4,
+        "p10": 16.27,
+        "p25": 17.5,
+        "median": 18.56,
+        "p75": 20.9,
+        "p90": 22.48
+      },
+      "capped": false
+    },
+    "anchorage-ak": {
+      "area_title": "Anchorage, AK",
+      "state": "AK",
+      "area_code": "11260",
+      "employment": 760,
+      "hourly": {
+        "mean": 17.42,
+        "p10": 13.89,
+        "p25": 15.04,
+        "median": 16.82,
+        "p75": 18.28,
+        "p90": 21.99
+      },
+      "capped": false
+    },
+    "ann-arbor-mi": {
+      "area_title": "Ann Arbor, MI",
+      "state": "MI",
+      "area_code": "11460",
+      "employment": 750,
+      "hourly": {
+        "mean": 15.09,
+        "p10": 12.22,
+        "p25": 13.8,
+        "median": 14.42,
+        "p75": 16.37,
+        "p90": 17.77
+      },
+      "capped": false
+    },
+    "anniston-oxford-al": {
+      "area_title": "Anniston-Oxford, AL",
+      "state": "AL",
+      "area_code": "11500",
+      "employment": 100,
+      "hourly": {
+        "mean": 11.16,
+        "p10": 8.43,
+        "p25": 8.76,
+        "median": 10.55,
+        "p75": 13.0,
+        "p90": 15.73
+      },
+      "capped": false
+    },
+    "appleton-wi": {
+      "area_title": "Appleton, WI",
+      "state": "WI",
+      "area_code": "11540",
+      "employment": 180,
+      "hourly": {
+        "mean": 13.96,
+        "p10": 11.28,
+        "p25": 12.02,
+        "median": 13.49,
+        "p75": 15.2,
+        "p90": 17.8
+      },
+      "capped": false
+    },
+    "arecibo-pr": {
+      "area_title": "Arecibo, PR",
+      "state": "PR",
+      "area_code": "11640",
+      "employment": 70,
+      "hourly": {
+        "mean": 9.95,
+        "p10": 9.5,
+        "p25": 9.5,
+        "median": 9.57,
+        "p75": 10.37,
+        "p90": 10.81
+      },
+      "capped": false
+    },
+    "asheville-nc": {
+      "area_title": "Asheville, NC",
+      "state": "NC",
+      "area_code": "11700",
+      "employment": 480,
+      "hourly": {
+        "mean": 15.2,
+        "p10": 11.18,
+        "p25": 12.96,
+        "median": 15.74,
+        "p75": 17.64,
+        "p90": 17.86
+      },
+      "capped": false
+    },
+    "athens-clarke-county-ga": {
+      "area_title": "Athens-Clarke County, GA",
+      "state": "GA",
+      "area_code": "12020",
+      "employment": 610,
+      "hourly": {
+        "mean": 12.31,
+        "p10": 10.27,
+        "p25": 10.55,
+        "median": 12.43,
+        "p75": 13.32,
+        "p90": 14.82
+      },
+      "capped": false
+    },
+    "atlanta-sandy-springs-roswell-ga": {
+      "area_title": "Atlanta-Sandy Springs-Roswell, GA",
+      "state": "GA",
+      "area_code": "12060",
+      "employment": 15600,
+      "hourly": {
+        "mean": 14.32,
+        "p10": 11.11,
+        "p25": 12.4,
+        "median": 13.69,
+        "p75": 16.58,
+        "p90": 17.33
+      },
+      "capped": false
+    },
+    "atlantic-city-hammonton-nj": {
+      "area_title": "Atlantic City-Hammonton, NJ",
+      "state": "NJ",
+      "area_code": "12100",
+      "employment": 500,
+      "hourly": {
+        "mean": 16.24,
+        "p10": 15.13,
+        "p25": 15.13,
+        "median": 16.02,
+        "p75": 16.82,
+        "p90": 17.61
+      },
+      "capped": false
+    },
+    "auburn-opelika-al": {
+      "area_title": "Auburn-Opelika, AL",
+      "state": "AL",
+      "area_code": "12220",
+      "employment": 300,
+      "hourly": {
+        "mean": 12.0,
+        "p10": 9.67,
+        "p25": 10.13,
+        "median": 12.38,
+        "p75": 13.93,
+        "p90": 14.16
+      },
+      "capped": false
+    },
+    "augusta-richmond-county-ga-sc": {
+      "area_title": "Augusta-Richmond County, GA-SC",
+      "state": "GA",
+      "area_code": "12260",
+      "employment": 1980,
+      "hourly": {
+        "mean": 12.78,
+        "p10": 10.14,
+        "p25": 10.7,
+        "median": 13.5,
+        "p75": 13.69,
+        "p90": 16.29
+      },
+      "capped": false
+    },
+    "austin-round-rock-san-marcos-tx": {
+      "area_title": "Austin-Round Rock-San Marcos, TX",
+      "state": "TX",
+      "area_code": "12420",
+      "employment": 4190,
+      "hourly": {
+        "mean": 14.81,
+        "p10": 11.08,
+        "p25": 12.56,
+        "median": 14.34,
+        "p75": 17.13,
+        "p90": 18.81
+      },
+      "capped": false
+    },
+    "bakersfield-delano-ca": {
+      "area_title": "Bakersfield-Delano, CA",
+      "state": "CA",
+      "area_code": "12540",
+      "employment": 1230,
+      "hourly": {
+        "mean": 18.15,
+        "p10": 16.17,
+        "p25": 16.58,
+        "median": 17.3,
+        "p75": 18.22,
+        "p90": 22.08
+      },
+      "capped": false
+    },
+    "baltimore-columbia-towson-md": {
+      "area_title": "Baltimore-Columbia-Towson, MD",
+      "state": "MD",
+      "area_code": "12580",
+      "employment": 3470,
+      "hourly": {
+        "mean": 16.9,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 16.56,
+        "p75": 17.43,
+        "p90": 20.65
+      },
+      "capped": false
+    },
+    "bangor-me": {
+      "area_title": "Bangor, ME",
+      "state": "ME",
+      "area_code": "12620",
+      "employment": 460,
+      "hourly": {
+        "mean": 16.17,
+        "p10": 14.15,
+        "p25": 14.71,
+        "median": 16.28,
+        "p75": 16.91,
+        "p90": 18.22
+      },
+      "capped": false
+    },
+    "barnstable-town-ma": {
+      "area_title": "Barnstable Town, MA",
+      "state": "MA",
+      "area_code": "12700",
+      "employment": 220,
+      "hourly": {
+        "mean": 19.55,
+        "p10": 16.95,
+        "p25": 17.0,
+        "median": 18.46,
+        "p75": 21.2,
+        "p90": 23.03
+      },
+      "capped": false
+    },
+    "baton-rouge-la": {
+      "area_title": "Baton Rouge, LA",
+      "state": "LA",
+      "area_code": "12940",
+      "employment": 1820,
+      "hourly": {
+        "mean": 11.93,
+        "p10": 9.07,
+        "p25": 10.29,
+        "median": 10.72,
+        "p75": 13.94,
+        "p90": 14.53
+      },
+      "capped": false
+    },
+    "battle-creek-mi": {
+      "area_title": "Battle Creek, MI",
+      "state": "MI",
+      "area_code": "12980",
+      "employment": 200,
+      "hourly": {
+        "mean": 14.31,
+        "p10": 11.44,
+        "p25": 12.53,
+        "median": 14.24,
+        "p75": 15.14,
+        "p90": 17.18
+      },
+      "capped": false
+    },
+    "bay-city-mi": {
+      "area_title": "Bay City, MI",
+      "state": "MI",
+      "area_code": "13020",
+      "employment": 150,
+      "hourly": {
+        "mean": 13.01,
+        "p10": 11.1,
+        "p25": 11.15,
+        "median": 12.42,
+        "p75": 13.85,
+        "p90": 16.83
+      },
+      "capped": false
+    },
+    "beaumont-port-arthur-tx": {
+      "area_title": "Beaumont-Port Arthur, TX",
+      "state": "TX",
+      "area_code": "13140",
+      "employment": 550,
+      "hourly": {
+        "mean": 11.67,
+        "p10": 9.25,
+        "p25": 10.25,
+        "median": 10.59,
+        "p75": 13.29,
+        "p90": 14.2
+      },
+      "capped": false
+    },
+    "beckley-wv": {
+      "area_title": "Beckley, WV",
+      "state": "WV",
+      "area_code": "13220",
+      "employment": 60,
+      "hourly": {
+        "mean": 11.02,
+        "p10": 8.75,
+        "p25": 9.99,
+        "median": 10.97,
+        "p75": 12.41,
+        "p90": 12.79
+      },
+      "capped": false
+    },
+    "bellingham-wa": {
+      "area_title": "Bellingham, WA",
+      "state": "WA",
+      "area_code": "13380",
+      "employment": 140,
+      "hourly": {
+        "mean": 17.78,
+        "p10": 16.48,
+        "p25": 16.77,
+        "median": 16.77,
+        "p75": 18.38,
+        "p90": 19.34
+      },
+      "capped": false
+    },
+    "bend-or": {
+      "area_title": "Bend, OR",
+      "state": "OR",
+      "area_code": "13460",
+      "employment": 210,
+      "hourly": {
+        "mean": 17.07,
+        "p10": 14.44,
+        "p25": 15.75,
+        "median": 16.92,
+        "p75": 17.48,
+        "p90": 20.39
+      },
+      "capped": false
+    },
+    "billings-mt": {
+      "area_title": "Billings, MT",
+      "state": "MT",
+      "area_code": "13740",
+      "employment": 450,
+      "hourly": {
+        "mean": 15.41,
+        "p10": 12.93,
+        "p25": 13.64,
+        "median": 14.54,
+        "p75": 16.84,
+        "p90": 18.68
+      },
+      "capped": false
+    },
+    "binghamton-ny": {
+      "area_title": "Binghamton, NY",
+      "state": "NY",
+      "area_code": "13780",
+      "employment": 620,
+      "hourly": {
+        "mean": 16.95,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 16.79,
+        "p75": 17.59,
+        "p90": 18.31
+      },
+      "capped": false
+    },
+    "birmingham-al": {
+      "area_title": "Birmingham, AL",
+      "state": "AL",
+      "area_code": "13820",
+      "employment": 1040,
+      "hourly": {
+        "mean": 12.0,
+        "p10": 9.86,
+        "p25": 10.62,
+        "median": 10.92,
+        "p75": 13.85,
+        "p90": 14.74
+      },
+      "capped": false
+    },
+    "bismarck-nd": {
+      "area_title": "Bismarck, ND",
+      "state": "ND",
+      "area_code": "13900",
+      "employment": 710,
+      "hourly": {
+        "mean": 14.87,
+        "p10": 12.09,
+        "p25": 13.43,
+        "median": 14.58,
+        "p75": 16.14,
+        "p90": 17.08
+      },
+      "capped": false
+    },
+    "blacksburg-christiansburg-radford-va": {
+      "area_title": "Blacksburg-Christiansburg-Radford, VA",
+      "state": "VA",
+      "area_code": "13980",
+      "employment": 260,
+      "hourly": {
+        "mean": 13.53,
+        "p10": 12.02,
+        "p25": 12.88,
+        "median": 13.15,
+        "p75": 13.68,
+        "p90": 16.2
+      },
+      "capped": false
+    },
+    "bloomington-il": {
+      "area_title": "Bloomington, IL",
+      "state": "IL",
+      "area_code": "14010",
+      "employment": 430,
+      "hourly": {
+        "mean": 15.92,
+        "p10": 14.02,
+        "p25": 14.76,
+        "median": 15.01,
+        "p75": 16.5,
+        "p90": 18.55
+      },
+      "capped": false
+    },
+    "bloomington-in": {
+      "area_title": "Bloomington, IN",
+      "state": "IN",
+      "area_code": "14020",
+      "employment": 230,
+      "hourly": {
+        "mean": 13.02,
+        "p10": 9.67,
+        "p25": 10.85,
+        "median": 13.61,
+        "p75": 14.22,
+        "p90": 16.91
+      },
+      "capped": false
+    },
+    "boise-city-id": {
+      "area_title": "Boise City, ID",
+      "state": "ID",
+      "area_code": "14260",
+      "employment": 2570,
+      "hourly": {
+        "mean": 14.04,
+        "p10": 7.65,
+        "p25": 10.93,
+        "median": 14.24,
+        "p75": 16.56,
+        "p90": 18.38
+      },
+      "capped": false
+    },
+    "boston-cambridge-newton-ma-nh": {
+      "area_title": "Boston-Cambridge-Newton, MA-NH",
+      "state": "MA",
+      "area_code": "14460",
+      "employment": 9650,
+      "hourly": {
+        "mean": 20.0,
+        "p10": 16.31,
+        "p25": 17.68,
+        "median": 18.89,
+        "p75": 22.44,
+        "p90": 23.6
+      },
+      "capped": false
+    },
+    "boulder-co": {
+      "area_title": "Boulder, CO",
+      "state": "CO",
+      "area_code": "14500",
+      "employment": 830,
+      "hourly": {
+        "mean": 20.62,
+        "p10": 16.02,
+        "p25": 17.78,
+        "median": 20.54,
+        "p75": 22.2,
+        "p90": 27.66
+      },
+      "capped": false
+    },
+    "bowling-green-ky": {
+      "area_title": "Bowling Green, KY",
+      "state": "KY",
+      "area_code": "14540",
+      "employment": 240,
+      "hourly": {
+        "mean": 13.03,
+        "p10": 9.64,
+        "p25": 11.36,
+        "median": 13.36,
+        "p75": 14.48,
+        "p90": 14.75
+      },
+      "capped": false
+    },
+    "bozeman-mt": {
+      "area_title": "Bozeman, MT",
+      "state": "MT",
+      "area_code": "14580",
+      "employment": 280,
+      "hourly": {
+        "mean": 16.73,
+        "p10": 14.14,
+        "p25": 14.42,
+        "median": 17.39,
+        "p75": 17.76,
+        "p90": 20.16
+      },
+      "capped": false
+    },
+    "bremerton-silverdale-port-orchard-wa": {
+      "area_title": "Bremerton-Silverdale-Port Orchard, WA",
+      "state": "WA",
+      "area_code": "14740",
+      "employment": 110,
+      "hourly": {
+        "mean": 19.26,
+        "p10": 16.48,
+        "p25": 17.71,
+        "median": 18.26,
+        "p75": 19.8,
+        "p90": 22.46
+      },
+      "capped": false
+    },
+    "bridgeport-stamford-danbury-ct": {
+      "area_title": "Bridgeport-Stamford-Danbury, CT",
+      "state": "CT",
+      "area_code": "14860",
+      "employment": 2920,
+      "hourly": {
+        "mean": 18.27,
+        "p10": 16.31,
+        "p25": 17.26,
+        "median": 17.64,
+        "p75": 18.24,
+        "p90": 22.13
+      },
+      "capped": false
+    },
+    "brownsville-harlingen-tx": {
+      "area_title": "Brownsville-Harlingen, TX",
+      "state": "TX",
+      "area_code": "15180",
+      "employment": 1030,
+      "hourly": {
+        "mean": 14.81,
+        "p10": 8.68,
+        "p25": 10.17,
+        "median": 12.71,
+        "p75": 21.12,
+        "p90": 21.12
+      },
+      "capped": false
+    },
+    "brunswick-st-simons-ga": {
+      "area_title": "Brunswick-St. Simons, GA",
+      "state": "GA",
+      "area_code": "15260",
+      "employment": 230,
+      "hourly": {
+        "mean": 13.2,
+        "p10": 9.28,
+        "p25": 10.85,
+        "median": 13.35,
+        "p75": 14.26,
+        "p90": 16.88
+      },
+      "capped": false
+    },
+    "buffalo-cheektowaga-ny": {
+      "area_title": "Buffalo-Cheektowaga, NY",
+      "state": "NY",
+      "area_code": "15380",
+      "employment": 2220,
+      "hourly": {
+        "mean": 16.97,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 16.46,
+        "p75": 17.72,
+        "p90": 20.9
+      },
+      "capped": false
+    },
+    "burlington-nc": {
+      "area_title": "Burlington, NC",
+      "state": "NC",
+      "area_code": "15500",
+      "employment": 120,
+      "hourly": {
+        "mean": 13.25,
+        "p10": 10.34,
+        "p25": 10.6,
+        "median": 13.11,
+        "p75": 16.04,
+        "p90": 16.6
+      },
+      "capped": false
+    },
+    "burlington-south-burlington-vt": {
+      "area_title": "Burlington-South Burlington, VT",
+      "state": "VT",
+      "area_code": "15540",
+      "employment": 490,
+      "hourly": {
+        "mean": 18.61,
+        "p10": 15.0,
+        "p25": 15.86,
+        "median": 18.48,
+        "p75": 20.23,
+        "p90": 22.37
+      },
+      "capped": false
+    },
+    "canton-massillon-oh": {
+      "area_title": "Canton-Massillon, OH",
+      "state": "OH",
+      "area_code": "15940",
+      "employment": 310,
+      "hourly": {
+        "mean": 12.8,
+        "p10": 10.45,
+        "p25": 10.76,
+        "median": 12.65,
+        "p75": 13.55,
+        "p90": 15.91
+      },
+      "capped": false
+    },
+    "cape-coral-fort-myers-fl": {
+      "area_title": "Cape Coral-Fort Myers, FL",
+      "state": "FL",
+      "area_code": "15980",
+      "employment": 410,
+      "hourly": {
+        "mean": 15.3,
+        "p10": 12.94,
+        "p25": 13.65,
+        "median": 14.6,
+        "p75": 16.34,
+        "p90": 17.78
+      },
+      "capped": false
+    },
+    "cape-girardeau-mo-il": {
+      "area_title": "Cape Girardeau, MO-IL",
+      "state": "MO",
+      "area_code": "16020",
+      "employment": 160,
+      "hourly": {
+        "mean": 14.01,
+        "p10": 12.3,
+        "p25": 12.3,
+        "median": 13.48,
+        "p75": 14.35,
+        "p90": 17.06
+      },
+      "capped": false
+    },
+    "carson-city-nv": {
+      "area_title": "Carson City, NV",
+      "state": "NV",
+      "area_code": "16180",
+      "employment": 50,
+      "hourly": {
+        "mean": 15.08,
+        "p10": 11.89,
+        "p25": 13.89,
+        "median": 14.19,
+        "p75": 16.24,
+        "p90": 18.52
+      },
+      "capped": false
+    },
+    "casper-wy": {
+      "area_title": "Casper, WY",
+      "state": "WY",
+      "area_code": "16220",
+      "employment": 160,
+      "hourly": {
+        "mean": 12.51,
+        "p10": 10.38,
+        "p25": 10.51,
+        "median": 12.77,
+        "p75": 13.99,
+        "p90": 14.95
+      },
+      "capped": false
+    },
+    "cedar-rapids-ia": {
+      "area_title": "Cedar Rapids, IA",
+      "state": "IA",
+      "area_code": "16300",
+      "employment": 410,
+      "hourly": {
+        "mean": 13.68,
+        "p10": 9.77,
+        "p25": 12.02,
+        "median": 13.98,
+        "p75": 15.0,
+        "p90": 17.08
+      },
+      "capped": false
+    },
+    "chambersburg-pa": {
+      "area_title": "Chambersburg, PA",
+      "state": "PA",
+      "area_code": "16540",
+      "employment": 160,
+      "hourly": {
+        "mean": 12.58,
+        "p10": 10.1,
+        "p25": 11.15,
+        "median": 12.39,
+        "p75": 13.54,
+        "p90": 16.21
+      },
+      "capped": false
+    },
+    "champaign-urbana-il": {
+      "area_title": "Champaign-Urbana, IL",
+      "state": "IL",
+      "area_code": "16580",
+      "employment": 500,
+      "hourly": {
+        "mean": 15.84,
+        "p10": 14.0,
+        "p25": 14.11,
+        "median": 14.9,
+        "p75": 17.02,
+        "p90": 17.84
+      },
+      "capped": false
+    },
+    "charleston-north-charleston-sc": {
+      "area_title": "Charleston-North Charleston, SC",
+      "state": "SC",
+      "area_code": "16700",
+      "employment": 2530,
+      "hourly": {
+        "mean": 15.52,
+        "p10": 10.74,
+        "p25": 13.04,
+        "median": 14.23,
+        "p75": 17.6,
+        "p90": 23.64
+      },
+      "capped": false
+    },
+    "charleston-wv": {
+      "area_title": "Charleston, WV",
+      "state": "WV",
+      "area_code": "16620",
+      "employment": 150,
+      "hourly": {
+        "mean": 11.88,
+        "p10": 9.84,
+        "p25": 10.22,
+        "median": 11.58,
+        "p75": 13.38,
+        "p90": 14.01
+      },
+      "capped": false
+    },
+    "charlotte-concord-gastonia-nc-sc": {
+      "area_title": "Charlotte-Concord-Gastonia, NC-SC",
+      "state": "NC",
+      "area_code": "16740",
+      "employment": 4010,
+      "hourly": {
+        "mean": 14.22,
+        "p10": 10.83,
+        "p25": 11.46,
+        "median": 13.87,
+        "p75": 16.42,
+        "p90": 17.85
+      },
+      "capped": false
+    },
+    "charlottesville-va": {
+      "area_title": "Charlottesville, VA",
+      "state": "VA",
+      "area_code": "16820",
+      "employment": 350,
+      "hourly": {
+        "mean": 15.05,
+        "p10": 12.92,
+        "p25": 13.93,
+        "median": 14.25,
+        "p75": 16.39,
+        "p90": 17.69
+      },
+      "capped": false
+    },
+    "chattanooga-tn-ga": {
+      "area_title": "Chattanooga, TN-GA",
+      "state": "TN",
+      "area_code": "16860",
+      "employment": 1090,
+      "hourly": {
+        "mean": 13.4,
+        "p10": 10.27,
+        "p25": 11.29,
+        "median": 13.78,
+        "p75": 14.6,
+        "p90": 16.13
+      },
+      "capped": false
+    },
+    "cheyenne-wy": {
+      "area_title": "Cheyenne, WY",
+      "state": "WY",
+      "area_code": "16940",
+      "employment": 280,
+      "hourly": {
+        "mean": 12.75,
+        "p10": 8.73,
+        "p25": 10.68,
+        "median": 13.24,
+        "p75": 13.81,
+        "p90": 15.6
+      },
+      "capped": false
+    },
+    "chicago-naperville-elgin-il-in": {
+      "area_title": "Chicago-Naperville-Elgin, IL-IN",
+      "state": "IL",
+      "area_code": "16980",
+      "employment": 16910,
+      "hourly": {
+        "mean": 16.87,
+        "p10": 14.11,
+        "p25": 14.63,
+        "median": 16.4,
+        "p75": 17.83,
+        "p90": 20.64
+      },
+      "capped": false
+    },
+    "chico-ca": {
+      "area_title": "Chico, CA",
+      "state": "CA",
+      "area_code": "17020",
+      "employment": 310,
+      "hourly": {
+        "mean": 18.41,
+        "p10": 16.0,
+        "p25": 16.21,
+        "median": 17.08,
+        "p75": 19.67,
+        "p90": 22.95
+      },
+      "capped": false
+    },
+    "cincinnati-oh-ky-in": {
+      "area_title": "Cincinnati, OH-KY-IN",
+      "state": "OH",
+      "area_code": "17140",
+      "employment": 2870,
+      "hourly": {
+        "mean": 14.58,
+        "p10": 11.37,
+        "p25": 13.19,
+        "median": 13.91,
+        "p75": 16.17,
+        "p90": 17.94
+      },
+      "capped": false
+    },
+    "clarksville-tn-ky": {
+      "area_title": "Clarksville, TN-KY",
+      "state": "TN",
+      "area_code": "17300",
+      "employment": 730,
+      "hourly": {
+        "mean": 12.96,
+        "p10": 10.27,
+        "p25": 10.83,
+        "median": 13.23,
+        "p75": 14.25,
+        "p90": 16.41
+      },
+      "capped": false
+    },
+    "cleveland-oh": {
+      "area_title": "Cleveland, OH",
+      "state": "OH",
+      "area_code": "17410",
+      "employment": 2840,
+      "hourly": {
+        "mean": 14.47,
+        "p10": 11.32,
+        "p25": 13.12,
+        "median": 13.97,
+        "p75": 15.18,
+        "p90": 18.01
+      },
+      "capped": false
+    },
+    "cleveland-tn": {
+      "area_title": "Cleveland, TN",
+      "state": "TN",
+      "area_code": "17420",
+      "employment": 200,
+      "hourly": {
+        "mean": 12.98,
+        "p10": 10.57,
+        "p25": 10.9,
+        "median": 13.17,
+        "p75": 14.13,
+        "p90": 16.21
+      },
+      "capped": false
+    },
+    "coeur-d-alene-id": {
+      "area_title": "Coeur d'Alene, ID",
+      "state": "ID",
+      "area_code": "17660",
+      "employment": 440,
+      "hourly": {
+        "mean": 15.25,
+        "p10": 10.91,
+        "p25": 13.24,
+        "median": 14.64,
+        "p75": 16.97,
+        "p90": 20.18
+      },
+      "capped": false
+    },
+    "college-station-bryan-tx": {
+      "area_title": "College Station-Bryan, TX",
+      "state": "TX",
+      "area_code": "17780",
+      "employment": 460,
+      "hourly": {
+        "mean": 13.16,
+        "p10": 9.99,
+        "p25": 10.5,
+        "median": 12.88,
+        "p75": 14.05,
+        "p90": 18.11
+      },
+      "capped": false
+    },
+    "colorado-springs-co": {
+      "area_title": "Colorado Springs, CO",
+      "state": "CO",
+      "area_code": "17820",
+      "employment": 1070,
+      "hourly": {
+        "mean": 17.96,
+        "p10": 14.67,
+        "p25": 15.41,
+        "median": 17.83,
+        "p75": 19.26,
+        "p90": 21.24
+      },
+      "capped": false
+    },
+    "columbia-mo": {
+      "area_title": "Columbia, MO",
+      "state": "MO",
+      "area_code": "17860",
+      "employment": 490,
+      "hourly": {
+        "mean": 15.4,
+        "p10": 12.84,
+        "p25": 13.32,
+        "median": 13.75,
+        "p75": 16.8,
+        "p90": 20.94
+      },
+      "capped": false
+    },
+    "columbia-sc": {
+      "area_title": "Columbia, SC",
+      "state": "SC",
+      "area_code": "17900",
+      "employment": 1810,
+      "hourly": {
+        "mean": 13.27,
+        "p10": 10.21,
+        "p25": 11.18,
+        "median": 13.66,
+        "p75": 14.17,
+        "p90": 17.02
+      },
+      "capped": false
+    },
+    "columbus-ga-al": {
+      "area_title": "Columbus, GA-AL",
+      "state": "GA",
+      "area_code": "17980",
+      "employment": 670,
+      "hourly": {
+        "mean": 12.25,
+        "p10": 8.73,
+        "p25": 10.42,
+        "median": 12.04,
+        "p75": 13.65,
+        "p90": 14.88
+      },
+      "capped": false
+    },
+    "columbus-oh": {
+      "area_title": "Columbus, OH",
+      "state": "OH",
+      "area_code": "18140",
+      "employment": 2950,
+      "hourly": {
+        "mean": 14.43,
+        "p10": 11.37,
+        "p25": 12.82,
+        "median": 13.62,
+        "p75": 14.42,
+        "p90": 17.74
+      },
+      "capped": false
+    },
+    "corpus-christi-tx": {
+      "area_title": "Corpus Christi, TX",
+      "state": "TX",
+      "area_code": "18580",
+      "employment": 790,
+      "hourly": {
+        "mean": 14.01,
+        "p10": 10.08,
+        "p25": 10.47,
+        "median": 13.06,
+        "p75": 16.13,
+        "p90": 21.12
+      },
+      "capped": false
+    },
+    "corvallis-or": {
+      "area_title": "Corvallis, OR",
+      "state": "OR",
+      "area_code": "18700",
+      "employment": 90,
+      "hourly": {
+        "mean": 16.48,
+        "p10": 13.91,
+        "p25": 14.27,
+        "median": 16.41,
+        "p75": 18.8,
+        "p90": 18.9
+      },
+      "capped": false
+    },
+    "crestview-fort-walton-beach-destin-fl": {
+      "area_title": "Crestview-Fort Walton Beach-Destin, FL",
+      "state": "FL",
+      "area_code": "18880",
+      "employment": 200,
+      "hourly": {
+        "mean": 14.89,
+        "p10": 12.1,
+        "p25": 12.1,
+        "median": 14.39,
+        "p75": 15.46,
+        "p90": 18.69
+      },
+      "capped": false
+    },
+    "dallas-fort-worth-arlington-tx": {
+      "area_title": "Dallas-Fort Worth-Arlington, TX",
+      "state": "TX",
+      "area_code": "19100",
+      "employment": 11350,
+      "hourly": {
+        "mean": 14.94,
+        "p10": 11.05,
+        "p25": 13.23,
+        "median": 14.31,
+        "p75": 16.97,
+        "p90": 19.34
+      },
+      "capped": false
+    },
+    "dalton-ga": {
+      "area_title": "Dalton, GA",
+      "state": "GA",
+      "area_code": "19140",
+      "employment": 130,
+      "hourly": {
+        "mean": 12.48,
+        "p10": 10.01,
+        "p25": 10.67,
+        "median": 13.07,
+        "p75": 13.46,
+        "p90": 14.11
+      },
+      "capped": false
+    },
+    "daphne-fairhope-foley-al": {
+      "area_title": "Daphne-Fairhope-Foley, AL",
+      "state": "AL",
+      "area_code": "19300",
+      "employment": 230,
+      "hourly": {
+        "mean": 11.77,
+        "p10": 9.5,
+        "p25": 10.41,
+        "median": 11.24,
+        "p75": 13.4,
+        "p90": 14.1
+      },
+      "capped": false
+    },
+    "davenport-moline-rock-island-ia-il": {
+      "area_title": "Davenport-Moline-Rock Island, IA-IL",
+      "state": "IA",
+      "area_code": "19340",
+      "employment": 710,
+      "hourly": {
+        "mean": 15.54,
+        "p10": 12.85,
+        "p25": 14.0,
+        "median": 14.83,
+        "p75": 16.22,
+        "p90": 18.9
+      },
+      "capped": false
+    },
+    "dayton-kettering-beavercreek-oh": {
+      "area_title": "Dayton-Kettering-Beavercreek, OH",
+      "state": "OH",
+      "area_code": "19430",
+      "employment": 720,
+      "hourly": {
+        "mean": 14.67,
+        "p10": 10.85,
+        "p25": 11.51,
+        "median": 13.8,
+        "p75": 16.16,
+        "p90": 19.13
+      },
+      "capped": false
+    },
+    "decatur-al": {
+      "area_title": "Decatur, AL",
+      "state": "AL",
+      "area_code": "19460",
+      "employment": 100,
+      "hourly": {
+        "mean": 11.41,
+        "p10": 8.72,
+        "p25": 10.43,
+        "median": 10.76,
+        "p75": 13.13,
+        "p90": 14.34
+      },
+      "capped": false
+    },
+    "decatur-il": {
+      "area_title": "Decatur, IL",
+      "state": "IL",
+      "area_code": "19500",
+      "employment": 110,
+      "hourly": {
+        "mean": 16.18,
+        "p10": 14.0,
+        "p25": 14.25,
+        "median": 14.94,
+        "p75": 17.17,
+        "p90": 18.17
+      },
+      "capped": false
+    },
+    "deltona-daytona-beach-ormond-beach-fl": {
+      "area_title": "Deltona-Daytona Beach-Ormond Beach, FL",
+      "state": "FL",
+      "area_code": "19660",
+      "employment": 580,
+      "hourly": {
+        "mean": 17.56,
+        "p10": 12.0,
+        "p25": 13.49,
+        "median": 14.88,
+        "p75": 17.33,
+        "p90": 30.32
+      },
+      "capped": false
+    },
+    "denver-aurora-centennial-co": {
+      "area_title": "Denver-Aurora-Centennial, CO",
+      "state": "CO",
+      "area_code": "19740",
+      "employment": 7000,
+      "hourly": {
+        "mean": 19.23,
+        "p10": 15.19,
+        "p25": 16.78,
+        "median": 18.62,
+        "p75": 21.69,
+        "p90": 22.68
+      },
+      "capped": false
+    },
+    "des-moines-west-des-moines-ia": {
+      "area_title": "Des Moines-West Des Moines, IA",
+      "state": "IA",
+      "area_code": "19780",
+      "employment": 1460,
+      "hourly": {
+        "mean": 15.45,
+        "p10": 11.18,
+        "p25": 12.85,
+        "median": 14.69,
+        "p75": 15.92,
+        "p90": 23.11
+      },
+      "capped": false
+    },
+    "detroit-warren-dearborn-mi": {
+      "area_title": "Detroit-Warren-Dearborn, MI",
+      "state": "MI",
+      "area_code": "19820",
+      "employment": 6170,
+      "hourly": {
+        "mean": 14.77,
+        "p10": 11.77,
+        "p25": 12.88,
+        "median": 14.08,
+        "p75": 15.66,
+        "p90": 18.39
+      },
+      "capped": false
+    },
+    "dothan-al": {
+      "area_title": "Dothan, AL",
+      "state": "AL",
+      "area_code": "20020",
+      "employment": 160,
+      "hourly": {
+        "mean": 10.72,
+        "p10": 8.39,
+        "p25": 8.77,
+        "median": 10.37,
+        "p75": 13.25,
+        "p90": 13.47
+      },
+      "capped": false
+    },
+    "dover-de": {
+      "area_title": "Dover, DE",
+      "state": "DE",
+      "area_code": "20100",
+      "employment": 110,
+      "hourly": {
+        "mean": 15.53,
+        "p10": 13.25,
+        "p25": 13.25,
+        "median": 14.22,
+        "p75": 15.74,
+        "p90": 19.97
+      },
+      "capped": false
+    },
+    "dubuque-ia": {
+      "area_title": "Dubuque, IA",
+      "state": "IA",
+      "area_code": "20220",
+      "employment": 350,
+      "hourly": {
+        "mean": 15.01,
+        "p10": 10.71,
+        "p25": 13.99,
+        "median": 14.55,
+        "p75": 17.07,
+        "p90": 18.78
+      },
+      "capped": false
+    },
+    "duluth-mn-wi": {
+      "area_title": "Duluth, MN-WI",
+      "state": "MN",
+      "area_code": "20260",
+      "employment": 440,
+      "hourly": {
+        "mean": 14.63,
+        "p10": 12.65,
+        "p25": 13.62,
+        "median": 13.7,
+        "p75": 15.87,
+        "p90": 17.97
+      },
+      "capped": false
+    },
+    "durham-chapel-hill-nc": {
+      "area_title": "Durham-Chapel Hill, NC",
+      "state": "NC",
+      "area_code": "20500",
+      "employment": 690,
+      "hourly": {
+        "mean": 15.13,
+        "p10": 11.27,
+        "p25": 13.27,
+        "median": 14.56,
+        "p75": 17.03,
+        "p90": 18.51
+      },
+      "capped": false
+    },
+    "eagle-pass-tx": {
+      "area_title": "Eagle Pass, TX",
+      "state": "TX",
+      "area_code": "20580",
+      "employment": 140,
+      "hourly": {
+        "mean": 11.18,
+        "p10": 8.79,
+        "p25": 9.83,
+        "median": 10.86,
+        "p75": 12.76,
+        "p90": 13.92
+      },
+      "capped": false
+    },
+    "eau-claire-wi": {
+      "area_title": "Eau Claire, WI",
+      "state": "WI",
+      "area_code": "20740",
+      "employment": 120,
+      "hourly": {
+        "mean": 13.72,
+        "p10": 10.53,
+        "p25": 11.88,
+        "median": 13.54,
+        "p75": 15.04,
+        "p90": 16.81
+      },
+      "capped": false
+    },
+    "el-centro-ca": {
+      "area_title": "El Centro, CA",
+      "state": "CA",
+      "area_code": "20940",
+      "employment": 280,
+      "hourly": {
+        "mean": 20.06,
+        "p10": 16.0,
+        "p25": 16.12,
+        "median": 17.29,
+        "p75": 23.5,
+        "p90": 23.5
+      },
+      "capped": false
+    },
+    "el-paso-tx": {
+      "area_title": "El Paso, TX",
+      "state": "TX",
+      "area_code": "21340",
+      "employment": 990,
+      "hourly": {
+        "mean": 11.52,
+        "p10": 8.59,
+        "p25": 10.12,
+        "median": 10.92,
+        "p75": 12.73,
+        "p90": 14.52
+      },
+      "capped": false
+    },
+    "elizabethtown-ky": {
+      "area_title": "Elizabethtown, KY",
+      "state": "KY",
+      "area_code": "21060",
+      "employment": 110,
+      "hourly": {
+        "mean": 12.82,
+        "p10": 9.25,
+        "p25": 10.83,
+        "median": 13.27,
+        "p75": 13.75,
+        "p90": 15.7
+      },
+      "capped": false
+    },
+    "elkhart-goshen-in": {
+      "area_title": "Elkhart-Goshen, IN",
+      "state": "IN",
+      "area_code": "21140",
+      "employment": 120,
+      "hourly": {
+        "mean": 13.78,
+        "p10": 11.31,
+        "p25": 12.04,
+        "median": 14.08,
+        "p75": 14.35,
+        "p90": 16.38
+      },
+      "capped": false
+    },
+    "elmira-ny": {
+      "area_title": "Elmira, NY",
+      "state": "NY",
+      "area_code": "21300",
+      "employment": 90,
+      "hourly": {
+        "mean": 16.72,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 15.95,
+        "p75": 16.72,
+        "p90": 18.58
+      },
+      "capped": false
+    },
+    "enid-ok": {
+      "area_title": "Enid, OK",
+      "state": "OK",
+      "area_code": "21420",
+      "employment": 90,
+      "hourly": {
+        "mean": 11.79,
+        "p10": 9.0,
+        "p25": 10.1,
+        "median": 11.32,
+        "p75": 13.38,
+        "p90": 13.97
+      },
+      "capped": false
+    },
+    "erie-pa": {
+      "area_title": "Erie, PA",
+      "state": "PA",
+      "area_code": "21500",
+      "employment": 370,
+      "hourly": {
+        "mean": 13.02,
+        "p10": 10.08,
+        "p25": 11.03,
+        "median": 11.68,
+        "p75": 14.68,
+        "p90": 17.07
+      },
+      "capped": false
+    },
+    "eugene-springfield-or": {
+      "area_title": "Eugene-Springfield, OR",
+      "state": "OR",
+      "area_code": "21660",
+      "employment": 330,
+      "hourly": {
+        "mean": 16.41,
+        "p10": 13.99,
+        "p25": 15.06,
+        "median": 16.44,
+        "p75": 16.72,
+        "p90": 18.58
+      },
+      "capped": false
+    },
+    "evansville-in": {
+      "area_title": "Evansville, IN",
+      "state": "IN",
+      "area_code": "21780",
+      "employment": 500,
+      "hourly": {
+        "mean": 13.99,
+        "p10": 10.33,
+        "p25": 11.49,
+        "median": 13.81,
+        "p75": 15.33,
+        "p90": 18.89
+      },
+      "capped": false
+    },
+    "fairbanks-college-ak": {
+      "area_title": "Fairbanks-College, AK",
+      "state": "AK",
+      "area_code": "21820",
+      "employment": 90,
+      "hourly": {
+        "mean": 18.37,
+        "p10": 13.74,
+        "p25": 16.72,
+        "median": 17.5,
+        "p75": 21.33,
+        "p90": 22.38
+      },
+      "capped": false
+    },
+    "fargo-nd-mn": {
+      "area_title": "Fargo, ND-MN",
+      "state": "ND",
+      "area_code": "22020",
+      "employment": 1350,
+      "hourly": {
+        "mean": 15.38,
+        "p10": 13.82,
+        "p25": 14.39,
+        "median": 14.65,
+        "p75": 16.69,
+        "p90": 17.38
+      },
+      "capped": false
+    },
+    "farmington-nm": {
+      "area_title": "Farmington, NM",
+      "state": "NM",
+      "area_code": "22140",
+      "employment": 190,
+      "hourly": {
+        "mean": 15.81,
+        "p10": 13.97,
+        "p25": 14.14,
+        "median": 15.27,
+        "p75": 17.23,
+        "p90": 17.25
+      },
+      "capped": false
+    },
+    "fayetteville-nc": {
+      "area_title": "Fayetteville, NC",
+      "state": "NC",
+      "area_code": "22180",
+      "employment": 360,
+      "hourly": {
+        "mean": 14.09,
+        "p10": 10.57,
+        "p25": 11.62,
+        "median": 13.44,
+        "p75": 16.23,
+        "p90": 17.57
+      },
+      "capped": false
+    },
+    "fayetteville-springdale-rogers-ar": {
+      "area_title": "Fayetteville-Springdale-Rogers, AR",
+      "state": "AR",
+      "area_code": "22220",
+      "employment": 1310,
+      "hourly": {
+        "mean": 14.0,
+        "p10": 12.33,
+        "p25": 12.6,
+        "median": 13.67,
+        "p75": 14.7,
+        "p90": 16.51
+      },
+      "capped": false
+    },
+    "flagstaff-az": {
+      "area_title": "Flagstaff, AZ",
+      "state": "AZ",
+      "area_code": "22380",
+      "employment": 150,
+      "hourly": {
+        "mean": 18.17,
+        "p10": 15.41,
+        "p25": 17.83,
+        "median": 18.23,
+        "p75": 18.23,
+        "p90": 20.91
+      },
+      "capped": false
+    },
+    "flint-mi": {
+      "area_title": "Flint, MI",
+      "state": "MI",
+      "area_code": "22420",
+      "employment": 570,
+      "hourly": {
+        "mean": 15.7,
+        "p10": 11.31,
+        "p25": 12.86,
+        "median": 13.99,
+        "p75": 17.82,
+        "p90": 23.54
+      },
+      "capped": false
+    },
+    "florence-muscle-shoals-al": {
+      "area_title": "Florence-Muscle Shoals, AL",
+      "state": "AL",
+      "area_code": "22520",
+      "employment": 120,
+      "hourly": {
+        "mean": 10.94,
+        "p10": 8.52,
+        "p25": 9.74,
+        "median": 10.11,
+        "p75": 12.75,
+        "p90": 13.33
+      },
+      "capped": false
+    },
+    "florence-sc": {
+      "area_title": "Florence, SC",
+      "state": "SC",
+      "area_code": "22500",
+      "employment": 480,
+      "hourly": {
+        "mean": 12.58,
+        "p10": 9.14,
+        "p25": 10.81,
+        "median": 13.01,
+        "p75": 14.48,
+        "p90": 16.42
+      },
+      "capped": false
+    },
+    "fond-du-lac-wi": {
+      "area_title": "Fond du Lac, WI",
+      "state": "WI",
+      "area_code": "22540",
+      "employment": 60,
+      "hourly": {
+        "mean": 14.6,
+        "p10": 11.73,
+        "p25": 12.4,
+        "median": 12.92,
+        "p75": 15.31,
+        "p90": 20.61
+      },
+      "capped": false
+    },
+    "fort-collins-loveland-co": {
+      "area_title": "Fort Collins-Loveland, CO",
+      "state": "CO",
+      "area_code": "22660",
+      "employment": 550,
+      "hourly": {
+        "mean": 17.56,
+        "p10": 14.71,
+        "p25": 15.65,
+        "median": 17.16,
+        "p75": 18.24,
+        "p90": 21.18
+      },
+      "capped": false
+    },
+    "fort-smith-ar-ok": {
+      "area_title": "Fort Smith, AR-OK",
+      "state": "AR",
+      "area_code": "22900",
+      "employment": 350,
+      "hourly": {
+        "mean": 12.79,
+        "p10": 10.84,
+        "p25": 11.11,
+        "median": 12.12,
+        "p75": 14.71,
+        "p90": 16.54
+      },
+      "capped": false
+    },
+    "fort-wayne-in": {
+      "area_title": "Fort Wayne, IN",
+      "state": "IN",
+      "area_code": "23060",
+      "employment": 590,
+      "hourly": {
+        "mean": 14.08,
+        "p10": 10.71,
+        "p25": 12.5,
+        "median": 13.92,
+        "p75": 15.02,
+        "p90": 17.97
+      },
+      "capped": false
+    },
+    "fresno-ca": {
+      "area_title": "Fresno, CA",
+      "state": "CA",
+      "area_code": "23420",
+      "employment": 1190,
+      "hourly": {
+        "mean": 18.23,
+        "p10": 16.0,
+        "p25": 16.0,
+        "median": 16.53,
+        "p75": 21.31,
+        "p90": 21.76
+      },
+      "capped": false
+    },
+    "gadsden-al": {
+      "area_title": "Gadsden, AL",
+      "state": "AL",
+      "area_code": "23460",
+      "employment": 60,
+      "hourly": {
+        "mean": 9.98,
+        "p10": 8.17,
+        "p25": 8.45,
+        "median": 9.67,
+        "p75": 10.95,
+        "p90": 12.78
+      },
+      "capped": false
+    },
+    "gainesville-fl": {
+      "area_title": "Gainesville, FL",
+      "state": "FL",
+      "area_code": "23540",
+      "employment": 370,
+      "hourly": {
+        "mean": 14.87,
+        "p10": 12.0,
+        "p25": 13.46,
+        "median": 13.89,
+        "p75": 14.84,
+        "p90": 18.32
+      },
+      "capped": false
+    },
+    "gettysburg-pa": {
+      "area_title": "Gettysburg, PA",
+      "state": "PA",
+      "area_code": "23900",
+      "employment": 100,
+      "hourly": {
+        "mean": 14.8,
+        "p10": 11.04,
+        "p25": 12.5,
+        "median": 15.15,
+        "p75": 16.53,
+        "p90": 16.53
+      },
+      "capped": false
+    },
+    "glens-falls-ny": {
+      "area_title": "Glens Falls, NY",
+      "state": "NY",
+      "area_code": "24020",
+      "employment": 230,
+      "hourly": {
+        "mean": 16.68,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 16.33,
+        "p75": 17.14,
+        "p90": 18.38
+      },
+      "capped": false
+    },
+    "goldsboro-nc": {
+      "area_title": "Goldsboro, NC",
+      "state": "NC",
+      "area_code": "24140",
+      "employment": 110,
+      "hourly": {
+        "mean": 13.08,
+        "p10": 9.92,
+        "p25": 10.63,
+        "median": 13.11,
+        "p75": 14.48,
+        "p90": 15.71
+      },
+      "capped": false
+    },
+    "grand-forks-nd-mn": {
+      "area_title": "Grand Forks, ND-MN",
+      "state": "ND",
+      "area_code": "24220",
+      "employment": 350,
+      "hourly": {
+        "mean": 14.41,
+        "p10": 11.68,
+        "p25": 13.12,
+        "median": 14.13,
+        "p75": 15.2,
+        "p90": 17.87
+      },
+      "capped": false
+    },
+    "grand-island-ne": {
+      "area_title": "Grand Island, NE",
+      "state": "NE",
+      "area_code": "24260",
+      "employment": 250,
+      "hourly": {
+        "mean": 13.88,
+        "p10": 12.0,
+        "p25": 12.0,
+        "median": 13.54,
+        "p75": 13.86,
+        "p90": 16.9
+      },
+      "capped": false
+    },
+    "grand-junction-co": {
+      "area_title": "Grand Junction, CO",
+      "state": "CO",
+      "area_code": "24300",
+      "employment": 210,
+      "hourly": {
+        "mean": 17.11,
+        "p10": 14.42,
+        "p25": 14.9,
+        "median": 17.23,
+        "p75": 18.54,
+        "p90": 20.06
+      },
+      "capped": false
+    },
+    "grand-rapids-wyoming-kentwood-mi": {
+      "area_title": "Grand Rapids-Wyoming-Kentwood, MI",
+      "state": "MI",
+      "area_code": "24340",
+      "employment": 1920,
+      "hourly": {
+        "mean": 15.08,
+        "p10": 11.98,
+        "p25": 13.32,
+        "median": 14.32,
+        "p75": 17.13,
+        "p90": 18.14
+      },
+      "capped": false
+    },
+    "grants-pass-or": {
+      "area_title": "Grants Pass, OR",
+      "state": "OR",
+      "area_code": "24420",
+      "employment": 80,
+      "hourly": {
+        "mean": 16.91,
+        "p10": 14.57,
+        "p25": 15.95,
+        "median": 17.03,
+        "p75": 17.25,
+        "p90": 17.5
+      },
+      "capped": false
+    },
+    "great-falls-mt": {
+      "area_title": "Great Falls, MT",
+      "state": "MT",
+      "area_code": "24500",
+      "employment": 220,
+      "hourly": {
+        "mean": 15.02,
+        "p10": 12.56,
+        "p25": 13.2,
+        "median": 14.4,
+        "p75": 16.13,
+        "p90": 17.82
+      },
+      "capped": false
+    },
+    "greeley-co": {
+      "area_title": "Greeley, CO",
+      "state": "CO",
+      "area_code": "24540",
+      "employment": 450,
+      "hourly": {
+        "mean": 17.94,
+        "p10": 14.7,
+        "p25": 15.32,
+        "median": 17.82,
+        "p75": 19.19,
+        "p90": 20.87
+      },
+      "capped": false
+    },
+    "green-bay-wi": {
+      "area_title": "Green Bay, WI",
+      "state": "WI",
+      "area_code": "24580",
+      "employment": 260,
+      "hourly": {
+        "mean": 14.88,
+        "p10": 10.64,
+        "p25": 12.98,
+        "median": 15.3,
+        "p75": 16.93,
+        "p90": 17.95
+      },
+      "capped": false
+    },
+    "greensboro-high-point-nc": {
+      "area_title": "Greensboro-High Point, NC",
+      "state": "NC",
+      "area_code": "24660",
+      "employment": 840,
+      "hourly": {
+        "mean": 14.01,
+        "p10": 10.33,
+        "p25": 11.26,
+        "median": 13.54,
+        "p75": 16.09,
+        "p90": 17.21
+      },
+      "capped": false
+    },
+    "greenville-anderson-greer-sc": {
+      "area_title": "Greenville-Anderson-Greer, SC",
+      "state": "SC",
+      "area_code": "24860",
+      "employment": 1910,
+      "hourly": {
+        "mean": 13.11,
+        "p10": 9.35,
+        "p25": 10.85,
+        "median": 13.43,
+        "p75": 14.06,
+        "p90": 17.15
+      },
+      "capped": false
+    },
+    "greenville-nc": {
+      "area_title": "Greenville, NC",
+      "state": "NC",
+      "area_code": "24780",
+      "employment": 210,
+      "hourly": {
+        "mean": 12.57,
+        "p10": 9.95,
+        "p25": 10.36,
+        "median": 12.94,
+        "p75": 13.53,
+        "p90": 16.12
+      },
+      "capped": false
+    },
+    "gulfport-biloxi-ms": {
+      "area_title": "Gulfport-Biloxi, MS",
+      "state": "MS",
+      "area_code": "25060",
+      "employment": 590,
+      "hourly": {
+        "mean": 11.14,
+        "p10": 8.27,
+        "p25": 9.13,
+        "median": 10.73,
+        "p75": 11.65,
+        "p90": 14.73
+      },
+      "capped": false
+    },
+    "hagerstown-martinsburg-md-wv": {
+      "area_title": "Hagerstown-Martinsburg, MD-WV",
+      "state": "MD",
+      "area_code": "25180",
+      "employment": 240,
+      "hourly": {
+        "mean": 15.51,
+        "p10": 13.09,
+        "p25": 15.0,
+        "median": 15.0,
+        "p75": 16.16,
+        "p90": 18.31
+      },
+      "capped": false
+    },
+    "hammond-la": {
+      "area_title": "Hammond, LA",
+      "state": "LA",
+      "area_code": "25220",
+      "employment": 390,
+      "hourly": {
+        "mean": 11.33,
+        "p10": 8.49,
+        "p25": 8.68,
+        "median": 10.47,
+        "p75": 13.26,
+        "p90": 13.7
+      },
+      "capped": false
+    },
+    "hanford-corcoran-ca": {
+      "area_title": "Hanford-Corcoran, CA",
+      "state": "CA",
+      "area_code": "25260",
+      "employment": 170,
+      "hourly": {
+        "mean": 18.65,
+        "p10": 16.0,
+        "p25": 16.3,
+        "median": 17.32,
+        "p75": 18.68,
+        "p90": 23.91
+      },
+      "capped": false
+    },
+    "harrisburg-carlisle-pa": {
+      "area_title": "Harrisburg-Carlisle, PA",
+      "state": "PA",
+      "area_code": "25420",
+      "employment": 820,
+      "hourly": {
+        "mean": 13.75,
+        "p10": 10.19,
+        "p25": 11.29,
+        "median": 13.55,
+        "p75": 15.54,
+        "p90": 17.48
+      },
+      "capped": false
+    },
+    "harrisonburg-va": {
+      "area_title": "Harrisonburg, VA",
+      "state": "VA",
+      "area_code": "25500",
+      "employment": 130,
+      "hourly": {
+        "mean": 14.68,
+        "p10": 12.59,
+        "p25": 13.32,
+        "median": 13.66,
+        "p75": 16.72,
+        "p90": 17.0
+      },
+      "capped": false
+    },
+    "hartford-west-hartford-east-hartford-ct": {
+      "area_title": "Hartford-West Hartford-East Hartford, CT",
+      "state": "CT",
+      "area_code": "25540",
+      "employment": 3010,
+      "hourly": {
+        "mean": 17.11,
+        "p10": 15.69,
+        "p25": 16.16,
+        "median": 16.48,
+        "p75": 17.18,
+        "p90": 18.8
+      },
+      "capped": false
+    },
+    "hattiesburg-ms": {
+      "area_title": "Hattiesburg, MS",
+      "state": "MS",
+      "area_code": "25620",
+      "employment": 250,
+      "hourly": {
+        "mean": 10.19,
+        "p10": 7.91,
+        "p25": 8.17,
+        "median": 10.07,
+        "p75": 10.91,
+        "p90": 13.27
+      },
+      "capped": false
+    },
+    "helena-mt": {
+      "area_title": "Helena, MT",
+      "state": "MT",
+      "area_code": "25740",
+      "employment": 130,
+      "hourly": {
+        "mean": 15.55,
+        "p10": 11.68,
+        "p25": 13.78,
+        "median": 14.8,
+        "p75": 17.81,
+        "p90": 18.43
+      },
+      "capped": false
+    },
+    "hickory-lenoir-morganton-nc": {
+      "area_title": "Hickory-Lenoir-Morganton, NC",
+      "state": "NC",
+      "area_code": "25860",
+      "employment": 290,
+      "hourly": {
+        "mean": 14.19,
+        "p10": 10.39,
+        "p25": 11.49,
+        "median": 13.47,
+        "p75": 16.41,
+        "p90": 17.93
+      },
+      "capped": false
+    },
+    "hilton-head-island-bluffton-port-royal-sc": {
+      "area_title": "Hilton Head Island-Bluffton-Port Royal, SC",
+      "state": "SC",
+      "area_code": "25940",
+      "employment": 260,
+      "hourly": {
+        "mean": 14.3,
+        "p10": 10.56,
+        "p25": 11.74,
+        "median": 13.67,
+        "p75": 16.52,
+        "p90": 20.29
+      },
+      "capped": false
+    },
+    "hinesville-ga": {
+      "area_title": "Hinesville, GA",
+      "state": "GA",
+      "area_code": "25980",
+      "employment": 200,
+      "hourly": {
+        "mean": 12.47,
+        "p10": 10.15,
+        "p25": 10.67,
+        "median": 13.05,
+        "p75": 13.59,
+        "p90": 14.38
+      },
+      "capped": false
+    },
+    "hot-springs-ar": {
+      "area_title": "Hot Springs, AR",
+      "state": "AR",
+      "area_code": "26300",
+      "employment": 220,
+      "hourly": {
+        "mean": 14.02,
+        "p10": 11.17,
+        "p25": 12.04,
+        "median": 14.47,
+        "p75": 14.85,
+        "p90": 17.1
+      },
+      "capped": false
+    },
+    "houma-bayou-cane-thibodaux-la": {
+      "area_title": "Houma-Bayou Cane-Thibodaux, LA",
+      "state": "LA",
+      "area_code": "26380",
+      "employment": 310,
+      "hourly": {
+        "mean": 11.62,
+        "p10": 8.82,
+        "p25": 9.74,
+        "median": 10.62,
+        "p75": 13.3,
+        "p90": 13.97
+      },
+      "capped": false
+    },
+    "houston-pasadena-the-woodlands-tx": {
+      "area_title": "Houston-Pasadena-The Woodlands, TX",
+      "state": "TX",
+      "area_code": "26420",
+      "employment": 13060,
+      "hourly": {
+        "mean": 14.19,
+        "p10": 10.66,
+        "p25": 11.32,
+        "median": 13.7,
+        "p75": 16.44,
+        "p90": 18.11
+      },
+      "capped": false
+    },
+    "huntington-ashland-wv-ky-oh": {
+      "area_title": "Huntington-Ashland, WV-KY-OH",
+      "state": "WV",
+      "area_code": "26580",
+      "employment": 420,
+      "hourly": {
+        "mean": 11.57,
+        "p10": 9.14,
+        "p25": 10.04,
+        "median": 11.33,
+        "p75": 12.83,
+        "p90": 13.17
+      },
+      "capped": false
+    },
+    "huntsville-al": {
+      "area_title": "Huntsville, AL",
+      "state": "AL",
+      "area_code": "26620",
+      "employment": 430,
+      "hourly": {
+        "mean": 12.45,
+        "p10": 10.05,
+        "p25": 10.47,
+        "median": 11.4,
+        "p75": 14.55,
+        "p90": 15.06
+      },
+      "capped": false
+    },
+    "idaho-falls-id": {
+      "area_title": "Idaho Falls, ID",
+      "state": "ID",
+      "area_code": "26820",
+      "employment": 680,
+      "hourly": {
+        "mean": 12.69,
+        "p10": 7.25,
+        "p25": 10.26,
+        "median": 13.01,
+        "p75": 14.54,
+        "p90": 17.0
+      },
+      "capped": false
+    },
+    "indianapolis-carmel-greenwood-in": {
+      "area_title": "Indianapolis-Carmel-Greenwood, IN",
+      "state": "IN",
+      "area_code": "26900",
+      "employment": 3110,
+      "hourly": {
+        "mean": 14.72,
+        "p10": 10.99,
+        "p25": 13.25,
+        "median": 14.24,
+        "p75": 15.65,
+        "p90": 18.65
+      },
+      "capped": false
+    },
+    "iowa-city-ia": {
+      "area_title": "Iowa City, IA",
+      "state": "IA",
+      "area_code": "26980",
+      "employment": 440,
+      "hourly": {
+        "mean": 14.27,
+        "p10": 10.1,
+        "p25": 11.02,
+        "median": 13.42,
+        "p75": 15.41,
+        "p90": 22.41
+      },
+      "capped": false
+    },
+    "ithaca-ny": {
+      "area_title": "Ithaca, NY",
+      "state": "NY",
+      "area_code": "27060",
+      "employment": 310,
+      "hourly": {
+        "mean": 17.36,
+        "p10": 15.01,
+        "p25": 16.12,
+        "median": 17.38,
+        "p75": 17.79,
+        "p90": 18.55
+      },
+      "capped": false
+    },
+    "jackson-mi": {
+      "area_title": "Jackson, MI",
+      "state": "MI",
+      "area_code": "27100",
+      "employment": 250,
+      "hourly": {
+        "mean": 14.43,
+        "p10": 11.39,
+        "p25": 12.51,
+        "median": 13.75,
+        "p75": 15.07,
+        "p90": 18.49
+      },
+      "capped": false
+    },
+    "jackson-ms": {
+      "area_title": "Jackson, MS",
+      "state": "MS",
+      "area_code": "27140",
+      "employment": 1330,
+      "hourly": {
+        "mean": 10.95,
+        "p10": 8.34,
+        "p25": 8.43,
+        "median": 10.64,
+        "p75": 12.2,
+        "p90": 13.78
+      },
+      "capped": false
+    },
+    "jackson-tn": {
+      "area_title": "Jackson, TN",
+      "state": "TN",
+      "area_code": "27180",
+      "employment": 360,
+      "hourly": {
+        "mean": 12.24,
+        "p10": 9.09,
+        "p25": 10.59,
+        "median": 12.51,
+        "p75": 13.84,
+        "p90": 14.09
+      },
+      "capped": false
+    },
+    "jacksonville-fl": {
+      "area_title": "Jacksonville, FL",
+      "state": "FL",
+      "area_code": "27260",
+      "employment": 1920,
+      "hourly": {
+        "mean": 16.76,
+        "p10": 12.0,
+        "p25": 13.69,
+        "median": 15.0,
+        "p75": 16.75,
+        "p90": 22.57
+      },
+      "capped": false
+    },
+    "jacksonville-nc": {
+      "area_title": "Jacksonville, NC",
+      "state": "NC",
+      "area_code": "27340",
+      "employment": 140,
+      "hourly": {
+        "mean": 13.14,
+        "p10": 10.28,
+        "p25": 11.78,
+        "median": 12.85,
+        "p75": 14.41,
+        "p90": 16.42
+      },
+      "capped": false
+    },
+    "janesville-beloit-wi": {
+      "area_title": "Janesville-Beloit, WI",
+      "state": "WI",
+      "area_code": "27500",
+      "employment": 100,
+      "hourly": {
+        "mean": 13.3,
+        "p10": 11.67,
+        "p25": 11.67,
+        "median": 13.56,
+        "p75": 13.81,
+        "p90": 16.16
+      },
+      "capped": false
+    },
+    "jefferson-city-mo": {
+      "area_title": "Jefferson City, MO",
+      "state": "MO",
+      "area_code": "27620",
+      "employment": 380,
+      "hourly": {
+        "mean": 13.94,
+        "p10": 12.51,
+        "p25": 12.86,
+        "median": 13.39,
+        "p75": 13.77,
+        "p90": 16.44
+      },
+      "capped": false
+    },
+    "johnson-city-tn": {
+      "area_title": "Johnson City, TN",
+      "state": "TN",
+      "area_code": "27740",
+      "employment": 240,
+      "hourly": {
+        "mean": 12.77,
+        "p10": 10.16,
+        "p25": 11.11,
+        "median": 13.08,
+        "p75": 13.4,
+        "p90": 14.21
+      },
+      "capped": false
+    },
+    "johnstown-pa": {
+      "area_title": "Johnstown, PA",
+      "state": "PA",
+      "area_code": "27780",
+      "employment": 160,
+      "hourly": {
+        "mean": 11.47,
+        "p10": 8.12,
+        "p25": 10.31,
+        "median": 10.89,
+        "p75": 13.19,
+        "p90": 15.53
+      },
+      "capped": false
+    },
+    "jonesboro-ar": {
+      "area_title": "Jonesboro, AR",
+      "state": "AR",
+      "area_code": "27860",
+      "employment": 570,
+      "hourly": {
+        "mean": 13.86,
+        "p10": 11.6,
+        "p25": 12.85,
+        "median": 13.68,
+        "p75": 15.72,
+        "p90": 16.29
+      },
+      "capped": false
+    },
+    "joplin-mo-ks": {
+      "area_title": "Joplin, MO-KS",
+      "state": "MO",
+      "area_code": "27900",
+      "employment": 270,
+      "hourly": {
+        "mean": 14.14,
+        "p10": 12.3,
+        "p25": 12.82,
+        "median": 13.44,
+        "p75": 14.66,
+        "p90": 17.44
+      },
+      "capped": false
+    },
+    "kahului-wailuku-hi": {
+      "area_title": "Kahului-Wailuku, HI",
+      "state": "HI",
+      "area_code": "27980",
+      "employment": 200,
+      "hourly": {
+        "mean": 19.64,
+        "p10": 16.42,
+        "p25": 17.17,
+        "median": 18.49,
+        "p75": 21.22,
+        "p90": 24.12
+      },
+      "capped": false
+    },
+    "kalamazoo-portage-mi": {
+      "area_title": "Kalamazoo-Portage, MI",
+      "state": "MI",
+      "area_code": "28020",
+      "employment": 580,
+      "hourly": {
+        "mean": 19.03,
+        "p10": 12.81,
+        "p25": 13.93,
+        "median": 17.66,
+        "p75": 25.68,
+        "p90": 25.68
+      },
+      "capped": false
+    },
+    "kankakee-il": {
+      "area_title": "Kankakee, IL",
+      "state": "IL",
+      "area_code": "28100",
+      "employment": 150,
+      "hourly": {
+        "mean": 15.37,
+        "p10": 14.0,
+        "p25": 14.38,
+        "median": 14.76,
+        "p75": 16.16,
+        "p90": 17.03
+      },
+      "capped": false
+    },
+    "kansas-city-mo-ks": {
+      "area_title": "Kansas City, MO-KS",
+      "state": "MO",
+      "area_code": "28140",
+      "employment": 5170,
+      "hourly": {
+        "mean": 15.37,
+        "p10": 12.26,
+        "p25": 13.77,
+        "median": 14.64,
+        "p75": 17.05,
+        "p90": 18.23
+      },
+      "capped": false
+    },
+    "kennewick-richland-wa": {
+      "area_title": "Kennewick-Richland, WA",
+      "state": "WA",
+      "area_code": "28420",
+      "employment": 260,
+      "hourly": {
+        "mean": 18.93,
+        "p10": 16.28,
+        "p25": 16.31,
+        "median": 17.42,
+        "p75": 18.44,
+        "p90": 26.29
+      },
+      "capped": false
+    },
+    "kenosha-wi": {
+      "area_title": "Kenosha, WI",
+      "state": "WI",
+      "area_code": "28450",
+      "employment": 110,
+      "hourly": {
+        "mean": 13.62,
+        "p10": 9.76,
+        "p25": 11.25,
+        "median": 14.57,
+        "p75": 15.2,
+        "p90": 16.41
+      },
+      "capped": false
+    },
+    "killeen-temple-tx": {
+      "area_title": "Killeen-Temple, TX",
+      "state": "TX",
+      "area_code": "28660",
+      "employment": 510,
+      "hourly": {
+        "mean": 12.11,
+        "p10": 10.04,
+        "p25": 10.36,
+        "median": 11.54,
+        "p75": 13.06,
+        "p90": 14.11
+      },
+      "capped": false
+    },
+    "kingsport-bristol-tn-va": {
+      "area_title": "Kingsport-Bristol, TN-VA",
+      "state": "TN",
+      "area_code": "28700",
+      "employment": 250,
+      "hourly": {
+        "mean": 13.16,
+        "p10": 10.78,
+        "p25": 11.93,
+        "median": 12.92,
+        "p75": 14.07,
+        "p90": 16.42
+      },
+      "capped": false
+    },
+    "kingston-ny": {
+      "area_title": "Kingston, NY",
+      "state": "NY",
+      "area_code": "28740",
+      "employment": 420,
+      "hourly": {
+        "mean": 17.32,
+        "p10": 15.02,
+        "p25": 15.66,
+        "median": 17.01,
+        "p75": 18.05,
+        "p90": 19.64
+      },
+      "capped": false
+    },
+    "kiryas-joel-poughkeepsie-newburgh-ny": {
+      "area_title": "Kiryas Joel-Poughkeepsie-Newburgh, NY",
+      "state": "NY",
+      "area_code": "28880",
+      "employment": 1860,
+      "hourly": {
+        "mean": 17.47,
+        "p10": 15.0,
+        "p25": 15.62,
+        "median": 17.04,
+        "p75": 18.06,
+        "p90": 21.22
+      },
+      "capped": false
+    },
+    "knoxville-tn": {
+      "area_title": "Knoxville, TN",
+      "state": "TN",
+      "area_code": "28940",
+      "employment": 1820,
+      "hourly": {
+        "mean": 13.83,
+        "p10": 10.63,
+        "p25": 11.43,
+        "median": 13.96,
+        "p75": 15.72,
+        "p90": 16.37
+      },
+      "capped": false
+    },
+    "kokomo-in": {
+      "area_title": "Kokomo, IN",
+      "state": "IN",
+      "area_code": "29020",
+      "employment": 110,
+      "hourly": {
+        "mean": 13.62,
+        "p10": 10.98,
+        "p25": 10.98,
+        "median": 13.65,
+        "p75": 14.98,
+        "p90": 17.87
+      },
+      "capped": false
+    },
+    "la-crosse-onalaska-wi-mn": {
+      "area_title": "La Crosse-Onalaska, WI-MN",
+      "state": "WI",
+      "area_code": "29100",
+      "employment": null,
+      "hourly": {
+        "mean": 14.48,
+        "p10": 11.26,
+        "p25": 13.54,
+        "median": 13.79,
+        "p75": 15.41,
+        "p90": 17.89
+      },
+      "capped": false
+    },
+    "lafayette-la": {
+      "area_title": "Lafayette, LA",
+      "state": "LA",
+      "area_code": "29180",
+      "employment": 1150,
+      "hourly": {
+        "mean": 11.44,
+        "p10": 8.7,
+        "p25": 9.84,
+        "median": 10.47,
+        "p75": 13.32,
+        "p90": 14.55
+      },
+      "capped": false
+    },
+    "lafayette-west-lafayette-in": {
+      "area_title": "Lafayette-West Lafayette, IN",
+      "state": "IN",
+      "area_code": "29200",
+      "employment": 400,
+      "hourly": {
+        "mean": 13.95,
+        "p10": 11.23,
+        "p25": 12.9,
+        "median": 13.81,
+        "p75": 14.73,
+        "p90": 16.65
+      },
+      "capped": false
+    },
+    "lake-charles-la": {
+      "area_title": "Lake Charles, LA",
+      "state": "LA",
+      "area_code": "29340",
+      "employment": 270,
+      "hourly": {
+        "mean": 11.88,
+        "p10": 8.97,
+        "p25": 10.29,
+        "median": 10.69,
+        "p75": 13.74,
+        "p90": 15.93
+      },
+      "capped": false
+    },
+    "lake-havasu-city-kingman-az": {
+      "area_title": "Lake Havasu City-Kingman, AZ",
+      "state": "AZ",
+      "area_code": "29420",
+      "employment": 100,
+      "hourly": {
+        "mean": 16.02,
+        "p10": 14.35,
+        "p25": 14.84,
+        "median": 15.14,
+        "p75": 16.68,
+        "p90": 19.15
+      },
+      "capped": false
+    },
+    "lakeland-winter-haven-fl": {
+      "area_title": "Lakeland-Winter Haven, FL",
+      "state": "FL",
+      "area_code": "29460",
+      "employment": 420,
+      "hourly": {
+        "mean": 15.17,
+        "p10": 12.68,
+        "p25": 13.44,
+        "median": 14.01,
+        "p75": 15.72,
+        "p90": 19.3
+      },
+      "capped": false
+    },
+    "lancaster-pa": {
+      "area_title": "Lancaster, PA",
+      "state": "PA",
+      "area_code": "29540",
+      "employment": 500,
+      "hourly": {
+        "mean": 13.74,
+        "p10": 10.32,
+        "p25": 11.3,
+        "median": 13.52,
+        "p75": 14.69,
+        "p90": 17.88
+      },
+      "capped": false
+    },
+    "lansing-east-lansing-mi": {
+      "area_title": "Lansing-East Lansing, MI",
+      "state": "MI",
+      "area_code": "29620",
+      "employment": 810,
+      "hourly": {
+        "mean": 14.62,
+        "p10": 12.16,
+        "p25": 13.07,
+        "median": 14.09,
+        "p75": 15.79,
+        "p90": 17.51
+      },
+      "capped": false
+    },
+    "laredo-tx": {
+      "area_title": "Laredo, TX",
+      "state": "TX",
+      "area_code": "29700",
+      "employment": 400,
+      "hourly": {
+        "mean": 10.74,
+        "p10": 8.68,
+        "p25": 8.98,
+        "median": 10.32,
+        "p75": 12.58,
+        "p90": 12.99
+      },
+      "capped": false
+    },
+    "las-cruces-nm": {
+      "area_title": "Las Cruces, NM",
+      "state": "NM",
+      "area_code": "29740",
+      "employment": 490,
+      "hourly": {
+        "mean": 15.91,
+        "p10": 13.46,
+        "p25": 14.03,
+        "median": 15.15,
+        "p75": 16.86,
+        "p90": 18.71
+      },
+      "capped": false
+    },
+    "las-vegas-henderson-north-las-vegas-nv": {
+      "area_title": "Las Vegas-Henderson-North Las Vegas, NV",
+      "state": "NV",
+      "area_code": "29820",
+      "employment": 1980,
+      "hourly": {
+        "mean": 14.51,
+        "p10": 11.56,
+        "p25": 13.56,
+        "median": 13.67,
+        "p75": 15.96,
+        "p90": 16.74
+      },
+      "capped": false
+    },
+    "lawrence-ks": {
+      "area_title": "Lawrence, KS",
+      "state": "KS",
+      "area_code": "29940",
+      "employment": 290,
+      "hourly": {
+        "mean": 13.78,
+        "p10": 11.08,
+        "p25": 11.77,
+        "median": 13.88,
+        "p75": 15.38,
+        "p90": 16.54
+      },
+      "capped": false
+    },
+    "lawton-ok": {
+      "area_title": "Lawton, OK",
+      "state": "OK",
+      "area_code": "30020",
+      "employment": 330,
+      "hourly": {
+        "mean": 15.31,
+        "p10": 9.63,
+        "p25": 10.18,
+        "median": 12.94,
+        "p75": 18.68,
+        "p90": 25.18
+      },
+      "capped": false
+    },
+    "lebanon-pa": {
+      "area_title": "Lebanon, PA",
+      "state": "PA",
+      "area_code": "30140",
+      "employment": 120,
+      "hourly": {
+        "mean": 13.01,
+        "p10": 8.55,
+        "p25": 10.54,
+        "median": 13.17,
+        "p75": 14.84,
+        "p90": 16.53
+      },
+      "capped": false
+    },
+    "lewiston-auburn-me": {
+      "area_title": "Lewiston-Auburn, ME",
+      "state": "ME",
+      "area_code": "30340",
+      "employment": 360,
+      "hourly": {
+        "mean": 16.25,
+        "p10": 14.3,
+        "p25": 15.01,
+        "median": 15.43,
+        "p75": 16.85,
+        "p90": 17.36
+      },
+      "capped": false
+    },
+    "lewiston-id-wa": {
+      "area_title": "Lewiston, ID-WA",
+      "state": "ID",
+      "area_code": "30300",
+      "employment": 210,
+      "hourly": {
+        "mean": 15.06,
+        "p10": 11.35,
+        "p25": 13.25,
+        "median": 14.44,
+        "p75": 16.6,
+        "p90": 18.32
+      },
+      "capped": false
+    },
+    "lexington-fayette-ky": {
+      "area_title": "Lexington-Fayette, KY",
+      "state": "KY",
+      "area_code": "30460",
+      "employment": 1100,
+      "hourly": {
+        "mean": 15.19,
+        "p10": 11.73,
+        "p25": 13.8,
+        "median": 14.11,
+        "p75": 17.05,
+        "p90": 18.16
+      },
+      "capped": false
+    },
+    "lexington-park-md": {
+      "area_title": "Lexington Park, MD",
+      "state": "MD",
+      "area_code": "30500",
+      "employment": 240,
+      "hourly": {
+        "mean": 16.65,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 15.8,
+        "p75": 16.64,
+        "p90": 20.42
+      },
+      "capped": false
+    },
+    "lima-oh": {
+      "area_title": "Lima, OH",
+      "state": "OH",
+      "area_code": "30620",
+      "employment": 60,
+      "hourly": {
+        "mean": 13.39,
+        "p10": 10.45,
+        "p25": 10.53,
+        "median": 13.07,
+        "p75": 15.0,
+        "p90": 17.66
+      },
+      "capped": false
+    },
+    "lincoln-ne": {
+      "area_title": "Lincoln, NE",
+      "state": "NE",
+      "area_code": "30700",
+      "employment": 1610,
+      "hourly": {
+        "mean": 14.66,
+        "p10": 12.0,
+        "p25": 13.03,
+        "median": 13.69,
+        "p75": 15.5,
+        "p90": 17.67
+      },
+      "capped": false
+    },
+    "little-rock-north-little-rock-conway-ar": {
+      "area_title": "Little Rock-North Little Rock-Conway, AR",
+      "state": "AR",
+      "area_code": "30780",
+      "employment": 1830,
+      "hourly": {
+        "mean": 13.34,
+        "p10": 11.43,
+        "p25": 11.67,
+        "median": 13.13,
+        "p75": 14.29,
+        "p90": 16.06
+      },
+      "capped": false
+    },
+    "logan-ut-id": {
+      "area_title": "Logan, UT-ID",
+      "state": "UT",
+      "area_code": "30860",
+      "employment": 170,
+      "hourly": {
+        "mean": 14.59,
+        "p10": 10.2,
+        "p25": 12.64,
+        "median": 14.13,
+        "p75": 16.8,
+        "p90": 18.46
+      },
+      "capped": false
+    },
+    "longview-kelso-wa": {
+      "area_title": "Longview-Kelso, WA",
+      "state": "WA",
+      "area_code": "31020",
+      "employment": 40,
+      "hourly": {
+        "mean": 19.08,
+        "p10": 16.28,
+        "p25": 16.91,
+        "median": 17.43,
+        "p75": 21.0,
+        "p90": 21.71
+      },
+      "capped": false
+    },
+    "longview-tx": {
+      "area_title": "Longview, TX",
+      "state": "TX",
+      "area_code": "30980",
+      "employment": 350,
+      "hourly": {
+        "mean": 12.02,
+        "p10": 9.74,
+        "p25": 10.1,
+        "median": 10.91,
+        "p75": 13.15,
+        "p90": 14.19
+      },
+      "capped": false
+    },
+    "los-angeles-long-beach-anaheim-ca": {
+      "area_title": "Los Angeles-Long Beach-Anaheim, CA",
+      "state": "CA",
+      "area_code": "31080",
+      "employment": 19120,
+      "hourly": {
+        "mean": 19.33,
+        "p10": 16.52,
+        "p25": 17.46,
+        "median": 18.3,
+        "p75": 21.42,
+        "p90": 23.26
+      },
+      "capped": false
+    },
+    "louisville-jefferson-county-ky-in": {
+      "area_title": "Louisville/Jefferson County, KY-IN",
+      "state": "KY",
+      "area_code": "31140",
+      "employment": 2200,
+      "hourly": {
+        "mean": 14.85,
+        "p10": 11.1,
+        "p25": 13.46,
+        "median": 14.21,
+        "p75": 16.4,
+        "p90": 19.3
+      },
+      "capped": false
+    },
+    "lubbock-tx": {
+      "area_title": "Lubbock, TX",
+      "state": "TX",
+      "area_code": "31180",
+      "employment": 630,
+      "hourly": {
+        "mean": 12.5,
+        "p10": 8.96,
+        "p25": 10.28,
+        "median": 12.61,
+        "p75": 13.8,
+        "p90": 16.24
+      },
+      "capped": false
+    },
+    "lynchburg-va": {
+      "area_title": "Lynchburg, VA",
+      "state": "VA",
+      "area_code": "31340",
+      "employment": 270,
+      "hourly": {
+        "mean": 13.71,
+        "p10": 12.0,
+        "p25": 12.54,
+        "median": 13.21,
+        "p75": 13.58,
+        "p90": 16.25
+      },
+      "capped": false
+    },
+    "macon-bibb-county-ga": {
+      "area_title": "Macon-Bibb County, GA",
+      "state": "GA",
+      "area_code": "31420",
+      "employment": 520,
+      "hourly": {
+        "mean": 12.81,
+        "p10": 10.37,
+        "p25": 10.7,
+        "median": 13.07,
+        "p75": 13.55,
+        "p90": 17.12
+      },
+      "capped": false
+    },
+    "madison-wi": {
+      "area_title": "Madison, WI",
+      "state": "WI",
+      "area_code": "31540",
+      "employment": 400,
+      "hourly": {
+        "mean": 15.43,
+        "p10": 11.1,
+        "p25": 13.1,
+        "median": 15.3,
+        "p75": 17.46,
+        "p90": 20.74
+      },
+      "capped": false
+    },
+    "manchester-nashua-nh": {
+      "area_title": "Manchester-Nashua, NH",
+      "state": "NH",
+      "area_code": "31700",
+      "employment": 860,
+      "hourly": {
+        "mean": 15.16,
+        "p10": 10.43,
+        "p25": 13.34,
+        "median": 14.38,
+        "p75": 17.47,
+        "p90": 19.07
+      },
+      "capped": false
+    },
+    "manhattan-ks": {
+      "area_title": "Manhattan, KS",
+      "state": "KS",
+      "area_code": "31740",
+      "employment": 230,
+      "hourly": {
+        "mean": 12.93,
+        "p10": 10.69,
+        "p25": 11.06,
+        "median": 13.08,
+        "p75": 13.81,
+        "p90": 17.12
+      },
+      "capped": false
+    },
+    "mankato-mn": {
+      "area_title": "Mankato, MN",
+      "state": "MN",
+      "area_code": "31860",
+      "employment": 380,
+      "hourly": {
+        "mean": 15.28,
+        "p10": 12.65,
+        "p25": 14.08,
+        "median": 14.88,
+        "p75": 16.51,
+        "p90": 16.95
+      },
+      "capped": false
+    },
+    "mansfield-oh": {
+      "area_title": "Mansfield, OH",
+      "state": "OH",
+      "area_code": "31900",
+      "employment": 110,
+      "hourly": {
+        "mean": 12.91,
+        "p10": 10.49,
+        "p25": 11.17,
+        "median": 12.11,
+        "p75": 13.0,
+        "p90": 16.87
+      },
+      "capped": false
+    },
+    "mayaguez-pr": {
+      "area_title": "Mayaguez, PR",
+      "state": "PR",
+      "area_code": "32420",
+      "employment": 90,
+      "hourly": {
+        "mean": 10.53,
+        "p10": 9.5,
+        "p25": 9.5,
+        "median": 9.78,
+        "p75": 11.14,
+        "p90": 12.4
+      },
+      "capped": false
+    },
+    "mcallen-edinburg-mission-tx": {
+      "area_title": "McAllen-Edinburg-Mission, TX",
+      "state": "TX",
+      "area_code": "32580",
+      "employment": 1010,
+      "hourly": {
+        "mean": 10.9,
+        "p10": 8.47,
+        "p25": 8.92,
+        "median": 10.26,
+        "p75": 12.48,
+        "p90": 14.01
+      },
+      "capped": false
+    },
+    "medford-or": {
+      "area_title": "Medford, OR",
+      "state": "OR",
+      "area_code": "32780",
+      "employment": 180,
+      "hourly": {
+        "mean": 16.75,
+        "p10": 15.22,
+        "p25": 16.13,
+        "median": 16.33,
+        "p75": 16.79,
+        "p90": 19.63
+      },
+      "capped": false
+    },
+    "memphis-tn-ms-ar": {
+      "area_title": "Memphis, TN-MS-AR",
+      "state": "TN",
+      "area_code": "32820",
+      "employment": 2700,
+      "hourly": {
+        "mean": 13.68,
+        "p10": 10.45,
+        "p25": 11.16,
+        "median": 13.58,
+        "p75": 14.83,
+        "p90": 16.98
+      },
+      "capped": false
+    },
+    "merced-ca": {
+      "area_title": "Merced, CA",
+      "state": "CA",
+      "area_code": "32900",
+      "employment": 230,
+      "hourly": {
+        "mean": 18.52,
+        "p10": 16.0,
+        "p25": 16.18,
+        "median": 16.96,
+        "p75": 20.93,
+        "p90": 22.92
+      },
+      "capped": false
+    },
+    "miami-fort-lauderdale-west-palm-beach-fl": {
+      "area_title": "Miami-Fort Lauderdale-West Palm Beach, FL",
+      "state": "FL",
+      "area_code": "33100",
+      "employment": 6620,
+      "hourly": {
+        "mean": 16.65,
+        "p10": 13.39,
+        "p25": 14.23,
+        "median": 15.3,
+        "p75": 17.52,
+        "p90": 22.02
+      },
+      "capped": false
+    },
+    "michigan-city-la-porte-in": {
+      "area_title": "Michigan City-La Porte, IN",
+      "state": "IN",
+      "area_code": "33140",
+      "employment": 70,
+      "hourly": {
+        "mean": 13.1,
+        "p10": 10.47,
+        "p25": 10.47,
+        "median": 13.22,
+        "p75": 14.14,
+        "p90": 16.74
+      },
+      "capped": false
+    },
+    "midland-mi": {
+      "area_title": "Midland, MI",
+      "state": "MI",
+      "area_code": "33220",
+      "employment": 120,
+      "hourly": {
+        "mean": 14.38,
+        "p10": 12.78,
+        "p25": 13.29,
+        "median": 14.07,
+        "p75": 14.92,
+        "p90": 17.44
+      },
+      "capped": false
+    },
+    "midland-tx": {
+      "area_title": "Midland, TX",
+      "state": "TX",
+      "area_code": "33260",
+      "employment": 300,
+      "hourly": {
+        "mean": 13.97,
+        "p10": 10.67,
+        "p25": 11.18,
+        "median": 13.95,
+        "p75": 15.75,
+        "p90": 17.68
+      },
+      "capped": false
+    },
+    "milwaukee-waukesha-wi": {
+      "area_title": "Milwaukee-Waukesha, WI",
+      "state": "WI",
+      "area_code": "33340",
+      "employment": 1290,
+      "hourly": {
+        "mean": 14.46,
+        "p10": 10.86,
+        "p25": 12.92,
+        "median": 13.97,
+        "p75": 16.4,
+        "p90": 18.19
+      },
+      "capped": false
+    },
+    "minneapolis-st-paul-bloomington-mn-wi": {
+      "area_title": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "state": "MN",
+      "area_code": "33460",
+      "employment": 7290,
+      "hourly": {
+        "mean": 16.99,
+        "p10": 13.77,
+        "p25": 14.81,
+        "median": 16.95,
+        "p75": 18.26,
+        "p90": 22.06
+      },
+      "capped": false
+    },
+    "missoula-mt": {
+      "area_title": "Missoula, MT",
+      "state": "MT",
+      "area_code": "33540",
+      "employment": 330,
+      "hourly": {
+        "mean": 15.75,
+        "p10": 11.92,
+        "p25": 13.98,
+        "median": 16.41,
+        "p75": 16.91,
+        "p90": 18.53
+      },
+      "capped": false
+    },
+    "mobile-al": {
+      "area_title": "Mobile, AL",
+      "state": "AL",
+      "area_code": "33660",
+      "employment": 410,
+      "hourly": {
+        "mean": 11.33,
+        "p10": 8.84,
+        "p25": 10.19,
+        "median": 10.55,
+        "p75": 12.92,
+        "p90": 13.91
+      },
+      "capped": false
+    },
+    "modesto-ca": {
+      "area_title": "Modesto, CA",
+      "state": "CA",
+      "area_code": "33700",
+      "employment": 490,
+      "hourly": {
+        "mean": 20.03,
+        "p10": 16.58,
+        "p25": 17.17,
+        "median": 19.04,
+        "p75": 22.77,
+        "p90": 24.55
+      },
+      "capped": false
+    },
+    "monroe-mi": {
+      "area_title": "Monroe, MI",
+      "state": "MI",
+      "area_code": "33780",
+      "employment": 130,
+      "hourly": {
+        "mean": 14.12,
+        "p10": 11.0,
+        "p25": 13.37,
+        "median": 14.0,
+        "p75": 14.57,
+        "p90": 17.1
+      },
+      "capped": false
+    },
+    "montgomery-al": {
+      "area_title": "Montgomery, AL",
+      "state": "AL",
+      "area_code": "33860",
+      "employment": 660,
+      "hourly": {
+        "mean": 11.62,
+        "p10": 9.09,
+        "p25": 10.03,
+        "median": 10.45,
+        "p75": 13.93,
+        "p90": 14.5
+      },
+      "capped": false
+    },
+    "morgantown-wv": {
+      "area_title": "Morgantown, WV",
+      "state": "WV",
+      "area_code": "34060",
+      "employment": 130,
+      "hourly": {
+        "mean": 13.37,
+        "p10": 11.2,
+        "p25": 12.89,
+        "median": 13.13,
+        "p75": 13.59,
+        "p90": 16.67
+      },
+      "capped": false
+    },
+    "morristown-tn": {
+      "area_title": "Morristown, TN",
+      "state": "TN",
+      "area_code": "34100",
+      "employment": 100,
+      "hourly": {
+        "mean": 13.08,
+        "p10": 10.72,
+        "p25": 11.43,
+        "median": 13.14,
+        "p75": 14.38,
+        "p90": 14.38
+      },
+      "capped": false
+    },
+    "mount-vernon-anacortes-wa": {
+      "area_title": "Mount Vernon-Anacortes, WA",
+      "state": "WA",
+      "area_code": "34580",
+      "employment": 50,
+      "hourly": {
+        "mean": 19.0,
+        "p10": 16.55,
+        "p25": 17.63,
+        "median": 18.41,
+        "p75": 20.52,
+        "p90": 21.68
+      },
+      "capped": false
+    },
+    "muncie-in": {
+      "area_title": "Muncie, IN",
+      "state": "IN",
+      "area_code": "34620",
+      "employment": 300,
+      "hourly": {
+        "mean": 15.18,
+        "p10": 11.35,
+        "p25": 13.58,
+        "median": 14.18,
+        "p75": 17.4,
+        "p90": 18.73
+      },
+      "capped": false
+    },
+    "muskegon-norton-shores-mi": {
+      "area_title": "Muskegon-Norton Shores, MI",
+      "state": "MI",
+      "area_code": "34740",
+      "employment": 260,
+      "hourly": {
+        "mean": 14.14,
+        "p10": 11.47,
+        "p25": 12.63,
+        "median": 13.63,
+        "p75": 14.77,
+        "p90": 17.29
+      },
+      "capped": false
+    },
+    "myrtle-beach-conway-north-myrtle-beach-sc": {
+      "area_title": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+      "state": "SC",
+      "area_code": "34820",
+      "employment": 590,
+      "hourly": {
+        "mean": 13.19,
+        "p10": 9.89,
+        "p25": 10.86,
+        "median": 13.11,
+        "p75": 14.22,
+        "p90": 16.8
+      },
+      "capped": false
+    },
+    "napa-ca": {
+      "area_title": "Napa, CA",
+      "state": "CA",
+      "area_code": "34900",
+      "employment": 150,
+      "hourly": {
+        "mean": 19.63,
+        "p10": 16.46,
+        "p25": 17.71,
+        "median": 18.22,
+        "p75": 21.29,
+        "p90": 23.23
+      },
+      "capped": false
+    },
+    "naples-marco-island-fl": {
+      "area_title": "Naples-Marco Island, FL",
+      "state": "FL",
+      "area_code": "34940",
+      "employment": 220,
+      "hourly": {
+        "mean": 16.15,
+        "p10": 12.0,
+        "p25": 14.48,
+        "median": 15.31,
+        "p75": 17.01,
+        "p90": 19.18
+      },
+      "capped": false
+    },
+    "nashville-davidson-murfreesboro-franklin-tn": {
+      "area_title": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+      "state": "TN",
+      "area_code": "34980",
+      "employment": 5090,
+      "hourly": {
+        "mean": 15.3,
+        "p10": 11.34,
+        "p25": 13.74,
+        "median": 14.89,
+        "p75": 16.84,
+        "p90": 18.49
+      },
+      "capped": false
+    },
+    "new-haven-ct": {
+      "area_title": "New Haven, CT",
+      "state": "CT",
+      "area_code": "35300",
+      "employment": 1550,
+      "hourly": {
+        "mean": 17.48,
+        "p10": 15.69,
+        "p25": 16.25,
+        "median": 16.6,
+        "p75": 17.16,
+        "p90": 20.98
+      },
+      "capped": false
+    },
+    "new-orleans-metairie-la": {
+      "area_title": "New Orleans-Metairie, LA",
+      "state": "LA",
+      "area_code": "35380",
+      "employment": 1880,
+      "hourly": {
+        "mean": 12.85,
+        "p10": 10.04,
+        "p25": 10.43,
+        "median": 11.36,
+        "p75": 14.33,
+        "p90": 17.02
+      },
+      "capped": false
+    },
+    "new-york-newark-jersey-city-ny-nj": {
+      "area_title": "New York-Newark-Jersey City, NY-NJ",
+      "state": "NY",
+      "area_code": "35620",
+      "employment": 46800,
+      "hourly": {
+        "mean": 18.45,
+        "p10": 15.15,
+        "p25": 16.49,
+        "median": 17.57,
+        "p75": 20.23,
+        "p90": 21.92
+      },
+      "capped": false
+    },
+    "niles-mi": {
+      "area_title": "Niles, MI",
+      "state": "MI",
+      "area_code": "35660",
+      "employment": 140,
+      "hourly": {
+        "mean": 13.52,
+        "p10": 11.21,
+        "p25": 12.58,
+        "median": 13.26,
+        "p75": 14.01,
+        "p90": 16.59
+      },
+      "capped": false
+    },
+    "north-port-bradenton-sarasota-fl": {
+      "area_title": "North Port-Bradenton-Sarasota, FL",
+      "state": "FL",
+      "area_code": "35840",
+      "employment": 1440,
+      "hourly": {
+        "mean": 24.67,
+        "p10": 14.07,
+        "p25": 17.0,
+        "median": 22.95,
+        "p75": 31.66,
+        "p90": 36.49
+      },
+      "capped": false
+    },
+    "norwich-new-london-willimantic-ct": {
+      "area_title": "Norwich-New London-Willimantic, CT",
+      "state": "CT",
+      "area_code": "35980",
+      "employment": 650,
+      "hourly": {
+        "mean": 16.99,
+        "p10": 15.69,
+        "p25": 16.21,
+        "median": 16.61,
+        "p75": 17.26,
+        "p90": 18.7
+      },
+      "capped": false
+    },
+    "ocala-fl": {
+      "area_title": "Ocala, FL",
+      "state": "FL",
+      "area_code": "36100",
+      "employment": 440,
+      "hourly": {
+        "mean": 22.63,
+        "p10": 13.3,
+        "p25": 14.03,
+        "median": 21.63,
+        "p75": 29.61,
+        "p90": 34.13
+      },
+      "capped": false
+    },
+    "odessa-tx": {
+      "area_title": "Odessa, TX",
+      "state": "TX",
+      "area_code": "36220",
+      "employment": 230,
+      "hourly": {
+        "mean": 13.55,
+        "p10": 10.3,
+        "p25": 10.81,
+        "median": 13.32,
+        "p75": 14.87,
+        "p90": 17.69
+      },
+      "capped": false
+    },
+    "ogden-ut": {
+      "area_title": "Ogden, UT",
+      "state": "UT",
+      "area_code": "36260",
+      "employment": 770,
+      "hourly": {
+        "mean": 15.11,
+        "p10": 10.04,
+        "p25": 11.6,
+        "median": 15.06,
+        "p75": 16.92,
+        "p90": 21.2
+      },
+      "capped": false
+    },
+    "oklahoma-city-ok": {
+      "area_title": "Oklahoma City, OK",
+      "state": "OK",
+      "area_code": "36420",
+      "employment": 3690,
+      "hourly": {
+        "mean": 12.64,
+        "p10": 10.53,
+        "p25": 10.59,
+        "median": 11.41,
+        "p75": 13.33,
+        "p90": 16.85
+      },
+      "capped": false
+    },
+    "olympia-lacey-tumwater-wa": {
+      "area_title": "Olympia-Lacey-Tumwater, WA",
+      "state": "WA",
+      "area_code": "36500",
+      "employment": 270,
+      "hourly": {
+        "mean": 18.52,
+        "p10": 16.28,
+        "p25": 16.5,
+        "median": 17.67,
+        "p75": 19.31,
+        "p90": 21.21
+      },
+      "capped": false
+    },
+    "omaha-ne-ia": {
+      "area_title": "Omaha, NE-IA",
+      "state": "NE",
+      "area_code": "36540",
+      "employment": 4980,
+      "hourly": {
+        "mean": 14.8,
+        "p10": 13.35,
+        "p25": 13.51,
+        "median": 14.25,
+        "p75": 15.41,
+        "p90": 17.61
+      },
+      "capped": false
+    },
+    "orlando-kissimmee-sanford-fl": {
+      "area_title": "Orlando-Kissimmee-Sanford, FL",
+      "state": "FL",
+      "area_code": "36740",
+      "employment": 2540,
+      "hourly": {
+        "mean": 14.94,
+        "p10": 12.21,
+        "p25": 13.1,
+        "median": 14.15,
+        "p75": 15.73,
+        "p90": 17.85
+      },
+      "capped": false
+    },
+    "oshkosh-neenah-wi": {
+      "area_title": "Oshkosh-Neenah, WI",
+      "state": "WI",
+      "area_code": "36780",
+      "employment": 130,
+      "hourly": {
+        "mean": 14.03,
+        "p10": 10.0,
+        "p25": 12.86,
+        "median": 13.61,
+        "p75": 16.0,
+        "p90": 17.24
+      },
+      "capped": false
+    },
+    "owensboro-ky": {
+      "area_title": "Owensboro, KY",
+      "state": "KY",
+      "area_code": "36980",
+      "employment": 240,
+      "hourly": {
+        "mean": 13.36,
+        "p10": 11.22,
+        "p25": 12.03,
+        "median": 13.18,
+        "p75": 14.82,
+        "p90": 14.82
+      },
+      "capped": false
+    },
+    "oxnard-thousand-oaks-ventura-ca": {
+      "area_title": "Oxnard-Thousand Oaks-Ventura, CA",
+      "state": "CA",
+      "area_code": "37100",
+      "employment": 700,
+      "hourly": {
+        "mean": 19.61,
+        "p10": 16.39,
+        "p25": 16.74,
+        "median": 18.08,
+        "p75": 22.25,
+        "p90": 23.56
+      },
+      "capped": false
+    },
+    "paducah-ky-il": {
+      "area_title": "Paducah, KY-IL",
+      "state": "KY",
+      "area_code": "37140",
+      "employment": 130,
+      "hourly": {
+        "mean": 13.24,
+        "p10": 11.14,
+        "p25": 11.59,
+        "median": 13.19,
+        "p75": 13.91,
+        "p90": 14.54
+      },
+      "capped": false
+    },
+    "palm-bay-melbourne-titusville-fl": {
+      "area_title": "Palm Bay-Melbourne-Titusville, FL",
+      "state": "FL",
+      "area_code": "37340",
+      "employment": 620,
+      "hourly": {
+        "mean": 15.68,
+        "p10": 13.38,
+        "p25": 14.23,
+        "median": 15.34,
+        "p75": 17.23,
+        "p90": 17.26
+      },
+      "capped": false
+    },
+    "panama-city-panama-city-beach-fl": {
+      "area_title": "Panama City-Panama City Beach, FL",
+      "state": "FL",
+      "area_code": "37460",
+      "employment": 210,
+      "hourly": {
+        "mean": 14.27,
+        "p10": 12.0,
+        "p25": 12.62,
+        "median": 14.11,
+        "p75": 15.0,
+        "p90": 16.65
+      },
+      "capped": false
+    },
+    "parkersburg-vienna-wv": {
+      "area_title": "Parkersburg-Vienna, WV",
+      "state": "WV",
+      "area_code": "37620",
+      "employment": 80,
+      "hourly": {
+        "mean": 11.63,
+        "p10": 9.94,
+        "p25": 10.7,
+        "median": 11.27,
+        "p75": 12.0,
+        "p90": 13.9
+      },
+      "capped": false
+    },
+    "pensacola-ferry-pass-brent-fl": {
+      "area_title": "Pensacola-Ferry Pass-Brent, FL",
+      "state": "FL",
+      "area_code": "37860",
+      "employment": 350,
+      "hourly": {
+        "mean": 14.45,
+        "p10": 12.0,
+        "p25": 12.67,
+        "median": 13.64,
+        "p75": 15.03,
+        "p90": 17.98
+      },
+      "capped": false
+    },
+    "peoria-il": {
+      "area_title": "Peoria, IL",
+      "state": "IL",
+      "area_code": "37900",
+      "employment": 590,
+      "hourly": {
+        "mean": 15.68,
+        "p10": 14.0,
+        "p25": 14.03,
+        "median": 14.82,
+        "p75": 16.74,
+        "p90": 17.91
+      },
+      "capped": false
+    },
+    "philadelphia-camden-wilmington-pa-nj-de-md": {
+      "area_title": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+      "state": "PA",
+      "area_code": "37980",
+      "employment": 8340,
+      "hourly": {
+        "mean": 15.96,
+        "p10": 11.97,
+        "p25": 14.23,
+        "median": 15.23,
+        "p75": 17.23,
+        "p90": 18.93
+      },
+      "capped": false
+    },
+    "phoenix-mesa-chandler-az": {
+      "area_title": "Phoenix-Mesa-Chandler, AZ",
+      "state": "AZ",
+      "area_code": "38060",
+      "employment": 4950,
+      "hourly": {
+        "mean": 18.34,
+        "p10": 14.48,
+        "p25": 15.44,
+        "median": 17.41,
+        "p75": 22.08,
+        "p90": 22.08
+      },
+      "capped": false
+    },
+    "pinehurst-southern-pines-nc": {
+      "area_title": "Pinehurst-Southern Pines, NC",
+      "state": "NC",
+      "area_code": "38240",
+      "employment": 130,
+      "hourly": {
+        "mean": 13.9,
+        "p10": 10.54,
+        "p25": 12.12,
+        "median": 13.3,
+        "p75": 16.27,
+        "p90": 16.69
+      },
+      "capped": false
+    },
+    "pittsburgh-pa": {
+      "area_title": "Pittsburgh, PA",
+      "state": "PA",
+      "area_code": "38300",
+      "employment": 2660,
+      "hourly": {
+        "mean": 13.47,
+        "p10": 8.96,
+        "p25": 10.8,
+        "median": 13.47,
+        "p75": 14.65,
+        "p90": 17.37
+      },
+      "capped": false
+    },
+    "pittsfield-ma": {
+      "area_title": "Pittsfield, MA",
+      "state": "MA",
+      "area_code": "38340",
+      "employment": 230,
+      "hourly": {
+        "mean": 19.18,
+        "p10": 15.27,
+        "p25": 16.63,
+        "median": 18.27,
+        "p75": 20.9,
+        "p90": 24.31
+      },
+      "capped": false
+    },
+    "pocatello-id": {
+      "area_title": "Pocatello, ID",
+      "state": "ID",
+      "area_code": "38540",
+      "employment": 270,
+      "hourly": {
+        "mean": 13.18,
+        "p10": 9.99,
+        "p25": 11.45,
+        "median": 13.01,
+        "p75": 14.3,
+        "p90": 16.71
+      },
+      "capped": false
+    },
+    "ponce-pr": {
+      "area_title": "Ponce, PR",
+      "state": "PR",
+      "area_code": "38660",
+      "employment": 70,
+      "hourly": {
+        "mean": 10.83,
+        "p10": 9.5,
+        "p25": 9.5,
+        "median": 9.56,
+        "p75": 12.07,
+        "p90": 15.25
+      },
+      "capped": false
+    },
+    "port-st-lucie-fl": {
+      "area_title": "Port St. Lucie, FL",
+      "state": "FL",
+      "area_code": "38940",
+      "employment": 480,
+      "hourly": {
+        "mean": 15.03,
+        "p10": 12.39,
+        "p25": 12.39,
+        "median": 14.35,
+        "p75": 16.14,
+        "p90": 18.24
+      },
+      "capped": false
+    },
+    "portland-south-portland-me": {
+      "area_title": "Portland-South Portland, ME",
+      "state": "ME",
+      "area_code": "38860",
+      "employment": 2030,
+      "hourly": {
+        "mean": 16.73,
+        "p10": 14.88,
+        "p25": 15.01,
+        "median": 16.89,
+        "p75": 17.27,
+        "p90": 17.54
+      },
+      "capped": false
+    },
+    "portland-vancouver-hillsboro-or-wa": {
+      "area_title": "Portland-Vancouver-Hillsboro, OR-WA",
+      "state": "OR",
+      "area_code": "38900",
+      "employment": 2570,
+      "hourly": {
+        "mean": 18.6,
+        "p10": 15.6,
+        "p25": 17.07,
+        "median": 18.05,
+        "p75": 20.2,
+        "p90": 22.68
+      },
+      "capped": false
+    },
+    "prescott-valley-prescott-az": {
+      "area_title": "Prescott Valley-Prescott, AZ",
+      "state": "AZ",
+      "area_code": "39150",
+      "employment": 40,
+      "hourly": {
+        "mean": 17.65,
+        "p10": 14.87,
+        "p25": 15.19,
+        "median": 16.53,
+        "p75": 18.53,
+        "p90": 18.78
+      },
+      "capped": false
+    },
+    "providence-warwick-ri-ma": {
+      "area_title": "Providence-Warwick, RI-MA",
+      "state": "RI",
+      "area_code": "39300",
+      "employment": 3480,
+      "hourly": {
+        "mean": 17.19,
+        "p10": 14.49,
+        "p25": 14.67,
+        "median": 17.27,
+        "p75": 17.86,
+        "p90": 21.69
+      },
+      "capped": false
+    },
+    "provo-orem-lehi-ut": {
+      "area_title": "Provo-Orem-Lehi, UT",
+      "state": "UT",
+      "area_code": "39340",
+      "employment": 700,
+      "hourly": {
+        "mean": 14.71,
+        "p10": 10.15,
+        "p25": 12.04,
+        "median": 14.73,
+        "p75": 16.77,
+        "p90": 20.65
+      },
+      "capped": false
+    },
+    "pueblo-co": {
+      "area_title": "Pueblo, CO",
+      "state": "CO",
+      "area_code": "39380",
+      "employment": 100,
+      "hourly": {
+        "mean": 17.08,
+        "p10": 14.42,
+        "p25": 14.89,
+        "median": 17.28,
+        "p75": 18.47,
+        "p90": 20.58
+      },
+      "capped": false
+    },
+    "punta-gorda-fl": {
+      "area_title": "Punta Gorda, FL",
+      "state": "FL",
+      "area_code": "39460",
+      "employment": 130,
+      "hourly": {
+        "mean": 16.17,
+        "p10": 13.58,
+        "p25": 14.15,
+        "median": 15.99,
+        "p75": 17.79,
+        "p90": 17.79
+      },
+      "capped": false
+    },
+    "racine-mount-pleasant-wi": {
+      "area_title": "Racine-Mount Pleasant, WI",
+      "state": "WI",
+      "area_code": "39540",
+      "employment": 90,
+      "hourly": {
+        "mean": 14.43,
+        "p10": 9.73,
+        "p25": 13.16,
+        "median": 14.79,
+        "p75": 16.02,
+        "p90": 17.26
+      },
+      "capped": false
+    },
+    "raleigh-cary-nc": {
+      "area_title": "Raleigh-Cary, NC",
+      "state": "NC",
+      "area_code": "39580",
+      "employment": 2090,
+      "hourly": {
+        "mean": 14.27,
+        "p10": 10.9,
+        "p25": 11.09,
+        "median": 13.6,
+        "p75": 16.65,
+        "p90": 19.4
+      },
+      "capped": false
+    },
+    "rapid-city-sd": {
+      "area_title": "Rapid City, SD",
+      "state": "SD",
+      "area_code": "39660",
+      "employment": 360,
+      "hourly": {
+        "mean": 12.81,
+        "p10": 11.53,
+        "p25": 11.63,
+        "median": 12.78,
+        "p75": 13.19,
+        "p90": 14.7
+      },
+      "capped": false
+    },
+    "reading-pa": {
+      "area_title": "Reading, PA",
+      "state": "PA",
+      "area_code": "39740",
+      "employment": 430,
+      "hourly": {
+        "mean": 13.19,
+        "p10": 10.1,
+        "p25": 10.76,
+        "median": 13.23,
+        "p75": 13.94,
+        "p90": 17.44
+      },
+      "capped": false
+    },
+    "redding-ca": {
+      "area_title": "Redding, CA",
+      "state": "CA",
+      "area_code": "39820",
+      "employment": 250,
+      "hourly": {
+        "mean": 18.3,
+        "p10": 16.0,
+        "p25": 16.38,
+        "median": 17.1,
+        "p75": 19.38,
+        "p90": 23.05
+      },
+      "capped": false
+    },
+    "reno-nv": {
+      "area_title": "Reno, NV",
+      "state": "NV",
+      "area_code": "39900",
+      "employment": 840,
+      "hourly": {
+        "mean": 15.72,
+        "p10": 12.48,
+        "p25": 14.12,
+        "median": 14.86,
+        "p75": 17.24,
+        "p90": 17.95
+      },
+      "capped": false
+    },
+    "richmond-va": {
+      "area_title": "Richmond, VA",
+      "state": "VA",
+      "area_code": "40060",
+      "employment": 2630,
+      "hourly": {
+        "mean": 14.58,
+        "p10": 12.81,
+        "p25": 13.26,
+        "median": 14.03,
+        "p75": 16.24,
+        "p90": 17.38
+      },
+      "capped": false
+    },
+    "riverside-san-bernardino-ontario-ca": {
+      "area_title": "Riverside-San Bernardino-Ontario, CA",
+      "state": "CA",
+      "area_code": "40140",
+      "employment": 4030,
+      "hourly": {
+        "mean": 19.22,
+        "p10": 16.3,
+        "p25": 17.16,
+        "median": 17.8,
+        "p75": 21.86,
+        "p90": 23.31
+      },
+      "capped": false
+    },
+    "roanoke-va": {
+      "area_title": "Roanoke, VA",
+      "state": "VA",
+      "area_code": "40220",
+      "employment": 510,
+      "hourly": {
+        "mean": 13.54,
+        "p10": 12.0,
+        "p25": 12.94,
+        "median": 13.36,
+        "p75": 13.68,
+        "p90": 15.89
+      },
+      "capped": false
+    },
+    "rochester-mn": {
+      "area_title": "Rochester, MN",
+      "state": "MN",
+      "area_code": "40340",
+      "employment": 630,
+      "hourly": {
+        "mean": 15.35,
+        "p10": 12.37,
+        "p25": 13.55,
+        "median": 14.63,
+        "p75": 17.16,
+        "p90": 18.2
+      },
+      "capped": false
+    },
+    "rochester-ny": {
+      "area_title": "Rochester, NY",
+      "state": "NY",
+      "area_code": "40380",
+      "employment": 2180,
+      "hourly": {
+        "mean": 16.41,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 16.14,
+        "p75": 17.2,
+        "p90": 17.95
+      },
+      "capped": false
+    },
+    "rockford-il": {
+      "area_title": "Rockford, IL",
+      "state": "IL",
+      "area_code": "40420",
+      "employment": 420,
+      "hourly": {
+        "mean": 15.57,
+        "p10": 14.0,
+        "p25": 14.0,
+        "median": 14.51,
+        "p75": 16.56,
+        "p90": 17.64
+      },
+      "capped": false
+    },
+    "rocky-mount-nc": {
+      "area_title": "Rocky Mount, NC",
+      "state": "NC",
+      "area_code": "40580",
+      "employment": 130,
+      "hourly": {
+        "mean": 13.03,
+        "p10": 9.93,
+        "p25": 10.55,
+        "median": 13.09,
+        "p75": 14.35,
+        "p90": 16.97
+      },
+      "capped": false
+    },
+    "rome-ga": {
+      "area_title": "Rome, GA",
+      "state": "GA",
+      "area_code": "40660",
+      "employment": 150,
+      "hourly": {
+        "mean": 11.87,
+        "p10": 9.43,
+        "p25": 10.1,
+        "median": 10.67,
+        "p75": 13.45,
+        "p90": 17.06
+      },
+      "capped": false
+    },
+    "sacramento-roseville-folsom-ca": {
+      "area_title": "Sacramento-Roseville-Folsom, CA",
+      "state": "CA",
+      "area_code": "40900",
+      "employment": 1840,
+      "hourly": {
+        "mean": 18.96,
+        "p10": 16.05,
+        "p25": 16.76,
+        "median": 17.45,
+        "p75": 21.06,
+        "p90": 24.0
+      },
+      "capped": false
+    },
+    "saginaw-mi": {
+      "area_title": "Saginaw, MI",
+      "state": "MI",
+      "area_code": "40980",
+      "employment": 260,
+      "hourly": {
+        "mean": 14.18,
+        "p10": 11.3,
+        "p25": 11.66,
+        "median": 13.59,
+        "p75": 15.65,
+        "p90": 18.01
+      },
+      "capped": false
+    },
+    "salem-or": {
+      "area_title": "Salem, OR",
+      "state": "OR",
+      "area_code": "41420",
+      "employment": 370,
+      "hourly": {
+        "mean": 17.21,
+        "p10": 14.11,
+        "p25": 14.86,
+        "median": 17.1,
+        "p75": 17.65,
+        "p90": 21.57
+      },
+      "capped": false
+    },
+    "salinas-ca": {
+      "area_title": "Salinas, CA",
+      "state": "CA",
+      "area_code": "41500",
+      "employment": 490,
+      "hourly": {
+        "mean": 19.86,
+        "p10": 16.97,
+        "p25": 17.44,
+        "median": 18.05,
+        "p75": 22.43,
+        "p90": 24.82
+      },
+      "capped": false
+    },
+    "salisbury-md": {
+      "area_title": "Salisbury, MD",
+      "state": "MD",
+      "area_code": "41540",
+      "employment": 210,
+      "hourly": {
+        "mean": 15.85,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 15.0,
+        "p75": 16.36,
+        "p90": 17.78
+      },
+      "capped": false
+    },
+    "salt-lake-city-murray-ut": {
+      "area_title": "Salt Lake City-Murray, UT",
+      "state": "UT",
+      "area_code": "41620",
+      "employment": 1670,
+      "hourly": {
+        "mean": 15.31,
+        "p10": 10.61,
+        "p25": 12.88,
+        "median": 15.19,
+        "p75": 17.19,
+        "p90": 20.75
+      },
+      "capped": false
+    },
+    "san-angelo-tx": {
+      "area_title": "San Angelo, TX",
+      "state": "TX",
+      "area_code": "41660",
+      "employment": 190,
+      "hourly": {
+        "mean": 12.11,
+        "p10": 9.99,
+        "p25": 10.34,
+        "median": 11.66,
+        "p75": 12.69,
+        "p90": 14.56
+      },
+      "capped": false
+    },
+    "san-antonio-new-braunfels-tx": {
+      "area_title": "San Antonio-New Braunfels, TX",
+      "state": "TX",
+      "area_code": "41700",
+      "employment": 3500,
+      "hourly": {
+        "mean": 14.27,
+        "p10": 10.38,
+        "p25": 11.3,
+        "median": 13.93,
+        "p75": 17.11,
+        "p90": 17.73
+      },
+      "capped": false
+    },
+    "san-diego-chula-vista-carlsbad-ca": {
+      "area_title": "San Diego-Chula Vista-Carlsbad, CA",
+      "state": "CA",
+      "area_code": "41740",
+      "employment": 3800,
+      "hourly": {
+        "mean": 19.48,
+        "p10": 16.14,
+        "p25": 17.12,
+        "median": 18.26,
+        "p75": 21.28,
+        "p90": 24.35
+      },
+      "capped": false
+    },
+    "san-francisco-oakland-fremont-ca": {
+      "area_title": "San Francisco-Oakland-Fremont, CA",
+      "state": "CA",
+      "area_code": "41860",
+      "employment": 5760,
+      "hourly": {
+        "mean": 22.58,
+        "p10": 17.94,
+        "p25": 18.47,
+        "median": 21.62,
+        "p75": 23.86,
+        "p90": 30.46
+      },
+      "capped": false
+    },
+    "san-jose-sunnyvale-santa-clara-ca": {
+      "area_title": "San Jose-Sunnyvale-Santa Clara, CA",
+      "state": "CA",
+      "area_code": "41940",
+      "employment": 2440,
+      "hourly": {
+        "mean": 22.4,
+        "p10": 18.53,
+        "p25": 19.28,
+        "median": 20.98,
+        "p75": 23.81,
+        "p90": 28.62
+      },
+      "capped": false
+    },
+    "san-juan-bayamon-caguas-pr": {
+      "area_title": "San Juan-Bayamon-Caguas, PR",
+      "state": "PR",
+      "area_code": "41980",
+      "employment": 1260,
+      "hourly": {
+        "mean": 11.03,
+        "p10": 9.5,
+        "p25": 9.89,
+        "median": 10.21,
+        "p75": 11.02,
+        "p90": 13.45
+      },
+      "capped": false
+    },
+    "san-luis-obispo-paso-robles-ca": {
+      "area_title": "San Luis Obispo-Paso Robles, CA",
+      "state": "CA",
+      "area_code": "42020",
+      "employment": 250,
+      "hourly": {
+        "mean": 19.27,
+        "p10": 16.54,
+        "p25": 17.02,
+        "median": 17.73,
+        "p75": 20.97,
+        "p90": 24.4
+      },
+      "capped": false
+    },
+    "sandusky-oh": {
+      "area_title": "Sandusky, OH",
+      "state": "OH",
+      "area_code": "41780",
+      "employment": 80,
+      "hourly": {
+        "mean": 14.13,
+        "p10": 11.2,
+        "p25": 11.37,
+        "median": 13.58,
+        "p75": 14.49,
+        "p90": 18.75
+      },
+      "capped": false
+    },
+    "santa-cruz-watsonville-ca": {
+      "area_title": "Santa Cruz-Watsonville, CA",
+      "state": "CA",
+      "area_code": "42100",
+      "employment": 410,
+      "hourly": {
+        "mean": 19.01,
+        "p10": 16.14,
+        "p25": 16.93,
+        "median": 17.39,
+        "p75": 21.13,
+        "p90": 24.48
+      },
+      "capped": false
+    },
+    "santa-fe-nm": {
+      "area_title": "Santa Fe, NM",
+      "state": "NM",
+      "area_code": "42140",
+      "employment": 140,
+      "hourly": {
+        "mean": 17.65,
+        "p10": 14.21,
+        "p25": 15.44,
+        "median": 17.46,
+        "p75": 18.21,
+        "p90": 22.44
+      },
+      "capped": false
+    },
+    "santa-maria-santa-barbara-ca": {
+      "area_title": "Santa Maria-Santa Barbara, CA",
+      "state": "CA",
+      "area_code": "42200",
+      "employment": 440,
+      "hourly": {
+        "mean": 18.78,
+        "p10": 16.06,
+        "p25": 16.89,
+        "median": 17.34,
+        "p75": 19.81,
+        "p90": 23.98
+      },
+      "capped": false
+    },
+    "santa-rosa-petaluma-ca": {
+      "area_title": "Santa Rosa-Petaluma, CA",
+      "state": "CA",
+      "area_code": "42220",
+      "employment": 610,
+      "hourly": {
+        "mean": 20.11,
+        "p10": 16.92,
+        "p25": 17.68,
+        "median": 18.97,
+        "p75": 21.91,
+        "p90": 23.39
+      },
+      "capped": false
+    },
+    "savannah-ga": {
+      "area_title": "Savannah, GA",
+      "state": "GA",
+      "area_code": "42340",
+      "employment": 1120,
+      "hourly": {
+        "mean": 13.93,
+        "p10": 10.66,
+        "p25": 11.4,
+        "median": 13.79,
+        "p75": 15.05,
+        "p90": 17.01
+      },
+      "capped": false
+    },
+    "scranton-wilkes-barre-pa": {
+      "area_title": "Scranton--Wilkes-Barre, PA",
+      "state": "PA",
+      "area_code": "42540",
+      "employment": 750,
+      "hourly": {
+        "mean": 13.75,
+        "p10": 10.46,
+        "p25": 11.28,
+        "median": 13.75,
+        "p75": 16.62,
+        "p90": 16.95
+      },
+      "capped": false
+    },
+    "seattle-tacoma-bellevue-wa": {
+      "area_title": "Seattle-Tacoma-Bellevue, WA",
+      "state": "WA",
+      "area_code": "42660",
+      "employment": 2220,
+      "hourly": {
+        "mean": 20.54,
+        "p10": 16.7,
+        "p25": 17.93,
+        "median": 19.32,
+        "p75": 22.22,
+        "p90": 25.68
+      },
+      "capped": false
+    },
+    "sebastian-vero-beach-west-vero-corridor-fl": {
+      "area_title": "Sebastian-Vero Beach-West Vero Corridor, FL",
+      "state": "FL",
+      "area_code": "42680",
+      "employment": 80,
+      "hourly": {
+        "mean": 15.13,
+        "p10": 12.84,
+        "p25": 13.25,
+        "median": 13.97,
+        "p75": 16.23,
+        "p90": 18.22
+      },
+      "capped": false
+    },
+    "sebring-fl": {
+      "area_title": "Sebring, FL",
+      "state": "FL",
+      "area_code": "42700",
+      "employment": 60,
+      "hourly": {
+        "mean": 14.17,
+        "p10": 12.0,
+        "p25": 12.9,
+        "median": 13.58,
+        "p75": 14.29,
+        "p90": 17.47
+      },
+      "capped": false
+    },
+    "sheboygan-wi": {
+      "area_title": "Sheboygan, WI",
+      "state": "WI",
+      "area_code": "43100",
+      "employment": 110,
+      "hourly": {
+        "mean": 14.99,
+        "p10": 9.9,
+        "p25": 13.29,
+        "median": 15.04,
+        "p75": 17.52,
+        "p90": 18.49
+      },
+      "capped": false
+    },
+    "sherman-denison-tx": {
+      "area_title": "Sherman-Denison, TX",
+      "state": "TX",
+      "area_code": "43300",
+      "employment": 90,
+      "hourly": {
+        "mean": 12.38,
+        "p10": 10.16,
+        "p25": 10.66,
+        "median": 12.81,
+        "p75": 13.54,
+        "p90": 15.35
+      },
+      "capped": false
+    },
+    "shreveport-bossier-city-la": {
+      "area_title": "Shreveport-Bossier City, LA",
+      "state": "LA",
+      "area_code": "43340",
+      "employment": 850,
+      "hourly": {
+        "mean": 12.14,
+        "p10": 8.85,
+        "p25": 9.69,
+        "median": 10.59,
+        "p75": 13.45,
+        "p90": 18.64
+      },
+      "capped": false
+    },
+    "sioux-city-ia-ne-sd": {
+      "area_title": "Sioux City, IA-NE-SD",
+      "state": "IA",
+      "area_code": "43580",
+      "employment": 270,
+      "hourly": {
+        "mean": 13.58,
+        "p10": 11.27,
+        "p25": 12.0,
+        "median": 13.41,
+        "p75": 14.0,
+        "p90": 16.45
+      },
+      "capped": false
+    },
+    "sioux-falls-sd-mn": {
+      "area_title": "Sioux Falls, SD-MN",
+      "state": "SD",
+      "area_code": "43620",
+      "employment": 1340,
+      "hourly": {
+        "mean": 12.74,
+        "p10": 11.62,
+        "p25": 11.76,
+        "median": 12.9,
+        "p75": 13.07,
+        "p90": 13.45
+      },
+      "capped": false
+    },
+    "slidell-mandeville-covington-la": {
+      "area_title": "Slidell-Mandeville-Covington, LA",
+      "state": "LA",
+      "area_code": "43640",
+      "employment": 610,
+      "hourly": {
+        "mean": 11.87,
+        "p10": 8.55,
+        "p25": 10.08,
+        "median": 10.77,
+        "p75": 13.62,
+        "p90": 14.22
+      },
+      "capped": false
+    },
+    "south-bend-mishawaka-in-mi": {
+      "area_title": "South Bend-Mishawaka, IN-MI",
+      "state": "IN",
+      "area_code": "43780",
+      "employment": 360,
+      "hourly": {
+        "mean": 14.13,
+        "p10": 10.94,
+        "p25": 12.77,
+        "median": 14.01,
+        "p75": 15.16,
+        "p90": 17.17
+      },
+      "capped": false
+    },
+    "spartanburg-sc": {
+      "area_title": "Spartanburg, SC",
+      "state": "SC",
+      "area_code": "43900",
+      "employment": 630,
+      "hourly": {
+        "mean": 13.77,
+        "p10": 10.62,
+        "p25": 11.4,
+        "median": 13.63,
+        "p75": 14.7,
+        "p90": 17.87
+      },
+      "capped": false
+    },
+    "spokane-spokane-valley-wa": {
+      "area_title": "Spokane-Spokane Valley, WA",
+      "state": "WA",
+      "area_code": "44060",
+      "employment": 380,
+      "hourly": {
+        "mean": 18.66,
+        "p10": 16.28,
+        "p25": 16.41,
+        "median": 17.14,
+        "p75": 20.52,
+        "p90": 22.01
+      },
+      "capped": false
+    },
+    "springfield-il": {
+      "area_title": "Springfield, IL",
+      "state": "IL",
+      "area_code": "44100",
+      "employment": 390,
+      "hourly": {
+        "mean": 16.12,
+        "p10": 14.0,
+        "p25": 14.36,
+        "median": 15.37,
+        "p75": 17.15,
+        "p90": 19.49
+      },
+      "capped": false
+    },
+    "springfield-ma": {
+      "area_title": "Springfield, MA",
+      "state": "MA",
+      "area_code": "44140",
+      "employment": 600,
+      "hourly": {
+        "mean": 18.86,
+        "p10": 15.9,
+        "p25": 16.92,
+        "median": 18.04,
+        "p75": 21.64,
+        "p90": 22.87
+      },
+      "capped": false
+    },
+    "springfield-mo": {
+      "area_title": "Springfield, MO",
+      "state": "MO",
+      "area_code": "44180",
+      "employment": 840,
+      "hourly": {
+        "mean": 14.66,
+        "p10": 12.69,
+        "p25": 13.57,
+        "median": 13.94,
+        "p75": 15.09,
+        "p90": 17.61
+      },
+      "capped": false
+    },
+    "springfield-oh": {
+      "area_title": "Springfield, OH",
+      "state": "OH",
+      "area_code": "44220",
+      "employment": 80,
+      "hourly": {
+        "mean": 14.06,
+        "p10": 10.71,
+        "p25": 11.72,
+        "median": 12.89,
+        "p75": 16.25,
+        "p90": 18.6
+      },
+      "capped": false
+    },
+    "st-cloud-mn": {
+      "area_title": "St. Cloud, MN",
+      "state": "MN",
+      "area_code": "41060",
+      "employment": 270,
+      "hourly": {
+        "mean": 15.32,
+        "p10": 13.07,
+        "p25": 13.86,
+        "median": 14.84,
+        "p75": 16.6,
+        "p90": 16.96
+      },
+      "capped": false
+    },
+    "st-george-ut": {
+      "area_title": "St. George, UT",
+      "state": "UT",
+      "area_code": "41100",
+      "employment": 210,
+      "hourly": {
+        "mean": 14.35,
+        "p10": 9.91,
+        "p25": 12.65,
+        "median": 14.46,
+        "p75": 16.04,
+        "p90": 17.46
+      },
+      "capped": false
+    },
+    "st-joseph-mo-ks": {
+      "area_title": "St. Joseph, MO-KS",
+      "state": "MO",
+      "area_code": "41140",
+      "employment": 300,
+      "hourly": {
+        "mean": 14.07,
+        "p10": 12.3,
+        "p25": 12.39,
+        "median": 13.11,
+        "p75": 14.82,
+        "p90": 17.71
+      },
+      "capped": false
+    },
+    "st-louis-mo-il": {
+      "area_title": "St. Louis, MO-IL",
+      "state": "MO",
+      "area_code": "41180",
+      "employment": 5100,
+      "hourly": {
+        "mean": 16.03,
+        "p10": 13.84,
+        "p25": 14.21,
+        "median": 14.76,
+        "p75": 16.8,
+        "p90": 20.0
+      },
+      "capped": false
+    },
+    "state-college-pa": {
+      "area_title": "State College, PA",
+      "state": "PA",
+      "area_code": "44300",
+      "employment": 140,
+      "hourly": {
+        "mean": 12.77,
+        "p10": 10.26,
+        "p25": 11.08,
+        "median": 12.69,
+        "p75": 13.94,
+        "p90": 16.56
+      },
+      "capped": false
+    },
+    "staunton-stuarts-draft-va": {
+      "area_title": "Staunton-Stuarts Draft, VA",
+      "state": "VA",
+      "area_code": "44420",
+      "employment": 140,
+      "hourly": {
+        "mean": 14.14,
+        "p10": 12.0,
+        "p25": 12.79,
+        "median": 13.37,
+        "p75": 16.27,
+        "p90": 17.01
+      },
+      "capped": false
+    },
+    "stockton-lodi-ca": {
+      "area_title": "Stockton-Lodi, CA",
+      "state": "CA",
+      "area_code": "44700",
+      "employment": 540,
+      "hourly": {
+        "mean": 18.95,
+        "p10": 16.34,
+        "p25": 17.13,
+        "median": 17.78,
+        "p75": 20.67,
+        "p90": 23.32
+      },
+      "capped": false
+    },
+    "sumter-sc": {
+      "area_title": "Sumter, SC",
+      "state": "SC",
+      "area_code": "44940",
+      "employment": 260,
+      "hourly": {
+        "mean": 12.77,
+        "p10": 9.64,
+        "p25": 10.89,
+        "median": 12.8,
+        "p75": 14.18,
+        "p90": 16.31
+      },
+      "capped": false
+    },
+    "syracuse-ny": {
+      "area_title": "Syracuse, NY",
+      "state": "NY",
+      "area_code": "45060",
+      "employment": 990,
+      "hourly": {
+        "mean": 16.53,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 15.96,
+        "p75": 17.39,
+        "p90": 18.27
+      },
+      "capped": false
+    },
+    "tallahassee-fl": {
+      "area_title": "Tallahassee, FL",
+      "state": "FL",
+      "area_code": "45220",
+      "employment": 290,
+      "hourly": {
+        "mean": 14.35,
+        "p10": 12.0,
+        "p25": 12.89,
+        "median": 13.58,
+        "p75": 15.68,
+        "p90": 17.04
+      },
+      "capped": false
+    },
+    "tampa-st-petersburg-clearwater-fl": {
+      "area_title": "Tampa-St. Petersburg-Clearwater, FL",
+      "state": "FL",
+      "area_code": "45300",
+      "employment": 3050,
+      "hourly": {
+        "mean": 15.43,
+        "p10": 12.9,
+        "p25": 13.77,
+        "median": 14.37,
+        "p75": 16.28,
+        "p90": 18.21
+      },
+      "capped": false
+    },
+    "terre-haute-in": {
+      "area_title": "Terre Haute, IN",
+      "state": "IN",
+      "area_code": "45460",
+      "employment": 190,
+      "hourly": {
+        "mean": 12.6,
+        "p10": 8.84,
+        "p25": 10.5,
+        "median": 13.42,
+        "p75": 13.66,
+        "p90": 14.01
+      },
+      "capped": false
+    },
+    "texarkana-tx-ar": {
+      "area_title": "Texarkana, TX-AR",
+      "state": "TX",
+      "area_code": "45500",
+      "employment": 240,
+      "hourly": {
+        "mean": 11.7,
+        "p10": 9.06,
+        "p25": 10.45,
+        "median": 11.36,
+        "p75": 12.66,
+        "p90": 13.76
+      },
+      "capped": false
+    },
+    "toledo-oh": {
+      "area_title": "Toledo, OH",
+      "state": "OH",
+      "area_code": "45780",
+      "employment": 750,
+      "hourly": {
+        "mean": 14.09,
+        "p10": 10.82,
+        "p25": 12.1,
+        "median": 13.46,
+        "p75": 16.02,
+        "p90": 17.44
+      },
+      "capped": false
+    },
+    "topeka-ks": {
+      "area_title": "Topeka, KS",
+      "state": "KS",
+      "area_code": "45820",
+      "employment": 610,
+      "hourly": {
+        "mean": 15.06,
+        "p10": 11.45,
+        "p25": 13.36,
+        "median": 13.86,
+        "p75": 18.04,
+        "p90": 18.22
+      },
+      "capped": false
+    },
+    "traverse-city-mi": {
+      "area_title": "Traverse City, MI",
+      "state": "MI",
+      "area_code": "45900",
+      "employment": 270,
+      "hourly": {
+        "mean": 15.73,
+        "p10": 12.55,
+        "p25": 14.02,
+        "median": 15.23,
+        "p75": 17.42,
+        "p90": 17.61
+      },
+      "capped": false
+    },
+    "trenton-princeton-nj": {
+      "area_title": "Trenton-Princeton, NJ",
+      "state": "NJ",
+      "area_code": "45940",
+      "employment": 990,
+      "hourly": {
+        "mean": 16.92,
+        "p10": 15.13,
+        "p25": 15.13,
+        "median": 16.6,
+        "p75": 17.02,
+        "p90": 19.29
+      },
+      "capped": false
+    },
+    "tucson-az": {
+      "area_title": "Tucson, AZ",
+      "state": "AZ",
+      "area_code": "46060",
+      "employment": 710,
+      "hourly": {
+        "mean": 16.08,
+        "p10": 14.35,
+        "p25": 14.74,
+        "median": 15.3,
+        "p75": 16.32,
+        "p90": 18.15
+      },
+      "capped": false
+    },
+    "tulsa-ok": {
+      "area_title": "Tulsa, OK",
+      "state": "OK",
+      "area_code": "46140",
+      "employment": 2060,
+      "hourly": {
+        "mean": 13.84,
+        "p10": 10.48,
+        "p25": 10.79,
+        "median": 13.08,
+        "p75": 15.51,
+        "p90": 18.16
+      },
+      "capped": false
+    },
+    "tuscaloosa-al": {
+      "area_title": "Tuscaloosa, AL",
+      "state": "AL",
+      "area_code": "46220",
+      "employment": 210,
+      "hourly": {
+        "mean": 13.21,
+        "p10": 8.94,
+        "p25": 10.23,
+        "median": 12.5,
+        "p75": 15.94,
+        "p90": 19.99
+      },
+      "capped": false
+    },
+    "twin-falls-id": {
+      "area_title": "Twin Falls, ID",
+      "state": "ID",
+      "area_code": "46300",
+      "employment": 300,
+      "hourly": {
+        "mean": 14.43,
+        "p10": 10.24,
+        "p25": 12.76,
+        "median": 13.84,
+        "p75": 16.13,
+        "p90": 17.15
+      },
+      "capped": false
+    },
+    "tyler-tx": {
+      "area_title": "Tyler, TX",
+      "state": "TX",
+      "area_code": "46340",
+      "employment": 260,
+      "hourly": {
+        "mean": 13.07,
+        "p10": 10.17,
+        "p25": 10.71,
+        "median": 12.55,
+        "p75": 13.78,
+        "p90": 16.83
+      },
+      "capped": false
+    },
+    "urban-honolulu-hi": {
+      "area_title": "Urban Honolulu, HI",
+      "state": "HI",
+      "area_code": "46520",
+      "employment": 1480,
+      "hourly": {
+        "mean": 17.02,
+        "p10": 14.43,
+        "p25": 15.36,
+        "median": 17.48,
+        "p75": 17.98,
+        "p90": 18.1
+      },
+      "capped": false
+    },
+    "utica-rome-ny": {
+      "area_title": "Utica-Rome, NY",
+      "state": "NY",
+      "area_code": "46540",
+      "employment": 570,
+      "hourly": {
+        "mean": 16.76,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 16.45,
+        "p75": 17.61,
+        "p90": 20.18
+      },
+      "capped": false
+    },
+    "valdosta-ga": {
+      "area_title": "Valdosta, GA",
+      "state": "GA",
+      "area_code": "46660",
+      "employment": 500,
+      "hourly": {
+        "mean": 11.87,
+        "p10": 9.09,
+        "p25": 10.1,
+        "median": 10.87,
+        "p75": 13.2,
+        "p90": 16.2
+      },
+      "capped": false
+    },
+    "vallejo-ca": {
+      "area_title": "Vallejo, CA",
+      "state": "CA",
+      "area_code": "46700",
+      "employment": 500,
+      "hourly": {
+        "mean": 19.77,
+        "p10": 16.44,
+        "p25": 17.5,
+        "median": 18.24,
+        "p75": 21.59,
+        "p90": 25.98
+      },
+      "capped": false
+    },
+    "victoria-tx": {
+      "area_title": "Victoria, TX",
+      "state": "TX",
+      "area_code": "47020",
+      "employment": 170,
+      "hourly": {
+        "mean": 11.69,
+        "p10": 10.17,
+        "p25": 10.35,
+        "median": 10.95,
+        "p75": 12.74,
+        "p90": 13.67
+      },
+      "capped": false
+    },
+    "vineland-nj": {
+      "area_title": "Vineland, NJ",
+      "state": "NJ",
+      "area_code": "47220",
+      "employment": 480,
+      "hourly": {
+        "mean": 16.52,
+        "p10": 15.13,
+        "p25": 15.13,
+        "median": 15.38,
+        "p75": 16.79,
+        "p90": 19.1
+      },
+      "capped": false
+    },
+    "virginia-beach-chesapeake-norfolk-va-nc": {
+      "area_title": "Virginia Beach-Chesapeake-Norfolk, VA-NC",
+      "state": "VA",
+      "area_code": "47260",
+      "employment": 2970,
+      "hourly": {
+        "mean": 14.25,
+        "p10": 12.33,
+        "p25": 13.12,
+        "median": 13.62,
+        "p75": 15.05,
+        "p90": 17.08
+      },
+      "capped": false
+    },
+    "visalia-ca": {
+      "area_title": "Visalia, CA",
+      "state": "CA",
+      "area_code": "47300",
+      "employment": 300,
+      "hourly": {
+        "mean": 19.39,
+        "p10": 16.01,
+        "p25": 16.55,
+        "median": 17.47,
+        "p75": 21.4,
+        "p90": 27.16
+      },
+      "capped": false
+    },
+    "waco-tx": {
+      "area_title": "Waco, TX",
+      "state": "TX",
+      "area_code": "47380",
+      "employment": 340,
+      "hourly": {
+        "mean": 13.04,
+        "p10": 10.29,
+        "p25": 10.64,
+        "median": 13.09,
+        "p75": 14.01,
+        "p90": 16.83
+      },
+      "capped": false
+    },
+    "walla-walla-wa": {
+      "area_title": "Walla Walla, WA",
+      "state": "WA",
+      "area_code": "47460",
+      "employment": 40,
+      "hourly": {
+        "mean": 17.36,
+        "p10": 16.28,
+        "p25": 16.28,
+        "median": 16.28,
+        "p75": 16.77,
+        "p90": 17.24
+      },
+      "capped": false
+    },
+    "warner-robins-ga": {
+      "area_title": "Warner Robins, GA",
+      "state": "GA",
+      "area_code": "47580",
+      "employment": 550,
+      "hourly": {
+        "mean": 12.41,
+        "p10": 10.18,
+        "p25": 10.67,
+        "median": 11.41,
+        "p75": 13.69,
+        "p90": 14.59
+      },
+      "capped": false
+    },
+    "washington-arlington-alexandria-dc-va-md-wv": {
+      "area_title": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+      "state": "DC",
+      "area_code": "47900",
+      "employment": 11290,
+      "hourly": {
+        "mean": 17.96,
+        "p10": 14.53,
+        "p25": 15.54,
+        "median": 17.05,
+        "p75": 18.64,
+        "p90": 23.01
+      },
+      "capped": false
+    },
+    "waterbury-shelton-ct": {
+      "area_title": "Waterbury-Shelton, CT",
+      "state": "CT",
+      "area_code": "47930",
+      "employment": 1040,
+      "hourly": {
+        "mean": 16.85,
+        "p10": 15.69,
+        "p25": 16.0,
+        "median": 16.6,
+        "p75": 16.91,
+        "p90": 17.72
+      },
+      "capped": false
+    },
+    "waterloo-cedar-falls-ia": {
+      "area_title": "Waterloo-Cedar Falls, IA",
+      "state": "IA",
+      "area_code": "47940",
+      "employment": 410,
+      "hourly": {
+        "mean": 13.51,
+        "p10": 10.05,
+        "p25": 10.89,
+        "median": 13.16,
+        "p75": 15.12,
+        "p90": 17.57
+      },
+      "capped": false
+    },
+    "watertown-fort-drum-ny": {
+      "area_title": "Watertown-Fort Drum, NY",
+      "state": "NY",
+      "area_code": "48060",
+      "employment": 160,
+      "hourly": {
+        "mean": 16.54,
+        "p10": 15.0,
+        "p25": 15.0,
+        "median": 15.0,
+        "p75": 17.22,
+        "p90": 21.93
+      },
+      "capped": false
+    },
+    "wausau-wi": {
+      "area_title": "Wausau, WI",
+      "state": "WI",
+      "area_code": "48140",
+      "employment": 90,
+      "hourly": {
+        "mean": 13.15,
+        "p10": 10.43,
+        "p25": 12.5,
+        "median": 13.06,
+        "p75": 14.08,
+        "p90": 16.56
+      },
+      "capped": false
+    },
+    "wenatchee-east-wenatchee-wa": {
+      "area_title": "Wenatchee-East Wenatchee, WA",
+      "state": "WA",
+      "area_code": "48300",
+      "employment": 100,
+      "hourly": {
+        "mean": 18.37,
+        "p10": 16.28,
+        "p25": 16.98,
+        "median": 17.51,
+        "p75": 18.18,
+        "p90": 20.83
+      },
+      "capped": false
+    },
+    "wheeling-wv-oh": {
+      "area_title": "Wheeling, WV-OH",
+      "state": "WV",
+      "area_code": "48540",
+      "employment": 140,
+      "hourly": {
+        "mean": 12.88,
+        "p10": 11.26,
+        "p25": 11.82,
+        "median": 12.91,
+        "p75": 13.53,
+        "p90": 14.29
+      },
+      "capped": false
+    },
+    "wichita-falls-tx": {
+      "area_title": "Wichita Falls, TX",
+      "state": "TX",
+      "area_code": "48660",
+      "employment": 240,
+      "hourly": {
+        "mean": 11.88,
+        "p10": 10.09,
+        "p25": 10.51,
+        "median": 11.42,
+        "p75": 12.85,
+        "p90": 13.94
+      },
+      "capped": false
+    },
+    "wichita-ks": {
+      "area_title": "Wichita, KS",
+      "state": "KS",
+      "area_code": "48620",
+      "employment": 1530,
+      "hourly": {
+        "mean": 13.23,
+        "p10": 10.02,
+        "p25": 11.47,
+        "median": 13.26,
+        "p75": 14.47,
+        "p90": 16.53
+      },
+      "capped": false
+    },
+    "wildwood-the-villages-fl": {
+      "area_title": "Wildwood-The Villages, FL",
+      "state": "FL",
+      "area_code": "48680",
+      "employment": null,
+      "hourly": {
+        "mean": 13.45,
+        "p10": 12.63,
+        "p25": 12.63,
+        "median": 12.63,
+        "p75": 13.68,
+        "p90": 14.58
+      },
+      "capped": false
+    },
+    "williamsport-pa": {
+      "area_title": "Williamsport, PA",
+      "state": "PA",
+      "area_code": "48700",
+      "employment": 120,
+      "hourly": {
+        "mean": 13.05,
+        "p10": 10.31,
+        "p25": 11.35,
+        "median": 13.2,
+        "p75": 14.6,
+        "p90": 15.91
+      },
+      "capped": false
+    },
+    "wilmington-nc": {
+      "area_title": "Wilmington, NC",
+      "state": "NC",
+      "area_code": "48900",
+      "employment": 510,
+      "hourly": {
+        "mean": 14.58,
+        "p10": 10.61,
+        "p25": 12.55,
+        "median": 13.48,
+        "p75": 16.55,
+        "p90": 19.19
+      },
+      "capped": false
+    },
+    "winchester-va-wv": {
+      "area_title": "Winchester, VA-WV",
+      "state": "VA",
+      "area_code": "49020",
+      "employment": 130,
+      "hourly": {
+        "mean": 14.47,
+        "p10": 12.37,
+        "p25": 13.2,
+        "median": 14.75,
+        "p75": 15.23,
+        "p90": 16.92
+      },
+      "capped": false
+    },
+    "winston-salem-nc": {
+      "area_title": "Winston-Salem, NC",
+      "state": "NC",
+      "area_code": "49180",
+      "employment": 850,
+      "hourly": {
+        "mean": 14.44,
+        "p10": 10.27,
+        "p25": 10.98,
+        "median": 13.84,
+        "p75": 16.61,
+        "p90": 18.62
+      },
+      "capped": false
+    },
+    "worcester-ma": {
+      "area_title": "Worcester, MA",
+      "state": "MA",
+      "area_code": "49340",
+      "employment": 1060,
+      "hourly": {
+        "mean": 19.19,
+        "p10": 15.62,
+        "p25": 17.12,
+        "median": 18.46,
+        "p75": 21.68,
+        "p90": 22.82
+      },
+      "capped": false
+    },
+    "yakima-wa": {
+      "area_title": "Yakima, WA",
+      "state": "WA",
+      "area_code": "49420",
+      "employment": 110,
+      "hourly": {
+        "mean": 17.77,
+        "p10": 16.28,
+        "p25": 16.28,
+        "median": 17.29,
+        "p75": 17.96,
+        "p90": 20.08
+      },
+      "capped": false
+    },
+    "york-hanover-pa": {
+      "area_title": "York-Hanover, PA",
+      "state": "PA",
+      "area_code": "49620",
+      "employment": 460,
+      "hourly": {
+        "mean": 14.26,
+        "p10": 9.94,
+        "p25": 10.96,
+        "median": 13.94,
+        "p75": 16.73,
+        "p90": 20.0
+      },
+      "capped": false
+    },
+    "youngstown-warren-oh": {
+      "area_title": "Youngstown-Warren, OH",
+      "state": "OH",
+      "area_code": "49660",
+      "employment": 440,
+      "hourly": {
+        "mean": 13.33,
+        "p10": 10.49,
+        "p25": 11.47,
+        "median": 12.71,
+        "p75": 13.99,
+        "p90": 17.14
+      },
+      "capped": false
+    },
+    "yuba-city-ca": {
+      "area_title": "Yuba City, CA",
+      "state": "CA",
+      "area_code": "49700",
+      "employment": 190,
+      "hourly": {
+        "mean": 18.9,
+        "p10": 16.0,
+        "p25": 16.61,
+        "median": 17.14,
+        "p75": 21.28,
+        "p90": 23.6
+      },
+      "capped": false
+    }
+  }
+}

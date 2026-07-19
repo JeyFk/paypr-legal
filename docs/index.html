@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 
 <!-- ============================================================= -->
 <!-- PRIMARY SEO TAGS                                               -->
@@ -141,10 +143,11 @@
   .lead{color:var(--muted);font-size:18px;max-width:60ch;margin-bottom:36px}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
   .card{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:26px}
+  a.card{transition:border-color .2s}
+  a.card:hover{border-color:var(--accent)}
   .card h3{font-size:19px;margin-bottom:8px}
   .card p{color:var(--muted);font-size:15px}
-  .ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
-    background:rgba(74,144,226,.16);margin-bottom:16px;font-size:22px}
+  .ico{width:44px;height:44px;margin-bottom:16px;display:block}
 
   /* who-for pills */
   .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
@@ -208,6 +211,7 @@
     <img src="shots/1-home.png" alt="Paypr home screen showing who you owe and weekly hours" loading="lazy">
     <img src="shots/2-log-time.png" alt="Logging a nanny's hours worked in Paypr" loading="lazy">
     <img src="shots/3-summary.png" alt="Weekly and monthly spending summary in Paypr" loading="lazy">
+    <img src="shots/6-report.png" alt="Exported Paypr payment report showing totals, paid and still-owed by person" loading="lazy">
     <img src="shots/4-settle-up.png" alt="Settle up and mark a payment as paid" loading="lazy">
     <img src="shots/5-history.png" alt="Full payment and hours history in Paypr" loading="lazy">
   </div>
@@ -218,32 +222,32 @@
   <p class="lead">Built for busy families who employ household help and just want to know, at a glance, who they owe and how much.</p>
   <div class="grid">
     <div class="card">
-      <div class="ico">⏱️</div>
+      <img class="ico" src="icons/timer.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Log hours in seconds</h3>
       <p>Drag across a day on the timeline, or tap a quick entry. Each person's balance updates instantly at their hourly rate.</p>
     </div>
     <div class="card">
-      <div class="ico">💰</div>
+      <img class="ico" src="icons/money.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Know what you owe</h3>
       <p>A clean running tally of time worked and money owed — so payday is never a guessing game.</p>
     </div>
     <div class="card">
-      <div class="ico">✅</div>
+      <img class="ico" src="icons/check.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Settle up &amp; mark paid</h3>
       <p>Record full or partial payments and watch each balance settle. Keep a tidy, searchable history.</p>
     </div>
     <div class="card">
-      <div class="ico">📊</div>
+      <img class="ico" src="icons/chart.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>See the bigger picture</h3>
       <p>Weekly, monthly and yearly spending summaries with per-person breakdowns (Paypr Pro).</p>
     </div>
     <div class="card">
-      <div class="ico">📄</div>
+      <img class="ico" src="icons/document.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Export for tax time</h3>
       <p>Export clean CSV records of hours and payments — handy for keeping tidy nanny-tax records (Pro).</p>
     </div>
     <div class="card">
-      <div class="ico">🔒</div>
+      <img class="ico" src="icons/lock.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Private by design</h3>
       <p>Your records live on your device and your own iCloud. No ads, no data selling — we never see them.</p>
     </div>
@@ -318,37 +322,37 @@
   <p class="lead">Free resources for anyone who employs household help.</p>
   <div class="grid">
     <a class="card" href="nanny-pay-calculator.html" style="color:inherit">
-      <div class="ico">🧮</div>
+      <img class="ico" src="icons/calculator.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Nanny pay calculator</h3>
       <p>Turn an hourly rate into weekly, monthly and yearly cost — with overtime.</p>
     </a>
     <a class="card" href="how-much-to-pay-a-nanny.html" style="color:inherit">
-      <div class="ico">💵</div>
+      <img class="ico" src="icons/pay.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>How much to pay a nanny</h3>
       <p>2026 rates, what raises them, overtime rules, and how to set a fair number.</p>
     </a>
     <a class="card" href="how-to-track-what-you-owe-your-nanny.html" style="color:inherit">
-      <div class="ico">📒</div>
+      <img class="ico" src="icons/ledger.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>How to track what you owe</h3>
       <p>Five methods compared — notebook, spreadsheet, app — and what to record.</p>
     </a>
     <a class="card" href="babysitter-hourly-rates.html" style="color:inherit">
-      <div class="ico">🏙️</div>
+      <img class="ico" src="icons/city.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Babysitter rates by city</h3>
       <p>What's fair to pay a sitter in 2026, city by city and by number of kids.</p>
     </a>
     <a class="card" href="how-much-to-pay-a-house-cleaner.html" style="color:inherit">
-      <div class="ico">🧽</div>
+      <img class="ico" src="icons/cleaning.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>House cleaner rates</h3>
       <p>Hourly vs per-visit pricing in 2026, what moves the price, and tipping.</p>
     </a>
     <a class="card" href="tutor-hourly-rates.html" style="color:inherit">
-      <div class="ico">📚</div>
+      <img class="ico" src="icons/books.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Tutor hourly rates</h3>
       <p>What to pay a tutor by subject, level and online vs in-person.</p>
     </a>
     <a class="card" href="nanny-taxes-explained.html" style="color:inherit">
-      <div class="ico">🧾</div>
+      <img class="ico" src="icons/tax.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Nanny taxes explained</h3>
       <p>When you owe them, who counts as an employee, and the records to keep.</p>
     </a>

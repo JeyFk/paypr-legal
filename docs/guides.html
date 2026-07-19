@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 
 <title>Guides &amp; Tools for Household Employers — Pay, Rates &amp; Taxes | Paypr</title>
 <meta name="description" content="Free guides and calculators for anyone who pays a nanny, babysitter, tutor or house cleaner — 2026 pay rates, nanny taxes, and tools to work out what you owe.">
@@ -30,14 +32,15 @@
   "name":"Paypr guides & tools for household employers",
   "itemListElement":[
     {"@type":"ListItem","position":1,"url":"https://usepaypr.com/how-much-to-pay-a-nanny.html","name":"How much to pay a nanny"},
-    {"@type":"ListItem","position":2,"url":"https://usepaypr.com/babysitter-hourly-rates.html","name":"Babysitter hourly rates by city"},
+    {"@type":"ListItem","position":2,"url":"https://usepaypr.com/babysitter-hourly-rates.html","name":"Babysitter hourly rates — 2026 guide"},
     {"@type":"ListItem","position":3,"url":"https://usepaypr.com/how-much-to-pay-a-house-cleaner.html","name":"How much to pay a house cleaner"},
     {"@type":"ListItem","position":4,"url":"https://usepaypr.com/tutor-hourly-rates.html","name":"Tutor hourly rates"},
     {"@type":"ListItem","position":5,"url":"https://usepaypr.com/nanny-taxes-explained.html","name":"Nanny taxes explained"},
     {"@type":"ListItem","position":6,"url":"https://usepaypr.com/how-to-track-what-you-owe-your-nanny.html","name":"How to track what you owe your nanny"},
     {"@type":"ListItem","position":7,"url":"https://usepaypr.com/nanny-pay-calculator.html","name":"Nanny pay calculator"},
     {"@type":"ListItem","position":8,"url":"https://usepaypr.com/babysitter-rate-calculator.html","name":"Babysitter rate calculator"},
-    {"@type":"ListItem","position":9,"url":"https://usepaypr.com/nanny-tax-calculator.html","name":"Nanny tax calculator"}
+    {"@type":"ListItem","position":9,"url":"https://usepaypr.com/nanny-tax-calculator.html","name":"Nanny tax calculator"},
+    {"@type":"ListItem","position":10,"url":"https://usepaypr.com/babysitter-rates-by-city.html","name":"Babysitter & childcare rates by city"}
   ]
 }
 </script>
@@ -65,7 +68,7 @@
   .card:hover{border-color:var(--accent)}
   .card h3{font-size:18px;margin-bottom:6px;color:var(--ink)}
   .card p{color:var(--muted);font-size:14px}
-  .ico{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(74,144,226,.16);margin-bottom:14px;font-size:20px}
+  .ico{width:44px;height:44px;margin-bottom:14px;display:block}
   .final{text-align:center;background:linear-gradient(180deg,rgba(74,144,226,.14),transparent);border:1px solid var(--stroke);border-radius:26px;padding:48px 24px;margin:24px 0}
   footer{border-top:1px solid var(--stroke);padding:34px 0;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
   footer a{color:var(--muted)}
@@ -94,19 +97,23 @@
     <h2>Pay-rate guides</h2>
     <div class="grid">
       <a class="card" href="how-much-to-pay-a-nanny.html">
-        <div class="ico">💵</div><h3>How much to pay a nanny</h3>
+        <img class="ico" src="icons/pay.svg" width="48" height="48" alt="" aria-hidden="true"><h3>How much to pay a nanny</h3>
         <p>2026 rates, what raises them, overtime rules, and how to set a fair number.</p>
       </a>
       <a class="card" href="babysitter-hourly-rates.html">
-        <div class="ico">🏙️</div><h3>Babysitter rates by city</h3>
-        <p>What's fair to pay a sitter in 2026, city by city and by number of kids.</p>
+        <img class="ico" src="icons/city.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Babysitter hourly rates — 2026 guide</h3>
+        <p>National averages, what raises the rate, and how many kids changes the number.</p>
+      </a>
+      <a class="card" href="babysitter-rates-by-city.html">
+        <img class="ico" src="icons/location.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Rates by city — look up any metro</h3>
+        <p>Search 384 US metros for local nanny &amp; babysitter rates (BLS data).</p>
       </a>
       <a class="card" href="how-much-to-pay-a-house-cleaner.html">
-        <div class="ico">🧽</div><h3>House cleaner rates</h3>
+        <img class="ico" src="icons/cleaning.svg" width="48" height="48" alt="" aria-hidden="true"><h3>House cleaner rates</h3>
         <p>Hourly vs per-visit pricing, what moves the price, and tipping norms.</p>
       </a>
       <a class="card" href="tutor-hourly-rates.html">
-        <div class="ico">📚</div><h3>Tutor hourly rates</h3>
+        <img class="ico" src="icons/books.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Tutor hourly rates</h3>
         <p>What to pay a tutor by subject, level and online vs in-person.</p>
       </a>
     </div>
@@ -116,11 +123,11 @@
     <h2>Taxes &amp; record-keeping</h2>
     <div class="grid">
       <a class="card" href="nanny-taxes-explained.html">
-        <div class="ico">🧾</div><h3>Nanny taxes explained</h3>
+        <img class="ico" src="icons/tax.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Nanny taxes explained</h3>
         <p>When you owe them, who counts as an employee, and the records to keep.</p>
       </a>
       <a class="card" href="how-to-track-what-you-owe-your-nanny.html">
-        <div class="ico">📒</div><h3>How to track what you owe</h3>
+        <img class="ico" src="icons/ledger.svg" width="48" height="48" alt="" aria-hidden="true"><h3>How to track what you owe</h3>
         <p>Five methods compared — notebook, spreadsheet, app — and what to record.</p>
       </a>
     </div>
@@ -130,15 +137,15 @@
     <h2>Free calculators</h2>
     <div class="grid">
       <a class="card" href="nanny-pay-calculator.html">
-        <div class="ico">🧮</div><h3>Nanny pay calculator</h3>
+        <img class="ico" src="icons/calculator.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Nanny pay calculator</h3>
         <p>Turn an hourly rate into weekly, monthly and yearly cost — with overtime.</p>
       </a>
       <a class="card" href="babysitter-rate-calculator.html">
-        <div class="ico">🍼</div><h3>Babysitter rate calculator</h3>
+        <img class="ico" src="icons/bottle.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Babysitter rate calculator</h3>
         <p>Rate, hours and number of kids into a per-booking and weekly cost.</p>
       </a>
       <a class="card" href="nanny-tax-calculator.html">
-        <div class="ico">📊</div><h3>Nanny tax calculator</h3>
+        <img class="ico" src="icons/chart.svg" width="48" height="48" alt="" aria-hidden="true"><h3>Nanny tax calculator</h3>
         <p>Estimate the employer taxes on top of wages and your true total cost.</p>
       </a>
     </div>
