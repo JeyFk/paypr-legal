@@ -1,0 +1,6 @@
+Day,Date,Start time,End time,Unpaid break minutes,Hours worked,Hourly rate,Amount earned,Payment date,Amount paid,Notes
+Monday,2026-09-14,09:00,15:00,0,6,20,120,,,Example only
+Tuesday,2026-09-15,09:00,15:00,0,6,20,120,,,Example only
+Wednesday,2026-09-16,09:00,15:00,0,6,20,120,,,Example only
+Thursday,2026-09-17,09:00,15:00,0,6,20,120,,,Example only
+Friday,2026-09-18,09:00,15:00,0,6,20,120,2026-09-18,400,Example only

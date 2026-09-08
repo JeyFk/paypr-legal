@@ -27,12 +27,7 @@ BASE = "https://usepaypr.com"
 APP = "https://apps.apple.com/app/paypr/id6778970494"
 TODAY = _dt.date.today().isoformat()
 
-# BLS gives one figure (childcare wage). We show two columns:
-#   Nanny (regular)      = the BLS local childcare median as-is.
-#   Babysitter (occasional) = that wage x an on-demand premium, disclosed below.
-# ~1.6x reflects national UrbanSitter/Sittercity sitter rates (~$26) vs the BLS
-# childcare wage (~$15). Tune here; it is labelled as an estimate on-page.
-SITTER_PREMIUM = 1.6
+# Show observed BLS median and interquartile range, never inferred private-care prices.
 
 # Curated top metros by search demand (full slugs as they appear in the JSON).
 FEATURED = [
@@ -120,13 +115,6 @@ def usd(x) -> str:
     return f"${x:,.2f}" if isinstance(x, (int, float)) else "—"
 
 
-def sitter(med) -> float | None:
-    # On-demand estimate: apply the premium, round to the nearest $0.50 so it
-    # reads as an estimate, not spurious precision.
-    if not isinstance(med, (int, float)):
-        return None
-    return round(med * SITTER_PREMIUM * 2) / 2
-
 
 def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
     return f"""<!DOCTYPE html>
@@ -169,7 +157,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
     title = f"Babysitter & Childcare Rates in {name} ({year}) | Paypr"
     desc = (
         f"What childcare workers earn per hour in {name}: BLS {year} median {usd(h['median'])}, "
-        f"typical range {usd(h['p25'])}–{usd(h['p75'])}. How to set a fair local sitter rate."
+        f"typical range {usd(h['p25'])}–{usd(h['p75'])}. Childcare wage context, not private sitter prices."
     )
     jsonld = {
         "@context": "https://schema.org", "@type": "BlogPosting",
@@ -189,27 +177,22 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
 
   <p>In the {v['area_title']} area, childcare workers earn a median of
   <strong>{usd(h['median'])} per hour</strong>, with most paid between
-  {usd(h['p25'])} and {usd(h['p75'])}. Use this as the local anchor for what a
-  regular sitter or nanny is worth, then adjust for the factors below.</p>
+  {usd(h['p25'])} and {usd(h['p75'])}. These figures describe surveyed childcare-worker jobs; they do not measure private household care.</p>
 
   <p class="big">{usd(h['median'])}<span style="font-size:16px;color:var(--muted);font-weight:600"> /hr median</span></p>
 
   <h2>Hourly rate spread in {name}</h2>
   <table>
     <tr><th>Level</th><th>Hourly</th></tr>
-    <tr><td>Entry (10th percentile)</td><td>{usd(h['p10'])}</td></tr>
+    <tr><td>10th percentile</td><td>{usd(h['p10'])}</td></tr>
     <tr><td>Lower typical (25th)</td><td>{usd(h['p25'])}</td></tr>
     <tr><td><strong>Median (50th)</strong></td><td><strong>{usd(h['median'])}</strong></td></tr>
     <tr><td>Upper typical (75th)</td><td>{usd(h['p75'])}</td></tr>
-    <tr><td>Experienced (90th)</td><td>{usd(h['p90'])}</td></tr>
+    <tr><td>90th percentile</td><td>{usd(h['p90'])}</td></tr>
     <tr><td>Average (mean)</td><td>{usd(h['mean'])}</td></tr>
   </table>
 
-  <div class="tip">These are <strong>childcare-worker wage</strong> figures — what
-  employed and regular sitters earn locally. Occasional, on-demand
-  <a href="babysitter-hourly-rates.html">date-night babysitting</a> usually pays
-  more per hour because it's short-notice and flexible. Treat this as the floor,
-  not the ceiling.</div>
+  <div class="tip"><strong>What these figures measure:</strong> BLS OEWS covers wage and salary jobs in surveyed establishments and excludes private household workers. This is childcare-industry wage context, not a measured nanny or private babysitter rate, a minimum wage, or a price recommendation. See the <a href="https://www.bls.gov/oes/oes_ques.htm">BLS survey coverage</a> and <a href="babysitter-hourly-rates.html">babysitting booking-rate guide</a>.</div>
 
   <h2>What raises the rate in {name}</h2>
   <ul>
@@ -266,11 +249,11 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
                       "logo": {"@type": "ImageObject", "url": f"{BASE}/icon.png"}},
     }
 
-    # Featured city rows — one per city, Nanny (BLS) + Babysitter (estimate).
+    # Featured city rows: observed BLS median and middle 50%.
     rows = "\n".join(
         f'      <tr><td><a href="{featured_files[s]}">{short_name(metros[s])}</a></td>'
         f'<td>{usd(metros[s]["hourly"]["median"])}/hr</td>'
-        f'<td>{usd(sitter(metros[s]["hourly"]["median"]))}/hr</td></tr>'
+        f'<td>{usd(metros[s]["hourly"]["p25"])}–{usd(metros[s]["hourly"]["p75"])}/hr</td></tr>'
         for s in FEATURED if s in metros
     )
     # href map so search results deep-link to featured pages where they exist.
@@ -281,15 +264,10 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
   <h1>Babysitter &amp; childcare rates by city</h1>
   <p class="meta">Updated {TODAY} · {meta['metro_count']} US metros · BLS {year} data</p>
 
-  <p>Search any US metro area for local hourly rates — by city, state or BLS area
-  code. The <strong>Nanny</strong> figure is the median wage for childcare workers
-  (SOC 39-9011) from the U.S. Bureau of Labor Statistics, a good anchor for regular,
-  ongoing care. The <strong>Babysitter</strong> figure estimates occasional,
-  on-demand pay at about {int(round((SITTER_PREMIUM - 1) * 100))}% above that local
-  wage (see method below). Featured cities have full guides:</p>
+  <p>Search by metro name, state or BLS area code for childcare-worker wages. The table shows the median and middle 50% of wages in surveyed jobs. BLS excludes private household workers, so these are not nanny or babysitter booking prices. For those, see the <a href="babysitter-hourly-rates.html">babysitter rates guide</a>. Featured cities explain the distinction:</p>
 
   <table class="res">
-    <tr><th>City</th><th>Nanny <span class="note">(regular)</span></th><th>Babysitter <span class="note">(occasional)</span></th></tr>
+    <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
 {rows}
   </table>
 
@@ -297,7 +275,7 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
   <input id="q" type="search" placeholder="Type a city, state or area code — e.g. Portland, OR or 38900" autocomplete="off" aria-label="Search metro areas">
   <p class="note" id="count"></p>
   <table class="res">
-    <tr><th>City</th><th>Nanny <span class="note">(regular)</span></th><th>Babysitter <span class="note">(occasional)</span></th></tr>
+    <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
     <tbody id="res"></tbody>
   </table>
 
@@ -308,13 +286,7 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
     <a class="btn" href="{APP}">Download Paypr on the App Store</a>
   </div>
 
-  <p class="note"><strong>Method &amp; sources.</strong> Nanny figures are median
-  hourly wages for Childcare Workers (SOC 39-9011) by metro area, from the U.S.
-  Bureau of Labor Statistics, OEWS {year} (public-domain data). Babysitter figures
-  are a Paypr estimate — the same local wage multiplied by {SITTER_PREMIUM}× to
-  reflect the on-demand premium occasional sitters command (national UrbanSitter /
-  Sittercity rates run roughly that much above the childcare wage), rounded to the
-  nearest $0.50. Estimates only; local pay varies by experience, hours and demand.</p>
+  <p class="note"><strong>Method &amp; sources.</strong> BLS OEWS 2024, Childcare Workers (SOC 39-9011). Median is the 50th percentile; the range is the 25th to 75th percentile. Household workers and self-employed workers are excluded. See <a href="https://www.bls.gov/oes/oes_ques.htm">BLS methodology</a>. No private-sitter prices have been inferred from these wages.</p>
 
   <p style="margin-top:24px"><strong>Related:</strong><br>
   <a href="babysitter-hourly-rates.html">National babysitter rates</a> ·
@@ -334,9 +306,7 @@ fetch('data/babysitter-rates.json').then(r=>r.json()).then(d=>{{
   }}));
   render('');
 }});
-const PREMIUM = {SITTER_PREMIUM};
 function money(x){{return (x||x===0)?'$'+Number(x).toFixed(2):'—';}}
-function sitter(m){{return (m||m===0)?'$'+(Math.round(m*PREMIUM*2)/2).toFixed(2):'—';}}
 function render(q){{
   q=q.trim().toLowerCase();
   let list = q ? ROWS.filter(r=>r.hay.includes(q)) : ROWS;
@@ -345,7 +315,7 @@ function render(q){{
   res.innerHTML = list.map(r=>{{
     const label = HREF[r.slug] ? `<a href="${{HREF[r.slug]}}">${{r.title}}</a>` : r.title;
     return `<tr><td>${{label}}</td><td>${{money(r.med)}}/hr</td>`+
-           `<td>${{sitter(r.med)}}/hr</td></tr>`;
+           `<td>${{money(r.p25)}}–${{money(r.p75)}}/hr</td></tr>`;
   }}).join('') || '<tr><td colspan="3">No metro matches that. Try a bigger nearby city.</td></tr>';
   cnt.textContent = q ? `${{list.length}} match${{list.length===1?'':'es'}} shown` : 'Start typing to filter all metros.';
 }}
@@ -374,6 +344,10 @@ def patch_sitemap(files: list[str]) -> int:
 
 
 def main() -> None:
+    # Existing city pages include researched booking data outside the BLS dataset.
+    # Use metro_page/lookup_page to preview updates and merge them into these pages.
+    if any("Paypr SEO editorial revision" in p.read_text() for p in DOCS.glob("babysitter-rates-*.html")):
+        raise SystemExit("Editorial city pages exist. Generate previews and merge data updates; a bulk run would overwrite researched content.")
     data = json.loads(DATA.read_text())
     metros, meta = data["metros"], data["meta"]
 

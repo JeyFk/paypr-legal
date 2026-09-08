@@ -6,14 +6,14 @@
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 
-<title>Babysitter Rate Calculator — What a Sitter Costs Per Night | Paypr</title>
-<meta name="description" content="Free babysitter rate calculator. Enter the hourly rate, hours and number of kids to see what a sitter costs per booking and per week, based on 2026 US rates.">
+<title>Babysitter Pay Calculator: Hours, Rate &amp; Extra Kids | Paypr</title>
+<meta name="description" content="Calculate babysitter pay for any booking. Enter your agreed hourly rate, hours and optional extra-child pay. Free, no signup, with totals to the cent.">
 <link rel="canonical" href="https://usepaypr.com/babysitter-rate-calculator.html">
 <meta name="theme-color" content="#0B0D12">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Babysitter Rate Calculator — Cost Per Night">
-<meta property="og:description" content="Enter an hourly rate, hours and number of kids to see what a babysitter costs per booking and per week.">
+<meta property="og:title" content="Babysitter Pay Calculator: Hours, Rate &amp; Extra Kids | Paypr">
+<meta property="og:description" content="Calculate babysitter pay for any booking. Enter your agreed hourly rate, hours and optional extra-child pay. Free, no signup, with totals to the cent.">
 <meta property="og:url" content="https://usepaypr.com/babysitter-rate-calculator.html">
 <meta property="og:image" content="https://usepaypr.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -29,7 +29,11 @@
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any (web)",
   "url": "https://usepaypr.com/babysitter-rate-calculator.html",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
   "description": "Free calculator that turns a babysitter's hourly rate, hours and number of children into a per-booking and weekly cost."
 }
 </script>
@@ -38,12 +42,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How much should I pay a babysitter per hour in 2026?",
-      "acceptedAnswer": { "@type": "Answer", "text": "US babysitter rates in 2026 typically run about $18 to $22 per hour for one child, higher in big cities and for more children. Teen sitters run lower; experienced adult sitters run higher." } },
-    { "@type": "Question", "name": "Do you pay a babysitter more for extra kids?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — it's common to add roughly $1 to $3 per hour for each additional child, since more kids mean more work." } },
-    { "@type": "Question", "name": "Should you round up when paying a babysitter?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Many families round up to the nearest $5 or $10, or add a little extra for a late night or last-minute booking. It's optional but appreciated." } }
+    {
+      "@type": "Question",
+      "name": "Does the rate include both children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the rate you agreed with the sitter. If that price covers all children, leave the extra-child add-on at zero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I enter hours and minutes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide minutes by 60 and add the full hours. Four hours and 30 minutes is 4.5 hours; four hours and 15 minutes is 4.25 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the weekly total mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the price of two identical bookings. For a different schedule, multiply your booking total by the number of bookings yourself."
+      }
+    }
   ]
 }
 </script>
@@ -101,7 +123,7 @@
 </nav>
 
 <main class="wrap">
-  <h1>Babysitter Rate Calculator</h1>
+  <h1>Babysitter pay &amp; rate calculator</h1>
   <p class="lead">Enter the hourly rate, how long the sitter worked and how many kids — see what you owe for the booking and across a typical week.</p>
 
   <div class="calc">
@@ -120,15 +142,15 @@
       </div>
     </div>
     <div class="field">
-      <label for="perkid">Extra per additional child</label>
+      <label for="perkid">Agreed extra per additional child</label><p class="note">Leave at zero if your hourly rate already covers all children.</p>
       <select id="perkid">
-        <option value="0">No per-child add-on</option>
+        <option value="0" selected>No per-child add-on</option>
         <option value="1">+$1 / hour per extra child</option>
-        <option value="2" selected>+$2 / hour per extra child</option>
+        <option value="2">+$2 / hour per extra child</option>
         <option value="3">+$3 / hour per extra child</option>
       </select>
     </div>
-    <div class="out">
+    <div class="out" aria-live="polite" aria-atomic="true">
       <div class="stat"><div class="k">Effective /hr</div><div class="v" id="eff">$20</div></div>
       <div class="stat"><div class="k">This booking</div><div class="v" id="book">$80</div></div>
       <div class="stat"><div class="k">Weekly ×2</div><div class="v" id="wk">$160</div></div>
@@ -136,37 +158,19 @@
     <p class="note" id="msg"></p>
   </div>
 
-  <h2>How babysitter pay is calculated</h2>
-  <p>The base is simple — <strong>hourly rate × hours</strong>. Two things nudge it up: <strong>number of children</strong> (most families add $1–$3/hour per extra child) and the occasional round-up for a late night or last-minute ask. This calculator adds the per-child bump to your base rate to give an effective hourly rate, then multiplies by the hours. "Weekly ×2" assumes two bookings a week as a rough monthly-planning figure.</p>
-
-  <h2>Average babysitter rates in 2026</h2>
-  <p>US babysitter rates in 2026 land around <strong>$18–$22 per hour for one child</strong>, with big-city and multi-child rates higher. Use these as a starting point:</p>
-  <table>
-    <tr><th>Situation</th><th>Typical hourly rate (2026)</th></tr>
-    <tr><td>Teen / occasional sitter, one child</td><td>$15–$18</td></tr>
-    <tr><td>US average, one child</td><td>$18–$22</td></tr>
-    <tr><td>Experienced adult sitter</td><td>$22–$28</td></tr>
-    <tr><td>High-cost metros</td><td>$25–$30+</td></tr>
-    <tr><td>Each additional child</td><td>+$1–$3 / hour</td></tr>
-  </table>
-  <p class="note">Rates are approximate, drawn from public 2025–2026 data (Care.com, UrbanSitter, Sittercity). Check current local rates for your area.</p>
-
+  <h2>How to calculate babysitter pay</h2>
+  <p>Multiply the agreed hourly rate by hours worked. This tool uses decimal hours: 4 hours 30 minutes is 4.5 hours, not 4.30. At $20/hour, that booking costs $90. The weekly total assumes two identical bookings.</p>
+  <p>If you agreed on a separate child add-on, the formula is (base hourly rate + extra-child rate × additional children) × hours. For two children at a $20 base plus an agreed $2/hour add-on, four hours costs $88. If $20 already covers both children, the same booking costs $80.</p>
+  <h2>Choosing a rate</h2>
+  <p>Enter the price you and the sitter agreed. The $20 starting value is an example, not a claimed national average. See <a href="babysitter-hourly-rates.html">2026 babysitter rates and source notes</a>, including <a href="babysitter-rates-dallas-tx.html">Dallas</a>, <a href="babysitter-rates-miami-fl.html">Miami</a> and <a href="babysitter-rates-new-york-ny.html">New York</a>.</p>
+  <p>This booking tool calculates the amount before any taxes or other adjustments. For weekly nanny hours, use the <a href="nanny-pay-calculator.html">nanny pay calculator</a>. Keep an ongoing record with the <a href="nanny-timesheet-template.html">free nanny timesheet</a>.</p>
   <div class="cta">
     <h2 style="margin-top:0">Track every sitter, every payment</h2>
     <p>Paypr keeps a running balance of what you owe each babysitter, nanny, tutor or cleaner — log the hours, settle up, done. No spreadsheet.</p>
     <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download Paypr on the App Store</a>
   </div>
 
-  <h2>Common questions</h2>
-  <details open><summary>Do you pay a babysitter more for more kids?</summary>
-    <p>Usually yes — adding roughly $1–$3/hour per extra child is standard, since more children mean more work.</p></details>
-  <details><summary>Should you round up?</summary>
-    <p>Many families round up to the nearest $5 or $10, or add a little for a late finish or last-minute booking. It's optional but appreciated and helps you keep a good sitter.</p></details>
-  <details><summary>Cash or app?</summary>
-    <p>Either works. However you pay, keeping a record of hours and amounts saves the "how much do we owe from last time?" confusion — Paypr keeps that tally automatically.</p></details>
-
-  <p style="margin-top:30px"><a href="babysitter-hourly-rates.html">→ Full guide: Babysitter hourly rates by city</a><br>
-  <a href="nanny-pay-calculator.html">→ Nanny pay calculator</a> · <a href="guides.html">→ All guides &amp; tools</a></p>
+  <h2>Common questions</h2><details><summary>Does the rate include both children?</summary><p>Use the rate you agreed with the sitter. If that price covers all children, leave the extra-child add-on at zero.</p></details><details><summary>How do I enter hours and minutes?</summary><p>Divide minutes by 60 and add the full hours. Four hours and 30 minutes is 4.5 hours; four hours and 15 minutes is 4.25 hours.</p></details><details><summary>What does the weekly total mean?</summary><p>It is the price of two identical bookings. For a different schedule, multiply your booking total by the number of bookings yourself.</p></details>
 </main>
 
 <footer class="wrap" style="max-width:1080px">
@@ -175,10 +179,10 @@
 </footer>
 
 <script>
-  var f=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+  var f=function(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD'});};
   function calc(){
-    var rate=parseFloat(document.getElementById('rate').value)||0;
-    var hours=parseFloat(document.getElementById('hours').value)||0;
+    var rate=Math.max(0,parseFloat(document.getElementById('rate').value)||0);
+    var hours=Math.max(0,parseFloat(document.getElementById('hours').value)||0);
     var kids=Math.max(parseInt(document.getElementById('kids').value)||1,1);
     var perkid=parseFloat(document.getElementById('perkid').value)||0;
     var eff=rate + perkid*(kids-1);

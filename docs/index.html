@@ -10,8 +10,8 @@
 <!-- PRIMARY SEO TAGS                                               -->
 <!-- Target query: "nanny pay tracker" / "track what you owe nanny" -->
 <!-- ============================================================= -->
-<title>Paypr — Nanny &amp; Household Pay Tracker | Know What You Owe</title>
-<meta name="description" content="The simple iPhone app to track hours and pay for your nanny, babysitter, tutor or cleaner. Log time in seconds, always know what you owe. Free to start.">
+<title>Paypr: Hourly Pay Tracker for Nanny Hours &amp; Clients</title>
+<meta name="description" content="Track nanny and babysitter hours, payments and what you owe. Track client hours and what you are owed, too. Free iPhone app for one person per view.">
 <link rel="canonical" href="https://usepaypr.com/">
 <meta name="theme-color" content="#0B0D12">
 <meta name="apple-itunes-app" content="app-id=6778970494">
@@ -19,8 +19,8 @@
 <!-- Open Graph / social sharing -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Paypr">
-<meta property="og:title" content="Paypr — Nanny &amp; Household Pay Tracker">
-<meta property="og:description" content="Track hours and pay for your nanny, sitter, tutor or cleaner. Always know exactly what you owe, and settle up on payday.">
+<meta property="og:title" content="Paypr: Hourly Pay Tracker for Nanny Hours &amp; Clients">
+<meta property="og:description" content="Track nanny and babysitter hours, payments and what you owe. Track client hours and what you are owed, too. Free iPhone app for one person per view.">
 <meta property="og:url" content="https://usepaypr.com/">
 <meta property="og:image" content="https://usepaypr.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -41,19 +41,38 @@
   "name": "Paypr: Hourly Pay Tracker",
   "operatingSystem": "iOS 17.0 or later",
   "applicationCategory": "ProductivityApplication",
-  "description": "Track hours and pay for your nanny, babysitter, tutor or house cleaner. Log time in seconds, always know what you owe, and settle up on payday.",
+  "description": "Track hourly work, payments and outstanding balances for household help or clients in two separate views.",
   "url": "https://usepaypr.com/",
   "image": "https://usepaypr.com/icon.png",
-  "author": { "@type": "Organization", "name": "QAtion" },
+  "author": {
+    "@type": "Organization",
+    "name": "QAtion"
+  },
   "offers": [
-    { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free — track 1 person" },
-    { "@type": "Offer", "price": "2.99", "priceCurrency": "USD", "name": "Paypr Pro — Monthly" },
-    { "@type": "Offer", "price": "7.99", "priceCurrency": "USD", "name": "Paypr Pro — Lifetime" }
-  ]
+    {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "name": "Free — track 1 person"
+    },
+    {
+      "@type": "Offer",
+      "price": "2.99",
+      "priceCurrency": "USD",
+      "name": "Paypr Pro — Monthly"
+    },
+    {
+      "@type": "Offer",
+      "price": "7.99",
+      "priceCurrency": "USD",
+      "name": "Paypr Pro — Lifetime"
+    }
+  ],
+  "downloadUrl": "https://apps.apple.com/us/app/paypr-hourly-pay-tracker/id6778970494"
 }
 </script>
 
-<!-- STRUCTURED DATA — FAQPage (eligible for FAQ rich results) -->
+<!-- FAQ markup describes visible answers; Google retired FAQ rich results in May 2026. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,47 +81,74 @@
     {
       "@type": "Question",
       "name": "How do I track what I owe my nanny?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Add your nanny once with their hourly rate, then log the hours they work each day by dragging across a timeline or tapping a quick entry. Paypr keeps a running balance of what you owe so payday is never a guess." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add your nanny once with their hourly rate, then log the hours they work each day by dragging across a timeline or tapping a quick entry. Paypr keeps a running balance of what you owe so payday is never a guess."
+      }
     },
     {
       "@type": "Question",
       "name": "Is Paypr free?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can track one person free forever. Paypr Pro unlocks unlimited people, weekly/monthly/yearly summaries and CSV export — start with a 7-day free trial, then $2.99/month or $7.99 once for lifetime." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can track one person free forever. Paypr Pro unlocks unlimited people, weekly/monthly/yearly summaries and CSV export — start with a 7-day free trial, then $2.99/month or $7.99 once for lifetime."
+      }
     },
     {
       "@type": "Question",
       "name": "Can I use Paypr for a babysitter, tutor or cleaner?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paypr works for anyone you pay by the hour — nanny, babysitter, sitter, tutor, house cleaner, housekeeper or any helper. Set each person's rate and track their hours and payments separately." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Paypr works for anyone you pay by the hour — nanny, babysitter, sitter, tutor, house cleaner, housekeeper or any helper. Set each person's rate and track their hours and payments separately."
+      }
     },
     {
       "@type": "Question",
       "name": "Is my data private?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your records stay on your device and sync through your own private iCloud account. No ads, no data selling, and analytics never include names, amounts or balances." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your records stay on your device and sync through your own private iCloud account. No ads, no data selling, and analytics never include names, amounts or balances."
+      }
     },
     {
       "@type": "Question",
       "name": "I'm the one paid by the hour — can I use Paypr?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paypr has a contractor view for people who are paid hourly: clock in as you work, see what each client owes you, and share a clean statement of unpaid hours. Switch between the two views anytime in Settings — each side keeps its own separate records." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Paypr has a contractor view for people who are paid hourly: clock in as you work, see what each client owes you, and share a clean statement of unpaid hours. Switch between the two views anytime in Settings — each side keeps its own separate records."
+      }
     },
     {
       "@type": "Question",
       "name": "Does Paypr help at tax time?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Paypr Pro exports clean CSV records of hours worked and payments made per person — handy for keeping tidy nanny-tax records." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Paypr Pro exports clean CSV records of hours worked and payments made per person — handy for keeping tidy nanny-tax records."
+      }
     },
     {
       "@type": "Question",
       "name": "How do I calculate and track overtime for a nanny?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A live-out nanny is a non-exempt employee, so every hour over 40 in a single workweek is paid at 1.5 times their regular rate — counted per workweek, never averaged across two weeks and never swapped for time off. A nanny at $25/hour who works 46 hours is owed (40 × $25) + (6 × $37.50) = $1,225 gross. Paypr shows weekly totals so you see the 40-hour line before you cross it. Live-in nannies are exempt from federal overtime, though several states require it anyway." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A live-out nanny is a non-exempt employee, so every hour over 40 in a single workweek is paid at 1.5 times their regular rate — counted per workweek, never averaged across two weeks and never swapped for time off. A nanny at $25/hour who works 46 hours is owed (40 × $25) + (6 × $37.50) = $1,225 gross. Paypr shows weekly totals so you see the 40-hour line before you cross it. Live-in nannies are exempt from federal overtime, though several states require it anyway."
+      }
     },
     {
       "@type": "Question",
       "name": "Is Paypr a payroll service, or do I still need one?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Paypr is a tracker, not payroll: it records hours, rates and payments and keeps the running balance, but it does not withhold taxes, file returns, issue W-2s or move money. If you pay one household employee more than the annual threshold you also need a payroll service for the filings — Paypr supplies the accurate hours it runs on. Below the threshold, which covers most babysitter, tutor and part-time cleaner arrangements, a tracker is all you need." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Paypr is a tracker, not payroll: it records hours, rates and payments and keeps the running balance, but it does not withhold taxes, file returns, issue W-2s or move money. Tax and filing duties depend on worker classification, wages and federal and state rules. Being below one threshold does not remove every obligation. You can handle required filings yourself or use a payroll provider; Paypr supplies the hours and payment records."
+      }
     },
     {
       "@type": "Question",
       "name": "How do I keep records of payments to a house cleaner for tax purposes?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Keep a dated log of each visit with the hours or flat fee, the rate, the amount paid and how you paid it, plus the cleaner's name and address. Record it as it happens rather than reconstructing later, and keep the records at least four years. If the cleaner is self-employed you generally file nothing — households do not normally issue a 1099 for personal services — but the log still protects you if the classification is ever questioned." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep a dated log of each visit with the hours or flat fee, the rate, the amount paid and how you paid it, plus the cleaner's name and address. Record it as it happens rather than reconstructing later, and keep the records at least four years. If the cleaner is self-employed you generally file nothing — households do not normally issue a 1099 for personal services — but the log still protects you if the classification is ever questioned."
+      }
     }
   ]
 }
@@ -116,7 +162,10 @@
   "name": "QAtion",
   "url": "https://usepaypr.com/",
   "logo": "https://usepaypr.com/icon.png",
-  "brand": { "@type": "Brand", "name": "Paypr" }
+  "brand": {
+    "@type": "Brand",
+    "name": "Paypr"
+  }
 }
 </script>
 
@@ -220,7 +269,7 @@
 </div>
 
 <header class="wrap">
-  <h1>Always know <span class="hl">what you owe</span> your nanny</h1>
+  <h1>Track nanny hours.<br>Know <span class="hl">what you owe.</span></h1>
   <p class="sub">Paypr is the simple iPhone app for tracking hours and pay for the people who work for you — nanny, babysitter, tutor or house cleaner. Log time in seconds, watch the balance, and settle up on payday.</p>
   <div class="cta-row">
     <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
@@ -374,7 +423,7 @@
   </details>
   <details>
     <summary>Is Paypr a payroll service, or do I still need one?</summary>
-    <p>Paypr is a tracker, not payroll: it records hours, rates and payments and keeps the running balance, but it doesn't withhold taxes, file returns, issue W-2s or move money. If you pay one household employee more than the annual threshold you also need a payroll service for the filings — Paypr supplies the accurate hours it runs on. Below the threshold, which covers most babysitter, tutor and part-time cleaner arrangements, a tracker is all you need. <a href="paypr-vs-nanny-payroll-services.html">Payroll service vs. hours tracker &rarr;</a></p>
+    <p>Paypr is a tracker, not payroll: it records hours, rates and payments and keeps the running balance, but it doesn't withhold taxes, file returns, issue W-2s or move money. Tax and filing duties depend on worker classification, wages and federal and state rules. Being below one threshold does not remove every obligation. You can handle required filings yourself or use a payroll provider; Paypr supplies the hours and payment records. <a href="paypr-vs-nanny-payroll-services.html">Payroll service vs. hours tracker &rarr;</a></p>
   </details>
   <details>
     <summary>How do I keep records of payments to a house cleaner for tax purposes?</summary>
@@ -383,7 +432,7 @@
 </section>
 
 <section class="wrap">
-  <h2>Guides &amp; tools</h2>
+  <h2>Guides &amp; tools</h2><p style="margin:18px 0"><a href="babysitter-rate-calculator.html">Calculate babysitter pay</a> · <a href="nanny-timesheet-template.html">Download a free nanny timesheet</a> · <a href="paypr-vs-nannykeeper.html">Compare Paypr and NannyKeeper</a></p>
   <p class="lead">Free resources for anyone who employs household help.</p>
   <div class="grid">
     <a class="card" href="nanny-pay-calculator.html" style="color:inherit">
@@ -409,7 +458,7 @@
     <a class="card" href="babysitter-rates-by-city.html" style="color:inherit">
       <img class="ico" src="icons/location.svg" width="48" height="48" alt="" aria-hidden="true">
       <h3>Rates by city — any US metro</h3>
-      <p>Look up local nanny &amp; sitter rates for 384 US metros, from BLS data.</p>
+      <p>Compare childcare-worker wages across 384 US metros, with the limits of BLS data explained.</p>
     </a>
     <a class="card" href="how-much-to-pay-a-house-cleaner.html" style="color:inherit">
       <img class="ico" src="icons/cleaning.svg" width="48" height="48" alt="" aria-hidden="true">
@@ -457,7 +506,7 @@
   <footer>
     <div>© 2026 QAtion · Paypr</div>
     <nav>
-      <a href="support.html">Support</a>
+      <a href="about.html">About Paypr</a> · <a href="support.html">Support</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
       <a href="mailto:payprfeedback@gmail.com">Contact</a>
