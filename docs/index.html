@@ -204,10 +204,23 @@
   .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
   .fine{color:var(--muted);font-size:14px}
 
-  /* shots */
-  .shots{display:flex;gap:18px;overflow-x:auto;padding:44px 0 8px;scroll-snap-type:x mandatory}
-  .shots img{height:520px;border-radius:26px;border:1px solid var(--stroke);
-    scroll-snap-align:center;box-shadow:0 30px 80px -30px rgba(0,0,0,.7);flex:0 0 auto}
+  /* Benefit-led screenshot panels; original app captures remain unmodified. */
+  .shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:28px 0 8px}
+  .shot{margin:0;min-width:0;overflow:hidden;border-radius:24px;background:#07543e;
+    color:#fffbed;border:1px solid rgba(255,255,255,.12)}
+  .shot:nth-child(2){background:#f4f0e6;color:#123b2e}
+  .shot:nth-child(3){background:#142b23;color:#fffbed}
+  .shot figcaption{padding:28px 24px 22px;min-height:190px}
+  .shot h2{font-size:clamp(25px,2.8vw,36px);line-height:1.08;letter-spacing:-.035em;margin:0 0 12px}
+  .shot p{font-size:15px;line-height:1.5;margin:0;opacity:.88}
+  .shot-screen{margin:0 18px 18px;border:5px solid #262b29;border-radius:28px;overflow:hidden;background:#000}
+  .shot-screen img{display:block;width:100%;height:auto}
+  @media(max-width:760px){
+    .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:18px}
+    .shot{flex:0 0 85%;max-width:360px;scroll-snap-align:center}
+    .shot figcaption{min-height:174px;padding:24px 22px 18px}
+    .shot h2{font-size:32px}
+  }
 
   /* sections */
   section{padding:64px 0}
@@ -252,7 +265,7 @@
     display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
   footer a{color:var(--muted)}
   footer nav{padding:0;gap:18px;display:flex;flex-wrap:wrap}
-  @media(max-width:640px){ .shots img{height:440px} }
+
 </style>
 </head>
 <body>
@@ -279,13 +292,19 @@
 </header>
 
 <div class="wrap">
-  <div class="shots">
-    <img src="shots/1-home.png" alt="Paypr home screen showing who you owe and weekly hours" loading="lazy">
-    <img src="shots/2-log-time.png" alt="Logging a nanny's hours worked in Paypr" loading="lazy">
-    <img src="shots/3-summary.png" alt="Weekly and monthly spending summary in Paypr" loading="lazy">
-    <img src="shots/6-report.png" alt="Exported Paypr payment report showing totals, paid and still-owed by person" loading="lazy">
-    <img src="shots/4-settle-up.png" alt="Settle up and mark a payment as paid" loading="lazy">
-    <img src="shots/5-history.png" alt="Full payment and hours history in Paypr" loading="lazy">
+  <div class="shots" role="region" aria-label="Paypr app screenshots" tabindex="0">
+    <figure class="shot">
+      <figcaption><h2>Know exactly<br>what’s owed.</h2><p>Hours, payments and balances.<br>One clear view.</p></figcaption>
+      <div class="shot-screen"><img src="shots/home-authentic.png" alt="Paypr showing Sofia’s $462.50 unpaid balance, hourly rate and logged hours" width="1320" height="2868" loading="lazy" decoding="async"></div>
+    </figure>
+    <figure class="shot">
+      <figcaption><h2>Log hours.<br>Skip the math.</h2><p>Your hourly rate does the rest.<br>7 hours × $25 = $175.</p></figcaption>
+      <div class="shot-screen"><img src="shots/log-authentic.png" alt="Paypr time entry from 8 AM to 3 PM calculating seven hours at $25 per hour as $175" width="1320" height="2868" loading="lazy" decoding="async"></div>
+    </figure>
+    <figure class="shot">
+      <figcaption><h2>Paid some?<br>Track the rest.</h2><p>Record a full or partial payment.<br>Keep your balance clear.</p></figcaption>
+      <div class="shot-screen"><img src="shots/payment-authentic.png" alt="Paypr Settle Up screen with full balance and partial payment options and a Mark as paid button" width="1320" height="2868" loading="lazy" decoding="async"></div>
+    </figure>
   </div>
 </div>
 
