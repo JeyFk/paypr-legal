@@ -48,6 +48,15 @@ FEATURED = [
     "columbus-oh",
 ]
 
+# DataFast analytics — kept identical on every page in docs/ so pageviews from
+# the generated city pages land in the same site as the hand-written ones.
+ANALYTICS = """<script
+  defer
+  data-website-id="dfid_hJ2Kroo4GcBHH6S3fdlZU"
+  data-domain="usepaypr.com"
+  src="https://datafa.st/js/script.js">
+</script>"""
+
 # Shared CSS, lifted verbatim from babysitter-hourly-rates.html so every page
 # is visually identical to the rest of the site.
 CSS = """<style>
@@ -141,6 +150,7 @@ def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
 </script>
 
 {CSS}
+{ANALYTICS}
 </head>
 <body>
 <div class="bg-glow"></div>
