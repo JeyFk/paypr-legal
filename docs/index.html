@@ -239,6 +239,43 @@
   .pill{background:var(--card);border:1px solid var(--stroke);border-radius:999px;
     padding:9px 16px;font-size:15px;color:var(--ink)}
 
+  /* quotes — light testimonial-style cards on the dark page.
+     Live cards carry title + body only; stars and the avatar/name row are
+     styled here but used ONLY by the real-testimonial block (commented out
+     below the section), never by the scenario cards. */
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:8px}
+  .quote{background:#fff;border-radius:20px;padding:30px 28px 30px;
+    display:flex;flex-direction:column;
+    box-shadow:0 24px 50px -24px rgba(0,0,0,.75),0 2px 6px rgba(0,0,0,.30);
+    transition:transform .2s,box-shadow .2s}
+  .quote:hover{transform:translateY(-3px);
+    box-shadow:0 30px 60px -24px rgba(0,0,0,.85),0 2px 8px rgba(0,0,0,.35)}
+  .quote-title{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-size:25px;line-height:1.18;font-weight:700;letter-spacing:-.01em;
+    color:#10131A;margin-bottom:14px}
+  .quote p{color:#4B5563;font-size:15px;line-height:1.62}
+  .quote p + p{margin-top:10px}
+
+  /* rating badge — REAL figure from the App Store. Re-sync when it moves:
+     curl -s "https://itunes.apple.com/lookup?id=6778970494&country=pl" | grep -o '"userRatingCount":[0-9]*'
+     (ratings currently sit on the PL and AE storefronts; US shows 0) */
+  .rating-badge{display:inline-flex;align-items:center;gap:11px;margin:-18px 0 30px;
+    background:rgba(245,166,35,.10);border:1px solid rgba(245,166,35,.32);
+    border-radius:999px;padding:9px 18px}
+  .rating-stars{color:#F5A623;font-size:16px;letter-spacing:2px;line-height:1}
+  .rating-text{font-size:14px;color:var(--ink);line-height:1}
+  .rating-text strong{font-weight:700}
+  .rating-text a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+
+  /* star row + attribution — real testimonials only */
+  .quote-stars{color:#F5A623;font-size:17px;letter-spacing:3px;line-height:1;margin-bottom:16px}
+  .quote-attr{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:22px}
+  .quote-avatar{width:42px;height:42px;border-radius:50%;flex:0 0 auto;object-fit:cover;
+    background:#E8EDF5;color:#3A6FB0;border:0;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px}
+  .quote-who{font-size:14px;font-weight:700;color:#10131A;line-height:1.4}
+  .quote-who span{display:block;font-weight:400;color:#6B7280}
+
   /* pricing */
   .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:760px;margin:0 auto}
   .price{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:28px;text-align:center}
@@ -393,6 +430,133 @@
   </div>
   <p style="margin-top:22px;color:var(--muted);font-size:15px">One app, two views — each side keeps its own records, and switching never mixes them. <a href="contractor-hours-tracker.html">Learn more about contractor view →</a></p>
 </section>
+
+<!-- ============================================================= -->
+<!-- WHY PEOPLE USE PAYPR                                           -->
+<!-- Scenario cards, NOT testimonials: no names, faces, stars or    -->
+<!-- counts. Nothing here is attributed to a customer. When real,   -->
+<!-- permissioned App Store quotes exist, swap this for the block   -->
+<!-- commented out below — see "Activating testimonials" in         -->
+<!-- DEPLOY.md and the guardrail in paypr/SEO_PLAN.md.              -->
+<!-- ============================================================= -->
+<section class="wrap" id="why">
+  <h2>Why people use Paypr</h2>
+  <p class="lead">Three situations that turn payday into a negotiation from memory — and what Paypr does about each.</p>
+  <div class="rating-badge" role="img" aria-label="Rated 5 out of 5 from 3 App Store ratings">
+    <span class="rating-stars" aria-hidden="true">★★★★★</span>
+    <span class="rating-text"><strong>5.0</strong> from 3 ratings on the <a href="https://apps.apple.com/app/paypr/id6778970494">App Store</a></span>
+  </div>
+  <div class="quotes">
+
+    <div class="quote">
+      <h3 class="quote-title">The hours drift.</h3>
+      <p>She stays late on Tuesdays, you get home early on Friday, and nobody writes any of it down. By payday you are both reconstructing the week from memory — and one of you is guessing low.</p>
+    </div>
+
+    <div class="quote">
+      <h3 class="quote-title">It is never just one person.</h3>
+      <p>A sitter twice a month, a tutor on Thursdays, a cleaner every other week — three different rates, three different rhythms, and one running total you are holding in your head.</p>
+    </div>
+
+    <div class="quote">
+      <h3 class="quote-title">Sometimes you are the one being paid.</h3>
+      <p>Clock in when you start, stop when you finish, and send a client a clean statement of the hours they have not paid for yet. No spreadsheet, no invoice template, no chasing.</p>
+    </div>
+
+  </div>
+  <p style="margin-top:22px;color:var(--muted);font-size:15px">Paypr keeps the record so the conversation is about the work, not the arithmetic. <a href="#how">See how it works →</a></p>
+</section>
+
+<!-- ============================================================= -->
+<!-- TESTIMONIALS — INERT. DO NOT PUBLISH UNTIL FILLED.             -->
+<!-- ============================================================= -->
+<!-- ACTIVATION CHECKLIST (full version in DEPLOY.md):              -->
+<!--   1. Collect >=3 REAL reviews from the App Store product page  -->
+<!--      (write-review deep link:                                  -->
+<!--       https://apps.apple.com/app/paypr/id6778970494?action=write-review) -->
+<!--   2. Ask each reviewer for permission before quoting them by   -->
+<!--      name. Quote verbatim; you may trim with an ellipsis, but  -->
+<!--      never reword, never invent, never composite two people.   -->
+<!--   3. Replace every [BRACKETED] placeholder below with the real -->
+<!--      quote, the reviewer's real first name, and their real     -->
+<!--      city. Star rows are pre-filled at 5 — drop a ★ and fix   -->
+<!--      the aria-label for any reviewer who left fewer.            -->
+<!--   4. Delete this comment wrapper (this line and the closing    -->
+<!--      marker at the end of the block) to publish.               -->
+<!--   5. Delete the "Why people use Paypr" section above, or keep  -->
+<!--      both — they are independent.                              -->
+<!--   6. aggregateRating on the SoftwareApplication block stays    -->
+<!--      LOCKED until the App Store shows real public ratings, and -->
+<!--      must then mirror the store's real count and average.      -->
+<!--      See paypr/SEO_PLAN.md:172 — "real only, never fabricate". -->
+<!--                                                                -->
+<!-- <section class="wrap" id="testimonials">                       -->
+<!--   <h2>What families say</h2>                                   -->
+<!--   <p class="lead">Reviews left on the App Store, quoted with permission.</p> -->
+<!--   <div class="quotes">                                         -->
+<!--                                                                -->
+<!--     <div class="quote">                                        -->
+<!--       <h3 class="quote-title">[REAL REVIEW TITLE]</h3>         -->
+<!--       <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>    -->
+<!--       <p>[REAL QUOTE — verbatim from the App Store review]</p> -->
+<!--       <div class="quote-attr">                                 -->
+<!--         <div class="quote-avatar">[X]</div>                    -->
+<!--         <div class="quote-who">[First name]<span>[City, ST]</span></div> -->
+<!--       </div>                                                   -->
+<!--     </div>                                                     -->
+<!--                                                                -->
+<!--     <div class="quote">                                        -->
+<!--       <h3 class="quote-title">[REAL REVIEW TITLE]</h3>         -->
+<!--       <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>    -->
+<!--       <p>[REAL QUOTE — verbatim from the App Store review]</p> -->
+<!--       <div class="quote-attr">                                 -->
+<!--         <div class="quote-avatar">[X]</div>                    -->
+<!--         <div class="quote-who">[First name]<span>[City, ST]</span></div> -->
+<!--       </div>                                                   -->
+<!--     </div>                                                     -->
+<!--                                                                -->
+<!--     <div class="quote">                                        -->
+<!--       <h3 class="quote-title">[REAL REVIEW TITLE]</h3>         -->
+<!--       <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>    -->
+<!--       <p>[REAL QUOTE — verbatim from the App Store review]</p> -->
+<!--       <div class="quote-attr">                                 -->
+<!--         <div class="quote-avatar">[X]</div>                    -->
+<!--         <div class="quote-who">[First name]<span>[City, ST]</span></div> -->
+<!--       </div>                                                   -->
+<!--     </div>                                                     -->
+<!--                                                                -->
+<!--   </div>                                                       -->
+<!-- </section>                                                     -->
+<!--                                                                -->
+<!-- Paired JSON-LD. Google ignores self-hosted Review markup for   -->
+<!-- star rich results (SEO_PLAN.md:174), so this is for clarity of -->
+<!-- provenance only, not a ranking play. Publish it only alongside -->
+<!-- the real quotes above, with datePublished set to the real      -->
+<!-- review dates.                                                  -->
+<!--                                                                -->
+<!-- <script type="application/ld+json">                            -->
+<!-- {                                                              -->
+<!--   "@context": "https://schema.org",                            -->
+<!--   "@type": "SoftwareApplication",                              -->
+<!--   "name": "Paypr: Hourly Pay Tracker",                         -->
+<!--   "url": "https://usepaypr.com/",                              -->
+<!--   "review": [                                                  -->
+<!--     {                                                          -->
+<!--       "@type": "Review",                                       -->
+<!--       "name": "[REAL REVIEW TITLE]",                           -->
+<!--       "reviewBody": "[REAL QUOTE]",                            -->
+<!--       "datePublished": "[YYYY-MM-DD]",                         -->
+<!--       "author": { "@type": "Person", "name": "[First name]" }, -->
+<!--       "reviewRating": {                                        -->
+<!--         "@type": "Rating", "ratingValue": "[N]",               -->
+<!--         "bestRating": "5", "worstRating": "1"                  -->
+<!--       },                                                       -->
+<!--       "publisher": { "@type": "Organization", "name": "Apple App Store" } -->
+<!--     }                                                          -->
+<!--   ]                                                            -->
+<!-- }                                                              -->
+<!-- </script>                                                      -->
+<!-- ============== END INERT TESTIMONIAL BLOCK =================== -->
 
 <section class="wrap">
   <h2>Simple pricing</h2>

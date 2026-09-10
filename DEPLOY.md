@@ -99,3 +99,41 @@ Content is built. Once it's live and indexed, the growth work is **off-page**: s
 calculator to tool/directory roundups, answer real questions on Reddit (r/Nanny, r/Parenting)
 and Facebook nanny-employer groups linking the relevant guide, and launch on Product Hunt.
 Each earns backlinks that push the whole site up. Ask me to draft those when you're ready.
+
+---
+
+## Activating testimonials
+
+`docs/index.html` ships a **"Why people use Paypr"** section (id `#why`) sitting just above
+pricing. It is deliberately **not** testimonials: three scenario cards in the reader's own voice,
+with no names, faces, star ratings or user counts. Nothing in it is attributed to a customer, so
+it is safe to run with zero reviews on the storefront.
+
+Directly beneath it, inside one HTML comment, is the **real** testimonial block — markup, styling
+hooks and `Review` JSON-LD, every quote a `[BRACKETED]` placeholder. It renders nothing until you
+delete the comment wrapper.
+
+**Do not fill it with invented quotes.** Fabricated consumer testimonials are actionable under the
+FTC's rule on fake reviews (16 CFR Part 465), and it contradicts the standing guardrail in
+`paypr/SEO_PLAN.md:172` — *"only with real, permissioned quotes — never fabricated."*
+
+To activate, in order:
+
+1. **Accumulate real App Store reviews.** As of 2026-07-14 the US storefront showed **0 public
+   ratings** (`paypr/ACQUISITION.md:82`). The in-app prompt already works (`ReviewManager`); the
+   bottleneck is installs. Optional squeeze: point the Settings "Rate" button at the write-review
+   deep link — `https://apps.apple.com/app/paypr/id6778970494?action=write-review` — which opens
+   the composer directly and yields *written* reviews rather than a bare star tap.
+2. **Get permission** before quoting anyone by name, even publicly. A reply to their review asking
+   to feature it is enough; keep the reply as your record.
+3. **Quote verbatim.** Trimming with an ellipsis is fine. Rewording, fixing their grammar,
+   compositing two reviewers into one, or upgrading a 4-star to 5 is not.
+4. **Fill every placeholder** — quote, real first name, real city, and a star count matching what
+   they actually left. Set `datePublished` in the JSON-LD to the real review date.
+5. **Delete the comment wrapper** (the opening marker and the `END INERT TESTIMONIAL BLOCK` line).
+   Keep or delete `#why` — the two sections are independent and read fine together.
+6. **`aggregateRating` stays locked** until the App Store shows real public ratings, and must then
+   mirror the store's real count and average. It lives on the `SoftwareApplication` block in the
+   `<head>`, not in the testimonial block. This is the one rating Google *will* treat as
+   third-party and eligible for a star rich result — self-hosted `Review` markup is ignored for
+   that purpose (`paypr/SEO_PLAN.md:174`), so the JSON-LD in the block is provenance, not ranking.
