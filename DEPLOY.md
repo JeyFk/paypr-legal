@@ -137,3 +137,83 @@ To activate, in order:
    `<head>`, not in the testimonial block. This is the one rating Google *will* treat as
    third-party and eligible for a star rich result — self-hosted `Review` markup is ignored for
    that purpose (`paypr/SEO_PLAN.md:174`), so the JSON-LD in the block is provenance, not ranking.
+
+---
+
+## Bot traffic tracking (DataFast AI crawl)
+
+Two separate DataFast integrations run on this site. They do not overlap:
+
+| | What it sees | Where it lives |
+|---|---|---|
+| Browser script | Humans. Pageviews, referrers, conversions. | `<head>` of every page in `docs/` |
+| `@datafast/ai-crawl` | Bots. ClaudeBot, GPTBot, ChatGPT-User, PerplexityBot, Googlebot… | `functions/_middleware.ts` |
+
+AI crawlers request raw HTML and never execute JavaScript, so the browser script cannot see them —
+that is the whole reason the second integration exists. It is **server-side**, which is why this
+site moved off GitHub Pages: Pages serves static files and runs no code, so `@datafast/ai-crawl`
+could not run there at all.
+
+### Hosting: Cloudflare Pages
+
+Build settings for the Pages project (nothing to build — the site is static HTML):
+
+| Setting | Value |
+|---|---|
+| Production branch | `master` |
+| Build command | *(empty)* |
+| Build output directory | `docs` |
+| Root directory | *(repo root)* |
+
+Cloudflare installs `package.json` dependencies automatically and compiles `functions/_middleware.ts`,
+so `git push origin master` still deploys, exactly like before.
+
+`docs/_routes.json` controls which requests invoke the Function. Images are excluded so Cloudflare
+does not bill a Function invocation for every PNG. **Do not exclude `/robots.txt`, `/llms.txt` or
+`/sitemap.xml`** — crawlers usually fetch those first, and seeing those hits is how you know bots are
+finding the site's AI/SEO instructions at all.
+
+### One-time setup (manual, in the Cloudflare dashboard)
+
+1. **Pages → Create → Connect to Git** → pick `JeyFk/paypr-legal`, apply the build settings above.
+2. Let the first deploy finish, then check the `*.pages.dev` URL it hands you.
+3. **Move DNS to Cloudflare**: add `usepaypr.com` as a zone, then change the nameservers at the
+   registrar. This is the cutover — until it happens, the live site is still GitHub Pages.
+4. **Pages → Custom domains** → add `usepaypr.com` and `www.usepaypr.com`.
+5. Confirm the switch: `curl -sI https://usepaypr.com/ | grep -i server` should stop saying
+   `GitHub.com`.
+
+The old GitHub Pages deployment can stay enabled as a fallback during the move; `docs/CNAME` is
+kept for that reason and is harmless on Cloudflare.
+
+### Verifying it works
+
+Bot traffic only appears when a **real** crawler hits the site, so an empty card right after
+deploying is normal, not a failure. To force a check without waiting:
+
+```bash
+curl -sI https://usepaypr.com/nanny-tax-calculator.html \
+  -A "Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)"
+```
+
+Then open the **Bot traffic** card in the DataFast dashboard. Note it defaults to showing
+IP-verified crawlers only — a spoofed user agent from your laptop will fail IP verification, so
+turn that filter off to see the test hit.
+
+Watch for crawlers repeatedly requesting paths that **404**. That is a content signal: bots expect a
+page there. Those show up in the same card.
+
+### Optional: request authentication
+
+Off by default, and fine to leave off. To enable: create a `dfbot_…` token in the Bot traffic card
+settings, add it as an **encrypted** environment variable named `DATAFAST_BOT_TOKEN` on the Pages
+project, deploy, *then* turn on "Reject unauthenticated requests" in that order. The middleware
+already reads the variable. Never commit the token — it does not belong in this repo.
+
+### Cost
+
+100,000 accepted bot requests per account per billing cycle, then $9/month per extra 1M. Allowance
+counting starts **15 September 2026**. Hitting the cap pauses bot ingestion only; normal web
+analytics keeps working. To cut usage, disable whole companies or individual agents under Crawler
+ingestion in the Bot traffic card — requests from disabled agents are dropped before storage and do
+not count.

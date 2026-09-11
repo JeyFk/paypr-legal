@@ -1,0 +1,9 @@
+{
+  "name": "paypr-legal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "usepaypr.com. Static site in docs/ with no build step; Node exists only for the Cloudflare Pages Function in functions/.",
+  "dependencies": {
+    "@datafast/ai-crawl": "^1.0.9"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/icons/*",
+    "/shots/*",
+    "/data/*",
+    "/CNAME",
+    "/favicon.ico",
+    "/*.png",
+    "/*.svg",
+    "/*.ico",
+    "/*.css",
+    "/*.js",
+    "/*.woff2"
+  ]
+}
