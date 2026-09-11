@@ -168,6 +168,22 @@ Build settings for the Pages project (nothing to build — the site is static HT
 Cloudflare installs `package.json` dependencies automatically and compiles `functions/_middleware.ts`,
 so `git push origin master` still deploys, exactly like before.
 
+### URLs are extensionless — do not reintroduce `.html`
+
+Unlike GitHub Pages, Cloudflare Pages **307-redirects `/foo.html` to `/foo`**. There is no setting to
+turn this off, so the site's own URLs must match what Pages serves.
+
+Files on disk keep their `.html` names (Pages resolves `/foo` to `foo.html`), but every *reference*
+is extensionless: `rel="canonical"`, `og:url`, JSON-LD `url`/`@id`/`mainEntityOfPage`, `sitemap.xml`,
+`llms.txt` and all internal `href`s. The homepage is linked as `./`, not `index.html`.
+
+This matters because a canonical pointing at a redirecting URL is discarded — Google then picks its
+own canonical, which breaks the self-referencing canonical on every page at once. `tools/gen_pages.py`
+emits extensionless links for the same reason; keep it that way if you edit the templates.
+
+The one exception is `docs/googlecc7ffb9970a3b81b.html`, the Search Console verification file, which
+must keep its extension.
+
 `docs/_routes.json` controls which requests invoke the Function. Images are excluded so Cloudflare
 does not bill a Function invocation for every PNG. **Do not exclude `/robots.txt`, `/llms.txt` or
 `/sitemap.xml`** — crawlers usually fetch those first, and seeing those hits is how you know bots are
@@ -192,7 +208,7 @@ Bot traffic only appears when a **real** crawler hits the site, so an empty card
 deploying is normal, not a failure. To force a check without waiting:
 
 ```bash
-curl -sI https://usepaypr.com/nanny-tax-calculator.html \
+curl -sI https://usepaypr.com/nanny-tax-calculator \
   -A "Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)"
 ```
 

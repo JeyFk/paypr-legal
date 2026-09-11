@@ -99,13 +99,13 @@ CSS = """<style>
 </style>"""
 
 NAV = f"""<nav class="wrap">
-  <a class="brand" href="index.html"><img src="icon.png" alt="Paypr icon"> Paypr</a>
+  <a class="brand" href="./"><img src="icon.png" alt="Paypr icon"> Paypr</a>
   <a class="btn" href="{APP}">Get the app</a>
 </nav>"""
 
 FOOTER = """<footer class="wrap">
   <div>© 2026 QAtion · Paypr</div>
-  <div><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+  <div><a href="./">Home</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a></div>
 </footer>
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->"""
 
@@ -161,7 +161,7 @@ def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
 def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
     name = short_name(v)
     fname = f"babysitter-rates-{short_slug(v)}.html"
-    canon = f"{BASE}/{fname}"
+    canon = f"{BASE}/{fname.removesuffix('.html')}"
     year = meta["reference_year"]
     h = v["hourly"]
     title = f"Babysitter & Childcare Rates in {name} ({year}) | Paypr"
@@ -181,7 +181,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
     }
 
     body = f"""<article class="article">
-  <div class="crumb"><a href="index.html">Paypr</a> · <a href="babysitter-rates-by-city.html">Rates by city</a> · {name}</div>
+  <div class="crumb"><a href="./">Paypr</a> · <a href="babysitter-rates-by-city">Rates by city</a> · {name}</div>
   <h1>Babysitter &amp; childcare rates in {name}</h1>
   <p class="meta">Updated {TODAY} · BLS {year} data</p>
 
@@ -202,7 +202,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
     <tr><td>Average (mean)</td><td>{usd(h['mean'])}</td></tr>
   </table>
 
-  <div class="tip"><strong>What these figures measure:</strong> BLS OEWS covers wage and salary jobs in surveyed establishments and excludes private household workers. This is childcare-industry wage context, not a measured nanny or private babysitter rate, a minimum wage, or a price recommendation. See the <a href="https://www.bls.gov/oes/oes_ques.htm">BLS survey coverage</a> and <a href="babysitter-hourly-rates.html">babysitting booking-rate guide</a>.</div>
+  <div class="tip"><strong>What these figures measure:</strong> BLS OEWS covers wage and salary jobs in surveyed establishments and excludes private household workers. This is childcare-industry wage context, not a measured nanny or private babysitter rate, a minimum wage, or a price recommendation. See the <a href="https://www.bls.gov/oes/oes_ques.htm">BLS survey coverage</a> and <a href="babysitter-hourly-rates">babysitting booking-rate guide</a>.</div>
 
   <h2>What raises the rate in {name}</h2>
   <ul>
@@ -213,7 +213,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
   </ul>
 
   <div class="tip">Know the hours but not the total? The free
-  <a href="nanny-pay-calculator.html">pay calculator</a> turns any rate into a
+  <a href="nanny-pay-calculator">pay calculator</a> turns any rate into a
   weekly, monthly and yearly figure.</div>
 
   <div class="cta">
@@ -229,10 +229,10 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
   Local pay varies by neighborhood, experience and demand. General information only.</p>
 
   <p style="margin-top:24px"><strong>Related:</strong><br>
-  <a href="babysitter-rates-by-city.html">Find another city</a> ·
-  <a href="babysitter-hourly-rates.html">National babysitter rates</a> ·
-  <a href="how-much-to-pay-a-nanny.html">How much to pay a nanny</a> ·
-  <a href="nanny-pay-calculator.html">Pay calculator</a></p>
+  <a href="babysitter-rates-by-city">Find another city</a> ·
+  <a href="babysitter-hourly-rates">National babysitter rates</a> ·
+  <a href="how-much-to-pay-a-nanny">How much to pay a nanny</a> ·
+  <a href="nanny-pay-calculator">Pay calculator</a></p>
 </article>
 
 {FOOTER}
@@ -244,7 +244,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
 
 def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, str]:
     fname = "babysitter-rates-by-city.html"
-    canon = f"{BASE}/{fname}"
+    canon = f"{BASE}/{fname.removesuffix('.html')}"
     year = meta["reference_year"]
     title = f"Babysitter & Childcare Rates by City ({year}) — Look Up Any US Metro | Paypr"
     desc = (
@@ -270,11 +270,11 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
     href_map = {s: featured_files[s] for s in FEATURED if s in metros}
 
     body = f"""<article class="article">
-  <div class="crumb"><a href="index.html">Paypr</a> · Rates by city</div>
+  <div class="crumb"><a href="./">Paypr</a> · Rates by city</div>
   <h1>Babysitter &amp; childcare rates by city</h1>
   <p class="meta">Updated {TODAY} · {meta['metro_count']} US metros · BLS {year} data</p>
 
-  <p>Search by metro name, state or BLS area code for childcare-worker wages. The table shows the median and middle 50% of wages in surveyed jobs. BLS excludes private household workers, so these are not nanny or babysitter booking prices. For those, see the <a href="babysitter-hourly-rates.html">babysitter rates guide</a>. Featured cities explain the distinction:</p>
+  <p>Search by metro name, state or BLS area code for childcare-worker wages. The table shows the median and middle 50% of wages in surveyed jobs. BLS excludes private household workers, so these are not nanny or babysitter booking prices. For those, see the <a href="babysitter-hourly-rates">babysitter rates guide</a>. Featured cities explain the distinction:</p>
 
   <table class="res">
     <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
@@ -299,9 +299,9 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
   <p class="note"><strong>Method &amp; sources.</strong> BLS OEWS 2024, Childcare Workers (SOC 39-9011). Median is the 50th percentile; the range is the 25th to 75th percentile. Household workers and self-employed workers are excluded. See <a href="https://www.bls.gov/oes/oes_ques.htm">BLS methodology</a>. No private-sitter prices have been inferred from these wages.</p>
 
   <p style="margin-top:24px"><strong>Related:</strong><br>
-  <a href="babysitter-hourly-rates.html">National babysitter rates</a> ·
-  <a href="how-much-to-pay-a-nanny.html">How much to pay a nanny</a> ·
-  <a href="nanny-pay-calculator.html">Pay calculator</a></p>
+  <a href="babysitter-hourly-rates">National babysitter rates</a> ·
+  <a href="how-much-to-pay-a-nanny">How much to pay a nanny</a> ·
+  <a href="nanny-pay-calculator">Pay calculator</a></p>
 </article>
 
 {FOOTER}
@@ -361,7 +361,7 @@ def main() -> None:
     data = json.loads(DATA.read_text())
     metros, meta = data["metros"], data["meta"]
 
-    featured_files = {s: f"babysitter-rates-{short_slug(metros[s])}.html"
+    featured_files = {s: f"babysitter-rates-{short_slug(metros[s])}"
                       for s in FEATURED if s in metros}
     missing = [s for s in FEATURED if s not in metros]
     if missing:

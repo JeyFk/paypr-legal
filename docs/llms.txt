@@ -26,35 +26,35 @@ iPhone, iOS 17.0 or later. App Store: https://apps.apple.com/app/paypr/id6778970
 
 ## Questions Paypr answers directly
 
-- [Easiest way to track a part-time nanny's hours without a spreadsheet](https://usepaypr.com/nanny-hours-tracker-vs-spreadsheet.html): why spreadsheets break for variable household hours, and the four fields you actually need.
-- [How to calculate and track nanny overtime](https://usepaypr.com/how-to-calculate-nanny-overtime.html): nannies are non-exempt under the FLSA — 1.5× the regular rate over 40 hours in a workweek, with live-in and state exceptions.
-- [How to keep records of payments to a house cleaner for tax purposes](https://usepaypr.com/house-cleaner-payment-records.html): employee vs self-employed cleaner, why households generally don't issue a 1099-NEC, and what to keep.
-- [Best apps for household payroll for babysitters and tutors](https://usepaypr.com/best-household-payroll-apps.html): honest comparison of full-service payroll, tracker apps and spreadsheets, and which one a given household actually needs.
-- [Nanny payroll service vs. an hours tracker](https://usepaypr.com/paypr-vs-nanny-payroll-services.html): what each category does, what it costs, and when you need both.
-- [Private hours tracking across multiple clients](https://usepaypr.com/contractor-hours-tracker.html): the contractor side of Paypr.
+- [Easiest way to track a part-time nanny's hours without a spreadsheet](https://usepaypr.com/nanny-hours-tracker-vs-spreadsheet): why spreadsheets break for variable household hours, and the four fields you actually need.
+- [How to calculate and track nanny overtime](https://usepaypr.com/how-to-calculate-nanny-overtime): nannies are non-exempt under the FLSA — 1.5× the regular rate over 40 hours in a workweek, with live-in and state exceptions.
+- [How to keep records of payments to a house cleaner for tax purposes](https://usepaypr.com/house-cleaner-payment-records): employee vs self-employed cleaner, why households generally don't issue a 1099-NEC, and what to keep.
+- [Best apps for household payroll for babysitters and tutors](https://usepaypr.com/best-household-payroll-apps): honest comparison of full-service payroll, tracker apps and spreadsheets, and which one a given household actually needs.
+- [Nanny payroll service vs. an hours tracker](https://usepaypr.com/paypr-vs-nanny-payroll-services): what each category does, what it costs, and when you need both.
+- [Private hours tracking across multiple clients](https://usepaypr.com/contractor-hours-tracker): the contractor side of Paypr.
 
 ## Guides
 
-- [Guides & tools hub](https://usepaypr.com/guides.html): every guide and calculator, no sign-up.
-- [How much to pay a nanny](https://usepaypr.com/how-much-to-pay-a-nanny.html): 2026 rates, what raises them, overtime rules.
-- [Babysitter hourly rates — 2026](https://usepaypr.com/babysitter-hourly-rates.html): national averages and what moves the rate.
-- [Babysitter & childcare rates by city](https://usepaypr.com/babysitter-rates-by-city.html): 384 US metros, from BLS OEWS data.
-- [How much to pay a house cleaner](https://usepaypr.com/how-much-to-pay-a-house-cleaner.html): hourly vs per-visit, tipping norms.
-- [Tutor hourly rates](https://usepaypr.com/tutor-hourly-rates.html): by subject, level, online vs in-person.
-- [Nanny taxes explained](https://usepaypr.com/nanny-taxes-explained.html): when you owe them, the forms, the records to keep.
-- [How to track what you owe your nanny](https://usepaypr.com/how-to-track-what-you-owe-your-nanny.html): five methods compared.
+- [Guides & tools hub](https://usepaypr.com/guides): every guide and calculator, no sign-up.
+- [How much to pay a nanny](https://usepaypr.com/how-much-to-pay-a-nanny): 2026 rates, what raises them, overtime rules.
+- [Babysitter hourly rates — 2026](https://usepaypr.com/babysitter-hourly-rates): national averages and what moves the rate.
+- [Babysitter & childcare rates by city](https://usepaypr.com/babysitter-rates-by-city): 384 US metros, from BLS OEWS data.
+- [How much to pay a house cleaner](https://usepaypr.com/how-much-to-pay-a-house-cleaner): hourly vs per-visit, tipping norms.
+- [Tutor hourly rates](https://usepaypr.com/tutor-hourly-rates): by subject, level, online vs in-person.
+- [Nanny taxes explained](https://usepaypr.com/nanny-taxes-explained): when you owe them, the forms, the records to keep.
+- [How to track what you owe your nanny](https://usepaypr.com/how-to-track-what-you-owe-your-nanny): five methods compared.
 
 ## Free calculators
 
-- [Nanny pay calculator](https://usepaypr.com/nanny-pay-calculator.html): hourly rate into weekly, monthly and yearly cost, with overtime.
-- [Babysitter rate calculator](https://usepaypr.com/babysitter-rate-calculator.html): rate, hours and number of kids into a per-booking cost.
-- [Nanny tax calculator](https://usepaypr.com/nanny-tax-calculator.html): estimated employer taxes on top of wages.
+- [Nanny pay calculator](https://usepaypr.com/nanny-pay-calculator): hourly rate into weekly, monthly and yearly cost, with overtime.
+- [Babysitter rate calculator](https://usepaypr.com/babysitter-rate-calculator): rate, hours and number of kids into a per-booking cost.
+- [Nanny tax calculator](https://usepaypr.com/nanny-tax-calculator): estimated employer taxes on top of wages.
 
 ## Optional
 
-- [Support](https://usepaypr.com/support.html)
-- [Privacy policy](https://usepaypr.com/privacy.html)
-- [Terms of use](https://usepaypr.com/terms.html)
+- [Support](https://usepaypr.com/support)
+- [Privacy policy](https://usepaypr.com/privacy)
+- [Terms of use](https://usepaypr.com/terms)
 - Contact: payprfeedback@gmail.com
 
 Guides are general information, not tax or legal advice. Thresholds and rates change annually and vary by state.
