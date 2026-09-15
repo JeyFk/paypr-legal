@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
 <!-- ============================================================= -->
 <!-- PRIMARY SEO TAGS                                               -->
@@ -13,7 +12,7 @@
 <title>Paypr: Hourly Pay Tracker for Nanny Hours &amp; Clients</title>
 <meta name="description" content="Track nanny and babysitter hours, payments and what you owe. Track client hours and what you are owed, too. Free iPhone app for one person per view.">
 <link rel="canonical" href="https://usepaypr.com/">
-<meta name="theme-color" content="#0B0D12">
+<meta name="theme-color" content="#faf9f3">
 <meta name="apple-itunes-app" content="app-id=6778970494">
 
 <!-- Open Graph / social sharing -->
@@ -169,540 +168,57 @@
 }
 </script>
 
-<style>
-  :root{
-    --bg:#0B0D12; --card:rgba(255,255,255,.05); --stroke:rgba(255,255,255,.10);
-    --ink:#F5F7FA; --muted:#9AA3B2; --accent:#4A90E2; --accent-2:#5FA8FF;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);color:var(--ink);line-height:1.6;
-    -webkit-font-smoothing:antialiased;overflow-x:hidden;
-  }
-  a{color:var(--accent-2);text-decoration:none}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  .bg-glow{position:fixed;inset:0;z-index:-1;
-    background:radial-gradient(60% 50% at 50% -10%,rgba(74,144,226,.28),transparent 70%),var(--bg);}
 
-  /* nav */
-  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px}
-  .brand img{width:36px;height:36px;border-radius:9px}
-  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;
-    padding:12px 22px;border-radius:12px;transition:.2s;white-space:nowrap}
-  .btn:hover{background:var(--accent-2);transform:translateY(-1px)}
-  .btn.ghost{background:var(--card);border:1px solid var(--stroke);color:var(--ink)}
-
-  /* hero */
-  header{padding:56px 0 40px;text-align:center}
-  h1{font-size:clamp(34px,6vw,58px);line-height:1.08;letter-spacing:-.02em;font-weight:800;
-    max-width:16ch;margin:0 auto 20px}
-  h1 .hl{color:var(--accent-2)}
-  .sub{font-size:clamp(17px,2.4vw,21px);color:var(--muted);max-width:52ch;margin:0 auto 30px}
-  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
-  .fine{color:var(--muted);font-size:14px}
-
-  /* Benefit-led screenshot panels; original app captures remain unmodified. */
-  .shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:28px 0 8px}
-  .shot{margin:0;min-width:0;overflow:hidden;border-radius:24px;background:#07543e;
-    color:#fffbed;border:1px solid rgba(255,255,255,.12)}
-  .shot:nth-child(2){background:#f4f0e6;color:#123b2e}
-  .shot:nth-child(3){background:#142b23;color:#fffbed}
-  .shot figcaption{padding:28px 24px 22px;min-height:190px}
-  .shot h2{font-size:clamp(25px,2.8vw,36px);line-height:1.08;letter-spacing:-.035em;margin:0 0 12px}
-  .shot p{font-size:15px;line-height:1.5;margin:0;opacity:.88}
-  .shot-screen{margin:0 18px 18px;border:5px solid #262b29;border-radius:28px;overflow:hidden;background:#000}
-  .shot-screen img{display:block;width:100%;height:auto}
-  @media(max-width:760px){
-    .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:18px}
-    .shot{flex:0 0 85%;max-width:360px;scroll-snap-align:center}
-    .shot figcaption{min-height:174px;padding:24px 22px 18px}
-    .shot h2{font-size:32px}
-  }
-
-  /* sections */
-  section{padding:64px 0}
-  h2{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.02em;margin-bottom:14px}
-  .lead{color:var(--muted);font-size:18px;max-width:60ch;margin-bottom:36px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-  .card{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:26px}
-  a.card{transition:border-color .2s}
-  a.card:hover{border-color:var(--accent)}
-  .card h3{font-size:19px;margin-bottom:8px}
-  .card p{color:var(--muted);font-size:15px}
-  .ico{width:44px;height:44px;margin-bottom:16px;display:block}
-
-  /* who-for pills */
-  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-  .pill{background:var(--card);border:1px solid var(--stroke);border-radius:999px;
-    padding:9px 16px;font-size:15px;color:var(--ink)}
-
-  /* quotes — light testimonial-style cards on the dark page.
-     Live cards carry title + body only; stars and the avatar/name row are
-     styled here but used ONLY by the real-testimonial block (commented out
-     below the section), never by the scenario cards. */
-  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:8px}
-  .quote{background:#fff;border-radius:20px;padding:30px 28px 30px;
-    display:flex;flex-direction:column;
-    box-shadow:0 24px 50px -24px rgba(0,0,0,.75),0 2px 6px rgba(0,0,0,.30);
-    transition:transform .2s,box-shadow .2s}
-  .quote:hover{transform:translateY(-3px);
-    box-shadow:0 30px 60px -24px rgba(0,0,0,.85),0 2px 8px rgba(0,0,0,.35)}
-  .quote-title{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
-    font-size:25px;line-height:1.18;font-weight:700;letter-spacing:-.01em;
-    color:#10131A;margin-bottom:14px}
-  .quote p{color:#4B5563;font-size:15px;line-height:1.62}
-  .quote p + p{margin-top:10px}
-
-  /* rating badge — REAL figure from the App Store. Re-sync when it moves:
-     curl -s "https://itunes.apple.com/lookup?id=6778970494&country=pl" | grep -o '"userRatingCount":[0-9]*'
-     (ratings currently sit on the PL and AE storefronts; US shows 0) */
-  .rating-badge{display:inline-flex;align-items:center;gap:11px;margin:-18px 0 30px;
-    background:rgba(245,166,35,.10);border:1px solid rgba(245,166,35,.32);
-    border-radius:999px;padding:9px 18px}
-  .rating-stars{color:#F5A623;font-size:16px;letter-spacing:2px;line-height:1}
-  .rating-text{font-size:14px;color:var(--ink);line-height:1}
-  .rating-text strong{font-weight:700}
-  .rating-text a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
-
-  /* star row + attribution — real testimonials only */
-  .quote-stars{color:#F5A623;font-size:17px;letter-spacing:3px;line-height:1;margin-bottom:16px}
-  .quote-attr{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:22px}
-  .quote-avatar{width:42px;height:42px;border-radius:50%;flex:0 0 auto;object-fit:cover;
-    background:#E8EDF5;color:#3A6FB0;border:0;
-    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px}
-  .quote-who{font-size:14px;font-weight:700;color:#10131A;line-height:1.4}
-  .quote-who span{display:block;font-weight:400;color:#6B7280}
-
-  /* pricing */
-  .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:760px;margin:0 auto}
-  .price{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:28px;text-align:center}
-  .price.best{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
-  .price .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;
-    color:var(--accent-2);background:rgba(74,144,226,.14);padding:4px 12px;border-radius:999px;margin-bottom:12px}
-  .price .amt{font-size:34px;font-weight:800;margin:6px 0}
-  .price .per{color:var(--muted);font-size:14px}
-
-  /* faq */
-  details{background:var(--card);border:1px solid var(--stroke);border-radius:14px;
-    padding:18px 22px;margin-bottom:12px;cursor:pointer}
-  details summary{font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center}
-  details summary::-webkit-details-marker{display:none}
-  details summary::after{content:"+";color:var(--accent-2);font-size:22px;font-weight:400}
-  details[open] summary::after{content:"–"}
-  details p{color:var(--muted);margin-top:12px}
-
-  /* final cta */
-  .final{text-align:center;background:linear-gradient(180deg,rgba(74,144,226,.14),transparent);
-    border:1px solid var(--stroke);border-radius:26px;padding:56px 24px;margin:24px 0}
-
-  footer{border-top:1px solid var(--stroke);padding:34px 0;color:var(--muted);font-size:14px;
-    display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
-  footer a{color:var(--muted)}
-  footer nav{padding:0;gap:18px;display:flex;flex-wrap:wrap}
-
-</style>
 <script
   defer
   data-website-id="dfid_hJ2Kroo4GcBHH6S3fdlZU"
   data-domain="usepaypr.com"
   src="https://datafa.st/js/script.js">
 </script>
-</head>
-<body>
-<div class="bg-glow"></div>
-
-<div class="wrap">
-  <nav>
-    <div class="brand"><img src="icon.png" alt="Paypr app icon"> Paypr</div>
-    <div style="display:flex;align-items:center;gap:20px">
-      <a href="guides" style="color:var(--muted);font-weight:600">Guides</a>
-      <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download</a>
-    </div>
-  </nav>
-</div>
-
-<header class="wrap">
-  <h1>Track nanny hours.<br>Know <span class="hl">what you owe.</span></h1>
-  <p class="sub">Paypr is the simple iPhone app for tracking hours and pay for the people who work for you — nanny, babysitter, tutor or house cleaner. Log time in seconds, watch the balance, and settle up on payday.</p>
-  <div class="cta-row">
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
-    <a class="btn ghost" href="#how">See how it works</a>
-  </div>
-  <p class="fine">Free to start · No spreadsheets · Private by design</p>
-</header>
-
-<div class="wrap">
-  <div class="shots" role="region" aria-label="Paypr app screenshots" tabindex="0">
-    <figure class="shot">
-      <figcaption><h2>Know exactly<br>what’s owed.</h2><p>Hours, payments and balances.<br>One clear view.</p></figcaption>
-      <div class="shot-screen"><img src="shots/home-authentic.png" alt="Paypr showing Sofia’s $462.50 unpaid balance, hourly rate and logged hours" width="1320" height="2868" loading="lazy" decoding="async"></div>
-    </figure>
-    <figure class="shot">
-      <figcaption><h2>Log hours.<br>Skip the math.</h2><p>Your hourly rate does the rest.<br>7 hours × $25 = $175.</p></figcaption>
-      <div class="shot-screen"><img src="shots/log-authentic.png" alt="Paypr time entry from 8 AM to 3 PM calculating seven hours at $25 per hour as $175" width="1320" height="2868" loading="lazy" decoding="async"></div>
-    </figure>
-    <figure class="shot">
-      <figcaption><h2>Paid some?<br>Track the rest.</h2><p>Record a full or partial payment.<br>Keep your balance clear.</p></figcaption>
-      <div class="shot-screen"><img src="shots/payment-authentic.png" alt="Paypr Settle Up screen with full balance and partial payment options and a Mark as paid button" width="1320" height="2868" loading="lazy" decoding="async"></div>
-    </figure>
-  </div>
-</div>
-
-<section id="how" class="wrap">
-  <h2>Track hours and pay in three taps</h2>
-  <p class="lead">Built for busy families who employ household help and just want to know, at a glance, who they owe and how much.</p>
-  <div class="grid">
-    <div class="card">
-      <img class="ico" src="icons/timer.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Log hours in seconds</h3>
-      <p>Drag across a day on the timeline, or tap a quick entry. Each person's balance updates instantly at their hourly rate.</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/money.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Know what you owe</h3>
-      <p>A clean running tally of time worked and money owed — so payday is never a guessing game.</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/check.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Settle up &amp; mark paid</h3>
-      <p>Record full or partial payments and watch each balance settle. Keep a tidy, searchable history.</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/chart.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>See the bigger picture</h3>
-      <p>Weekly, monthly and yearly spending summaries with per-person breakdowns (Paypr Pro).</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/document.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Export for tax time</h3>
-      <p>Export clean CSV records of hours and payments — handy for keeping tidy nanny-tax records (Pro).</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/lock.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Private by design</h3>
-      <p>Your records live on your device and your own iCloud. No ads, no data selling — we never see them.</p>
-    </div>
-  </div>
-</section>
-
-<section class="wrap">
-  <h2>For everyone you pay by the hour</h2>
-  <p class="lead">One app for all your household help — set each person's rate once and track them separately.</p>
-  <div class="pills">
-    <span class="pill">Nanny</span>
-    <span class="pill">Babysitter</span>
-    <span class="pill">Sitter</span>
-    <span class="pill">Tutor</span>
-    <span class="pill">House cleaner</span>
-    <span class="pill">Housekeeper</span>
-    <span class="pill">Au pair</span>
-    <span class="pill">Caregiver</span>
-    <span class="pill">Gardener</span>
-    <span class="pill">Any hourly helper</span>
-  </div>
-</section>
-
-<!-- ============================================================= -->
-<!-- CONTRACTOR MODE (new in 1.2) — the other side of the hour      -->
-<!-- ============================================================= -->
-<section class="wrap" id="contractor">
-  <h2><span style="display:inline-block;vertical-align:middle;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--accent-2);background:rgba(74,144,226,.14);padding:5px 12px;border-radius:999px;margin-right:12px">NEW</span>Get paid for your own work</h2>
-  <p class="lead">Paypr now works from both sides of the hour. If you're the one who's paid hourly, flip into contractor view and track the hours you work for each client — completely separate from any household records you keep.</p>
-  <div class="grid">
-    <div class="card">
-      <img class="ico" src="icons/timer.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Clock in as you work</h3>
-      <p>Start the timer when the job starts. Hours land under the right client at your rate — no end-of-week reconstruction.</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/money.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Know what you're owed</h3>
-      <p>A running tally per client of unpaid hours and what they add up to, so you never chase a number from memory.</p>
-    </div>
-    <div class="card">
-      <img class="ico" src="icons/document.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Share a clean statement</h3>
-      <p>Send each client a tidy summary of hours worked and the total unpaid — clear, professional, no spreadsheet.</p>
-    </div>
-  </div>
-  <p style="margin-top:22px;color:var(--muted);font-size:15px">One app, two views — each side keeps its own records, and switching never mixes them. <a href="contractor-hours-tracker">Learn more about contractor view →</a></p>
-</section>
-
-<!-- ============================================================= -->
-<!-- WHY PEOPLE USE PAYPR                                           -->
-<!-- Scenario cards, NOT testimonials: no names, faces, stars or    -->
-<!-- counts. Nothing here is attributed to a customer. When real,   -->
-<!-- permissioned App Store quotes exist, swap this for the block   -->
-<!-- commented out below — see "Activating testimonials" in         -->
-<!-- DEPLOY.md and the guardrail in paypr/SEO_PLAN.md.              -->
-<!-- ============================================================= -->
-<section class="wrap" id="why">
-  <h2>Why people use Paypr</h2>
-  <p class="lead">Three situations that turn payday into a negotiation from memory — and what Paypr does about each.</p>
-  <div class="rating-badge" role="img" aria-label="Rated 5 out of 5 from 3 App Store ratings">
-    <span class="rating-stars" aria-hidden="true">★★★★★</span>
-    <span class="rating-text"><strong>5.0</strong> from 3 ratings on the <a href="https://apps.apple.com/app/paypr/id6778970494">App Store</a></span>
-  </div>
-  <div class="quotes">
-
-    <div class="quote">
-      <h3 class="quote-title">The hours drift.</h3>
-      <p>She stays late on Tuesdays, you get home early on Friday, and nobody writes any of it down. By payday you are both reconstructing the week from memory — and one of you is guessing low.</p>
-    </div>
-
-    <div class="quote">
-      <h3 class="quote-title">It is never just one person.</h3>
-      <p>A sitter twice a month, a tutor on Thursdays, a cleaner every other week — three different rates, three different rhythms, and one running total you are holding in your head.</p>
-    </div>
-
-    <div class="quote">
-      <h3 class="quote-title">Sometimes you are the one being paid.</h3>
-      <p>Clock in when you start, stop when you finish, and send a client a clean statement of the hours they have not paid for yet. No spreadsheet, no invoice template, no chasing.</p>
-    </div>
-
-  </div>
-  <p style="margin-top:22px;color:var(--muted);font-size:15px">Paypr keeps the record so the conversation is about the work, not the arithmetic. <a href="#how">See how it works →</a></p>
-</section>
-
-<!-- ============================================================= -->
-<!-- TESTIMONIALS — INERT. DO NOT PUBLISH UNTIL FILLED.             -->
-<!-- ============================================================= -->
-<!-- ACTIVATION CHECKLIST (full version in DEPLOY.md):              -->
-<!--   1. Collect >=3 REAL reviews from the App Store product page  -->
-<!--      (write-review deep link:                                  -->
-<!--       https://apps.apple.com/app/paypr/id6778970494?action=write-review) -->
-<!--   2. Ask each reviewer for permission before quoting them by   -->
-<!--      name. Quote verbatim; you may trim with an ellipsis, but  -->
-<!--      never reword, never invent, never composite two people.   -->
-<!--   3. Replace every [BRACKETED] placeholder below with the real -->
-<!--      quote, the reviewer's real first name, and their real     -->
-<!--      city. Star rows are pre-filled at 5 — drop a ★ and fix   -->
-<!--      the aria-label for any reviewer who left fewer.            -->
-<!--   4. Delete this comment wrapper (this line and the closing    -->
-<!--      marker at the end of the block) to publish.               -->
-<!--   5. Delete the "Why people use Paypr" section above, or keep  -->
-<!--      both — they are independent.                              -->
-<!--   6. aggregateRating on the SoftwareApplication block stays    -->
-<!--      LOCKED until the App Store shows real public ratings, and -->
-<!--      must then mirror the store's real count and average.      -->
-<!--      See paypr/SEO_PLAN.md:172 — "real only, never fabricate". -->
-<!--                                                                -->
-<!-- <section class="wrap" id="testimonials">                       -->
-<!--   <h2>What families say</h2>                                   -->
-<!--   <p class="lead">Reviews left on the App Store, quoted with permission.</p> -->
-<!--   <div class="quotes">                                         -->
-<!--                                                                -->
-<!--     <div class="quote">                                        -->
-<!--       <h3 class="quote-title">[REAL REVIEW TITLE]</h3>         -->
-<!--       <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>    -->
-<!--       <p>[REAL QUOTE — verbatim from the App Store review]</p> -->
-<!--       <div class="quote-attr">                                 -->
-<!--         <div class="quote-avatar">[X]</div>                    -->
-<!--         <div class="quote-who">[First name]<span>[City, ST]</span></div> -->
-<!--       </div>                                                   -->
-<!--     </div>                                                     -->
-<!--                                                                -->
-<!--     <div class="quote">                                        -->
-<!--       <h3 class="quote-title">[REAL REVIEW TITLE]</h3>         -->
-<!--       <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>    -->
-<!--       <p>[REAL QUOTE — verbatim from the App Store review]</p> -->
-<!--       <div class="quote-attr">                                 -->
-<!--         <div class="quote-avatar">[X]</div>                    -->
-<!--         <div class="quote-who">[First name]<span>[City, ST]</span></div> -->
-<!--       </div>                                                   -->
-<!--     </div>                                                     -->
-<!--                                                                -->
-<!--     <div class="quote">                                        -->
-<!--       <h3 class="quote-title">[REAL REVIEW TITLE]</h3>         -->
-<!--       <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>    -->
-<!--       <p>[REAL QUOTE — verbatim from the App Store review]</p> -->
-<!--       <div class="quote-attr">                                 -->
-<!--         <div class="quote-avatar">[X]</div>                    -->
-<!--         <div class="quote-who">[First name]<span>[City, ST]</span></div> -->
-<!--       </div>                                                   -->
-<!--     </div>                                                     -->
-<!--                                                                -->
-<!--   </div>                                                       -->
-<!-- </section>                                                     -->
-<!--                                                                -->
-<!-- Paired JSON-LD. Google ignores self-hosted Review markup for   -->
-<!-- star rich results (SEO_PLAN.md:174), so this is for clarity of -->
-<!-- provenance only, not a ranking play. Publish it only alongside -->
-<!-- the real quotes above, with datePublished set to the real      -->
-<!-- review dates.                                                  -->
-<!--                                                                -->
-<!-- <script type="application/ld+json">                            -->
-<!-- {                                                              -->
-<!--   "@context": "https://schema.org",                            -->
-<!--   "@type": "SoftwareApplication",                              -->
-<!--   "name": "Paypr: Hourly Pay Tracker",                         -->
-<!--   "url": "https://usepaypr.com/",                              -->
-<!--   "review": [                                                  -->
-<!--     {                                                          -->
-<!--       "@type": "Review",                                       -->
-<!--       "name": "[REAL REVIEW TITLE]",                           -->
-<!--       "reviewBody": "[REAL QUOTE]",                            -->
-<!--       "datePublished": "[YYYY-MM-DD]",                         -->
-<!--       "author": { "@type": "Person", "name": "[First name]" }, -->
-<!--       "reviewRating": {                                        -->
-<!--         "@type": "Rating", "ratingValue": "[N]",               -->
-<!--         "bestRating": "5", "worstRating": "1"                  -->
-<!--       },                                                       -->
-<!--       "publisher": { "@type": "Organization", "name": "Apple App Store" } -->
-<!--     }                                                          -->
-<!--   ]                                                            -->
-<!-- }                                                              -->
-<!-- </script>                                                      -->
-<!-- ============== END INERT TESTIMONIAL BLOCK =================== -->
-
-<section class="wrap">
-  <h2>Simple pricing</h2>
-  <p class="lead">Track one person free, forever. Or start a 7-day free trial of Paypr Pro for unlimited people, summaries and export.</p>
-  <div class="price-grid">
-    <div class="price">
-      <div class="tag">FREE</div>
-      <div class="amt">$0</div>
-      <p class="per">Track 1 person, forever</p>
-    </div>
-    <div class="price">
-      <div class="tag">PRO · MONTHLY</div>
-      <div class="amt">$2.99</div>
-      <p class="per">per month · 7-day free trial</p>
-    </div>
-    <div class="price best">
-      <div class="tag">PRO · LIFETIME</div>
-      <div class="amt">$7.99</div>
-      <p class="per">one-time · best value</p>
-    </div>
-  </div>
-</section>
-
-<section class="wrap">
-  <h2>Questions, answered</h2>
-  <details open>
+<link rel="stylesheet" href="/sage/sage-home.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
+</head><body class="sage-home"><a class="sage-skip" href="#main">Skip to content</a>
+<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
+<nav class="sage-nav" aria-label="Main navigation"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="/guides">Guides</a></nav>
+<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>
+<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header>
+<main id="main"><section class="hero wrap" id="top"><div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> Hours and pay, kept simple</p><h1>Track nanny hours.<br>Know <span>what you owe.</span></h1><p>Paypr is the simple iPhone app for tracking hours and pay for the people who work for you — nanny, babysitter, tutor or house cleaner. Log time in seconds, watch the balance, and settle up on payday.</p><div class="hero-actions"><a class="store" href="https://apps.apple.com/app/paypr/id6778970494"><img src="sage/app-store-badge.svg" width="156" height="52" alt="Download Paypr on the App Store"></a><a class="text-link" href="#how">See how it works <span>↘</span></a></div><p class="fine">Free to start · No spreadsheets · Private by design</p></div><div class="hero-art studio-art"><div class="studio-disc" aria-hidden="true"></div><div class="studio-label"><span>GOOD HELP.<br>HAPPY BALANCES.</span><span class="asterisk">✳</span></div><img class="studio-phone" src="sage/capture-home.webp" width="660" height="1434" alt="Current Paypr home screen showing Sofia’s balance and recent activity" fetchpriority="high"><img class="studio-mascot" src="sage/mascot.webp" width="800" height="960" alt="Paypr’s friendly bird mascot in a moss green jacket"><p class="studio-note">A clear record.<br>A lighter day.</p></div></section><div class="trust-strip wrap"><span>Made for everyday life</span><span>One person free</span><span>Your own private iCloud</span><span>Made for iPhone ↗</span></div><section class="product wrap section" id="how"><div class="section-heading"><div><p class="eyebrow">01 / A simpler routine</p><h2>Track hours and pay in three taps</h2></div><p>Built for busy families who employ household help and just want to know, at a glance, who they owe and how much.</p></div><div class="workflow"><div class="workflow-visual"><img class="" src="sage/02-log-hours.webp" width="744" height="1610" alt="Log seven hours at $25 per hour for $175 in Paypr" loading="lazy" decoding="async"><span class="image-note">Your hourly rate does the rest.</span></div><div class="steps"><article class="step"><span class="step-number">01</span><div><h3>Log hours in seconds</h3><p>Drag across a day on the timeline, or tap a quick entry. Each person&#x27;s balance updates instantly at their hourly rate.</p><div class="caption-copy"><strong>Log hours.<br>Skip the math.</strong><p>Your hourly rate does the rest.<br>7 hours × $25 = $175.</p></div></div></article><article class="step"><span class="step-number">02</span><div><h3>Know what you owe</h3><p>A clean running tally of time worked and money owed — so payday is never a guessing game.</p><div class="caption-copy"><strong>Know exactly<br>what’s owed.</strong><p>Hours, payments and balances.<br>One clear view.</p></div></div></article><article class="step"><span class="step-number">03</span><div><h3>Settle up &amp; mark paid</h3><p>Record full or partial payments and watch each balance settle. Keep a tidy, searchable history.</p><div class="caption-copy"><strong>Paid some?<br>Track the rest.</strong><p>Record a full or partial payment.<br>Keep your balance clear.</p></div></div></article></div></div><div class="essentials"><article><span class="mini-icon">↗</span><h3>See the bigger picture</h3><p>Weekly, monthly and yearly spending summaries with per-person breakdowns (Paypr Pro).</p></article><article><span class="mini-icon">↓</span><h3>Export for tax time</h3><p>Export clean CSV records of hours and payments — handy for keeping tidy nanny-tax records (Pro).</p></article><article><span class="mini-icon">⌑</span><h3>Private by design</h3><p>Your records live on your device and your own iCloud. No ads, no data selling — we never see them.</p></article></div></section><section class="screens-section wrap" aria-labelledby="screens-title"><div class="screens-heading"><div><p class="eyebrow">Meet your new everyday companion</p><h2 id="screens-title">A closer look at Paypr.</h2></div><p>Explore hours, payments and the bigger picture.</p></div><div class="screenshot-rail"><a href="sage/01-know-whats-owed.webp" class="gallery-image"><img class="" src="sage/01-know-whats-owed.webp" width="744" height="1610" alt="Paypr mascot beside the app showing Sofia Reyes’s $462.50 balance" loading="lazy" decoding="async"><span>01 / Balances ↗</span></a><a href="sage/02-log-hours.webp" class="gallery-image"><img class="" src="sage/02-log-hours.webp" width="744" height="1610" alt="Log seven hours at $25 per hour for $175 in Paypr" loading="lazy" decoding="async"><span>02 / Log hours ↗</span></a><a href="sage/03-record-payments.webp" class="gallery-image"><img class="" src="sage/03-record-payments.webp" width="744" height="1610" alt="Record a payment in Paypr and keep the remaining balance clear" loading="lazy" decoding="async"><span>03 / Payments ↗</span></a><a href="sage/04-monthly-summary.webp" class="gallery-image"><img class="" src="sage/04-monthly-summary.webp" width="744" height="1610" alt="Paypr Pro monthly summary of spending, payments and balances" loading="lazy" decoding="async"><span>04 / Pro summaries ↗</span></a><a href="sage/05-good-help.webp" class="gallery-image"><img class="" src="sage/05-good-help.webp" width="744" height="1610" alt="Paypr person history with logged hours and payments" loading="lazy" decoding="async"><span>05 / Your people ↗</span></a></div></section><section class="audience-band"><div class="wrap"><h2>For everyone you pay by the hour</h2><p>One app for all your household help — set each person&#x27;s rate once and track them separately.</p><p class="audience-list"><span>Nanny</span><span>Babysitter</span><span>Sitter</span><span>Tutor</span><span>House cleaner</span><span>Housekeeper</span><span>Au pair</span><span>Caregiver</span><span>Gardener</span><span>Any hourly helper</span></p></div></section><section class="contractor section wrap" id="contractor"><div class="contractor-intro"><p class="eyebrow">02 / Both sides of the hour</p><h2><span>NEW</span>Get paid for your own work</h2><p>Paypr now works from both sides of the hour. If you&#x27;re the one who&#x27;s paid hourly, flip into contractor view and track the hours you work for each client — completely separate from any household records you keep.</p></div><div class="contractor-features"><article><h3>Clock in as you work</h3><p>Start the timer when the job starts. Hours land under the right client at your rate — no end-of-week reconstruction.</p></article><article><h3>Know what you&#x27;re owed</h3><p>A running tally per client of unpaid hours and what they add up to, so you never chase a number from memory.</p></article><article><h3>Share a clean statement</h3><p>Send each client a tidy summary of hours worked and the total unpaid — clear, professional, no spreadsheet.</p></article></div><div class="contractor-note"><p>One app, two views — each side keeps its own records, and switching never mixes them. <a href="/contractor-hours-tracker">Learn more about contractor view →</a></p></div></section><section class="why section wrap" id="why"><div class="section-heading"><div><p class="eyebrow">Made for the way life happens</p><h2>Why people use Paypr</h2></div><p>Three situations that turn payday into a negotiation from memory — and what Paypr does about each.</p></div><div class="scenario-list"><article><span class="scenario-number">01 /</span><h3>The hours drift.</h3><p>She stays late on Tuesdays, you get home early on Friday, and nobody writes any of it down. By payday you are both reconstructing the week from memory — and one of you is guessing low.</p></article><article><span class="scenario-number">02 /</span><h3>It is never just one person.</h3><p>A sitter twice a month, a tutor on Thursdays, a cleaner every other week — three different rates, three different rhythms, and one running total you are holding in your head.</p></article><article><span class="scenario-number">03 /</span><h3>Sometimes you are the one being paid.</h3><p>Clock in when you start, stop when you finish, and send a client a clean statement of the hours they have not paid for yet. No spreadsheet, no invoice template, no chasing.</p></article></div><div class="why-foot"><div role="img" aria-label="Rated 5 out of 5 from 3 App Store ratings">
+    <span aria-hidden="true">★★★★★</span>
+    <span><strong>5.0</strong> from 3 ratings on the <a href="https://apps.apple.com/app/paypr/id6778970494">App Store</a></span>
+  </div><p>Paypr keeps the record so the conversation is about the work, not the arithmetic. <a href="#how">See how it works →</a></p></div></section><section class="pricing-section" id="pricing"><div class="wrap section"><div class="section-heading"><div><p class="eyebrow">03 / Room to grow</p><h2>Simple pricing</h2></div><p>Track one person free, forever. Or start a 7-day free trial of Paypr Pro for unlimited people, summaries and export.</p></div><div class="price-table"><article class="price-option"><h3>FREE</h3><p class="amount">$0</p><p>Track 1 person, forever</p><a class="text-link" href="https://apps.apple.com/app/paypr/id6778970494">Start free ↗</a></article><article class="price-option"><h3>PRO · MONTHLY</h3><p class="amount">$2.99</p><p>per month · 7-day free trial</p><a class="text-link" href="https://apps.apple.com/app/paypr/id6778970494">Try Pro ↗</a></article><article class="price-option"><h3>PRO · LIFETIME</h3><p class="amount">$7.99</p><p>one-time · best value</p><a class="button" href="https://apps.apple.com/app/paypr/id6778970494">Get lifetime ↗</a></article></div><p class="price-footnote">USD · View current pricing and trial eligibility in the app.</p></div></section><section class="faq section wrap" id="faq"><div><p class="eyebrow">04 / Good to know</p><h2>Questions, answered</h2><p>Simple answers.<br>One less thing to wonder about.</p><a class="text-link" href="/support">Visit support ↗</a></div><div class="faq-list"><details open>
     <summary>How do I track what I owe my nanny?</summary>
     <p>Add your nanny once with their hourly rate, then log the hours they work each day by dragging across a timeline or tapping a quick entry. Paypr keeps a running balance of what you owe, so payday is never a guess.</p>
-  </details>
-  <details>
+  </details><details>
     <summary>Is Paypr free?</summary>
     <p>Yes. You can track one person free forever. Paypr Pro unlocks unlimited people, weekly/monthly/yearly summaries and CSV export — start with a 7-day free trial, then $2.99/month or $7.99 once for lifetime.</p>
-  </details>
-  <details>
+  </details><details>
     <summary>Can I use Paypr for a babysitter, tutor or cleaner?</summary>
-    <p>Yes. Paypr works for anyone you pay by the hour — nanny, babysitter, sitter, tutor, house cleaner, housekeeper or any helper. Set each person's rate and track their hours and payments separately.</p>
-  </details>
-  <details>
+    <p>Yes. Paypr works for anyone you pay by the hour — nanny, babysitter, sitter, tutor, house cleaner, housekeeper or any helper. Set each person&#x27;s rate and track their hours and payments separately.</p>
+  </details><details>
     <summary>Is my data private?</summary>
     <p>Yes. Your records stay on your device and sync through your own private iCloud account. No ads, no data selling, and analytics never include names, amounts or balances.</p>
-  </details>
-  <details>
-    <summary>I'm the one paid by the hour — can I use Paypr?</summary>
+  </details><details>
+    <summary>I&#x27;m the one paid by the hour — can I use Paypr?</summary>
     <p>Yes. Paypr has a contractor view for people who are paid hourly: clock in as you work, see what each client owes you, and share a clean statement of unpaid hours. Switch between the two views anytime in Settings — each side keeps its own separate records.</p>
-  </details>
-  <details>
+  </details><details>
     <summary>Does Paypr help at tax time?</summary>
     <p>Paypr Pro exports clean CSV records of hours worked and payments made per person — handy for keeping tidy nanny-tax records.</p>
-  </details>
-  <details>
+  </details><details>
     <summary>How do I calculate and track overtime for a nanny?</summary>
-    <p>A live-out nanny is a non-exempt employee, so every hour over 40 in a single workweek is paid at 1.5&times; their regular rate — counted per workweek, never averaged across two weeks and never swapped for time off. A nanny at $25/hour who works 46 hours is owed (40 &times; $25) + (6 &times; $37.50) = $1,225 gross. Paypr shows weekly totals so you see the 40-hour line before you cross it. <a href="how-to-calculate-nanny-overtime">Full guide, with the two-rate case and state exceptions &rarr;</a></p>
-  </details>
-  <details>
+    <p>A live-out nanny is a non-exempt employee, so every hour over 40 in a single workweek is paid at 1.5× their regular rate — counted per workweek, never averaged across two weeks and never swapped for time off. A nanny at $25/hour who works 46 hours is owed (40 × $25) + (6 × $37.50) = $1,225 gross. Paypr shows weekly totals so you see the 40-hour line before you cross it. <a href="/how-to-calculate-nanny-overtime">Full guide, with the two-rate case and state exceptions →</a></p>
+  </details><details>
     <summary>Is Paypr a payroll service, or do I still need one?</summary>
-    <p>Paypr is a tracker, not payroll: it records hours, rates and payments and keeps the running balance, but it doesn't withhold taxes, file returns, issue W-2s or move money. Tax and filing duties depend on worker classification, wages and federal and state rules. Being below one threshold does not remove every obligation. You can handle required filings yourself or use a payroll provider; Paypr supplies the hours and payment records. <a href="paypr-vs-nanny-payroll-services">Payroll service vs. hours tracker &rarr;</a></p>
-  </details>
-  <details>
+    <p>Paypr is a tracker, not payroll: it records hours, rates and payments and keeps the running balance, but it doesn&#x27;t withhold taxes, file returns, issue W-2s or move money. Tax and filing duties depend on worker classification, wages and federal and state rules. Being below one threshold does not remove every obligation. You can handle required filings yourself or use a payroll provider; Paypr supplies the hours and payment records. <a href="/paypr-vs-nanny-payroll-services">Payroll service vs. hours tracker →</a></p>
+  </details><details>
     <summary>How do I keep records of payments to a house cleaner for tax purposes?</summary>
-    <p>Keep a dated log of each visit with the hours or flat fee, the rate, the amount paid and how you paid it, plus the cleaner's name and address. Record it as it happens rather than reconstructing later, and keep the records at least four years. If the cleaner is self-employed you generally file nothing — households don't normally issue a 1099 for personal services — but the log still protects you if the classification is ever questioned. <a href="house-cleaner-payment-records">What to record, and for how long &rarr;</a></p>
-  </details>
-</section>
-
-<section class="wrap">
-  <h2>Guides &amp; tools</h2><p style="margin:18px 0"><a href="babysitter-rate-calculator">Calculate babysitter pay</a> · <a href="nanny-timesheet-template">Download a free nanny timesheet</a> · <a href="paypr-vs-nannykeeper">Compare Paypr and NannyKeeper</a></p>
-  <p class="lead">Free resources for anyone who employs household help.</p>
-  <div class="grid">
-    <a class="card" href="nanny-pay-calculator" style="color:inherit">
-      <img class="ico" src="icons/calculator.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Nanny pay calculator</h3>
-      <p>Turn an hourly rate into weekly, monthly and yearly cost — with overtime.</p>
-    </a>
-    <a class="card" href="how-much-to-pay-a-nanny" style="color:inherit">
-      <img class="ico" src="icons/pay.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>How much to pay a nanny</h3>
-      <p>2026 rates, what raises them, overtime rules, and how to set a fair number.</p>
-    </a>
-    <a class="card" href="how-to-track-what-you-owe-your-nanny" style="color:inherit">
-      <img class="ico" src="icons/ledger.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>How to track what you owe</h3>
-      <p>Five methods compared — notebook, spreadsheet, app — and what to record.</p>
-    </a>
-    <a class="card" href="babysitter-hourly-rates" style="color:inherit">
-      <img class="ico" src="icons/city.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Babysitter hourly rates</h3>
-      <p>2026 national averages, what raises the rate, and how many kids changes it.</p>
-    </a>
-    <a class="card" href="babysitter-rates-by-city" style="color:inherit">
-      <img class="ico" src="icons/location.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Rates by city — any US metro</h3>
-      <p>Compare childcare-worker wages across 384 US metros, with the limits of BLS data explained.</p>
-    </a>
-    <a class="card" href="how-much-to-pay-a-house-cleaner" style="color:inherit">
-      <img class="ico" src="icons/cleaning.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>House cleaner rates</h3>
-      <p>Hourly vs per-visit pricing in 2026, what moves the price, and tipping.</p>
-    </a>
-    <a class="card" href="tutor-hourly-rates" style="color:inherit">
-      <img class="ico" src="icons/books.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Tutor hourly rates</h3>
-      <p>What to pay a tutor by subject, level and online vs in-person.</p>
-    </a>
-    <a class="card" href="nanny-taxes-explained" style="color:inherit">
-      <img class="ico" src="icons/tax.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Nanny taxes explained</h3>
-      <p>When you owe them, who counts as an employee, and the records to keep.</p>
-    </a>
-    <a class="card" href="how-to-calculate-nanny-overtime" style="color:inherit">
-      <img class="ico" src="icons/timer.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Calculating nanny overtime</h3>
-      <p>1.5&times; over 40 hours a workweek — worked examples and state exceptions.</p>
-    </a>
-    <a class="card" href="best-household-payroll-apps" style="color:inherit">
-      <img class="ico" src="icons/chart.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>Best household payroll apps</h3>
-      <p>Payroll services, hours trackers and spreadsheets — honestly compared.</p>
-    </a>
-    <a class="card" href="house-cleaner-payment-records" style="color:inherit">
-      <img class="ico" src="icons/document.svg" width="48" height="48" alt="" aria-hidden="true">
-      <h3>House cleaner payment records</h3>
-      <p>What to record for taxes, and why you probably don't file a 1099.</p>
-    </a>
-  </div>
-  <p style="margin-top:22px"><a href="guides">View all guides &amp; tools →</a></p>
-</section>
-
-<div class="wrap">
-  <div class="final">
-    <h2>Stop guessing what you owe</h2>
-    <p class="lead" style="margin:12px auto 26px">Download Paypr and keep a clean tally of every hour and every payment.</p>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
-  </div>
-</div>
-
-<div class="wrap">
-  <footer>
+    <p>Keep a dated log of each visit with the hours or flat fee, the rate, the amount paid and how you paid it, plus the cleaner&#x27;s name and address. Record it as it happens rather than reconstructing later, and keep the records at least four years. If the cleaner is self-employed you generally file nothing — households don&#x27;t normally issue a 1099 for personal services — but the log still protects you if the classification is ever questioned. <a href="/house-cleaner-payment-records">What to record, and for how long →</a></p>
+  </details></div></section><section class="guides section wrap" id="guides"><div class="section-heading"><div><p class="eyebrow">05 / A little extra help</p><h2>Guides &amp; tools</h2></div><p>Free resources for anyone who employs household help.</p></div><div class="quick-links"><p><a href="/babysitter-rate-calculator">Calculate babysitter pay</a> · <a href="/nanny-timesheet-template">Download a free nanny timesheet</a> · <a href="/paypr-vs-nannykeeper">Compare Paypr and NannyKeeper</a></p></div><div class="guide-directory"><div class="guide-group"><h3>Tools & comparisons</h3><a class="guide-link" href="/nanny-pay-calculator"><span class="guide-title">Nanny pay calculator <span>↗</span></span><p>Turn an hourly rate into weekly, monthly and yearly cost — with overtime.</p></a><a class="guide-link" href="/how-to-track-what-you-owe-your-nanny"><span class="guide-title">How to track what you owe <span>↗</span></span><p>Five methods compared — notebook, spreadsheet, app — and what to record.</p></a><a class="guide-link" href="/best-household-payroll-apps"><span class="guide-title">Best household payroll apps <span>↗</span></span><p>Payroll services, hours trackers and spreadsheets — honestly compared.</p></a></div><div class="guide-group"><h3>Rates & planning</h3><a class="guide-link" href="/how-much-to-pay-a-nanny"><span class="guide-title">How much to pay a nanny <span>↗</span></span><p>2026 rates, what raises them, overtime rules, and how to set a fair number.</p></a><a class="guide-link" href="/babysitter-hourly-rates"><span class="guide-title">Babysitter hourly rates <span>↗</span></span><p>2026 national averages, what raises the rate, and how many kids changes it.</p></a><a class="guide-link" href="/babysitter-rates-by-city"><span class="guide-title">Rates by city — any US metro <span>↗</span></span><p>Compare childcare-worker wages across 384 US metros, with the limits of BLS data explained.</p></a><a class="guide-link" href="/how-much-to-pay-a-house-cleaner"><span class="guide-title">House cleaner rates <span>↗</span></span><p>Hourly vs per-visit pricing in 2026, what moves the price, and tipping.</p></a><a class="guide-link" href="/tutor-hourly-rates"><span class="guide-title">Tutor hourly rates <span>↗</span></span><p>What to pay a tutor by subject, level and online vs in-person.</p></a></div><div class="guide-group"><h3>Records & responsibilities</h3><a class="guide-link" href="/nanny-taxes-explained"><span class="guide-title">Nanny taxes explained <span>↗</span></span><p>When you owe them, who counts as an employee, and the records to keep.</p></a><a class="guide-link" href="/how-to-calculate-nanny-overtime"><span class="guide-title">Calculating nanny overtime <span>↗</span></span><p>1.5× over 40 hours a workweek — worked examples and state exceptions.</p></a><a class="guide-link" href="/house-cleaner-payment-records"><span class="guide-title">House cleaner payment records <span>↗</span></span><p>What to record for taxes, and why you probably don&#x27;t file a 1099.</p></a></div></div><p><a href="/guides">View all guides &amp; tools →</a></p></section><section class="closing"><div class="wrap"><p class="eyebrow">Keep the hours. Lose the mental math.</p><h2>Stop guessing what you owe</h2><p>Download Paypr and keep a clean tally of every hour and every payment.</p><a class="store" href="https://apps.apple.com/app/paypr/id6778970494"><img src="sage/app-store-badge.svg" width="156" height="52" alt="Download Paypr on the App Store"></a></div></section></main><footer class="wrap"><a class="brand" href="#top">paypr<span class="brand-dot">.</span></a>
     <div>© 2026 QAtion · Paypr</div>
     <nav>
-      <a href="about">About Paypr</a> · <a href="support">Support</a>
-      <a href="privacy">Privacy Policy</a>
-      <a href="terms">Terms of Use</a>
+      <a href="/about">About Paypr</a> · <a href="/support">Support</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
       <a href="mailto:payprfeedback@gmail.com">Contact</a>
     </nav>
-  </footer>
-</div>
-
-  <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->
-</body>
-</html>
+  </footer><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script></body></html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" role="img" aria-label="Download on the App Store">
+  <title>Download on the App Store</title>
+  <rect x=".5" y=".5" width="119" height="39" rx="6.5" fill="#000"/>
+  <rect x=".5" y=".5" width="119" height="39" rx="6.5" fill="none" stroke="#A6A6A6" stroke-width="1"/>
+  <g fill="#fff" transform="translate(-0.6 0)">
+    <path d="M24.769 20.3a4.949 4.949 0 0 1 2.357-4.152 5.066 5.066 0 0 0-3.99-2.158c-1.68-.176-3.308.995-4.164.995-.872 0-2.19-.976-3.6-.947a5.316 5.316 0 0 0-4.473 2.717c-1.923 3.33-.49 8.26 1.38 10.97.913 1.323 2 2.807 3.43 2.754 1.376-.056 1.9-.89 3.564-.89 1.65 0 2.122.89 3.575.86 1.48-.026 2.42-1.343 3.328-2.676a11.943 11.943 0 0 0 1.512-3.088A4.8 4.8 0 0 1 24.769 20.3Z"/>
+    <path d="M22.037 12.211a4.87 4.87 0 0 0 1.116-3.491 4.96 4.96 0 0 0-3.212 1.651 4.634 4.634 0 0 0-1.145 3.4 4.1 4.1 0 0 0 3.241-1.56Z"/>
+  </g>
+  <g fill="#fff" font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif">
+    <text x="35.6" y="15.4" font-size="8" textLength="52.5" lengthAdjust="spacingAndGlyphs">Download on the</text>
+    <text x="35.6" y="31" font-size="17.5" font-weight="500" textLength="74.7" lengthAdjust="spacingAndGlyphs">App Store</text>
+  </g>
+</svg>

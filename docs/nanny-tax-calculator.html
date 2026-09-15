@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
 <title>Nanny Tax Calculator — Estimate Your Employer Cost (2026) | Paypr</title>
 <meta name="description" content="Free nanny tax calculator. Estimate the employer taxes on top of a nanny's wages — Social Security, Medicare and an unemployment buffer — and your true total cost.">
 <link rel="canonical" href="https://usepaypr.com/nanny-tax-calculator">
-<meta name="theme-color" content="#0B0D12">
+<meta name="theme-color" content="#faf9f3">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nanny Tax Calculator — Estimate Employer Cost">
@@ -91,6 +91,13 @@
   footer{border-top:1px solid var(--stroke);padding:28px 0;color:var(--muted);font-size:14px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
   footer a{color:var(--muted)}
   @media(max-width:560px){.row,.out{grid-template-columns:1fr}}
+  /* App Store badge CTA */
+  .btn-appstore{display:inline-block;line-height:0;border-radius:9px;
+    transition:transform .15s ease,opacity .15s ease}
+  .btn-appstore:hover{transform:translateY(-1px);opacity:.88}
+  .btn-appstore img{height:52px;width:auto;display:block}
+  .cta-row{align-items:center}
+  @media (max-width:520px){.btn-appstore img{height:46px}}
 </style>
 <script
   defer
@@ -98,20 +105,24 @@
   data-domain="usepaypr.com"
   src="https://datafa.st/js/script.js">
 </script>
+<link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
 </head>
-<body>
-<div class="bg-glow"></div>
+<body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
+<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
+<nav class="sage-nav" aria-label="Main navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a></nav>
+<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>
+<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header>
 
-<nav class="wrap" style="max-width:1080px">
-  <a class="brand" href="./"><img src="icon.png" alt="Paypr icon"> Paypr</a>
-  <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Get the app</a>
-</nav>
 
-<main class="wrap">
+
+
+<main id="main" class="wrap">
   <h1>Nanny Tax Calculator</h1>
   <p class="lead">Estimate the employer taxes on top of your nanny's wages — so the "nanny taxes" don't surprise you at filing time.</p>
 
-  <div class="disclaim"><strong>Planning estimate only — not tax advice.</strong> Tax rates, thresholds and state rules change every year. This gives a ballpark of the employer's added cost; confirm real figures with the <a href="https://www.irs.gov/taxtopics/tc756" rel="nofollow">IRS Household Employer rules</a> or a tax professional. See the <a href="nanny-taxes-explained">full nanny-tax guide</a>.</p>
+  <div class="disclaim"><strong>Planning estimate only — not tax advice.</strong> Tax rates, thresholds and state rules change every year. This gives a ballpark of the employer's added cost; confirm real figures with the <a href="https://www.irs.gov/taxtopics/tc756" rel="nofollow">IRS Household Employer rules</a> or a tax professional. See the <a href="nanny-taxes-explained">full nanny-tax guide</a>.</div>
 
   <div class="calc">
     <div class="row">
@@ -160,7 +171,7 @@
   <div class="cta">
     <h2 style="margin-top:0">Keep tax-ready records automatically</h2>
     <p>Every nanny-tax calculation depends on an accurate log of hours and payments. Paypr keeps that record for you and exports a clean CSV at tax time — track one person free.</p>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download Paypr on the App Store</a>
+    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
   </div>
 
   <h2>Common questions</h2>

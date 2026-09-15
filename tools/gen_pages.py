@@ -98,10 +98,7 @@ CSS = """<style>
   .res tr:nth-child(even) td{background:rgba(255,255,255,.075)}
 </style>"""
 
-NAV = f"""<nav class="wrap">
-  <a class="brand" href="./"><img src="icon.png" alt="Paypr icon"> Paypr</a>
-  <a class="btn" href="{APP}">Get the app</a>
-</nav>"""
+NAV = '<a class="sage-skip" href="#main">Skip to content</a>\n<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>\n<nav class="sage-nav" aria-label="Main navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a></nav>\n<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>\n<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header>'
 
 FOOTER = """<footer class="wrap">
   <div>© 2026 QAtion · Paypr</div>
@@ -135,9 +132,9 @@ def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canon}">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
-<meta name="theme-color" content="#0B0D12">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
+<meta name="theme-color" content="#faf9f3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
@@ -151,8 +148,11 @@ def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
 
 {CSS}
 {ANALYTICS}
+<link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
 </head>
-<body>
+<body class="sage-content sage-article">
 <div class="bg-glow"></div>
 {NAV}
 """
@@ -180,7 +180,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
         "mainEntityOfPage": canon, "image": f"{BASE}/icon.png",
     }
 
-    body = f"""<article class="article">
+    body = f"""<main class="article" id="main">
   <div class="crumb"><a href="./">Paypr</a> · <a href="babysitter-rates-by-city">Rates by city</a> · {name}</div>
   <h1>Babysitter &amp; childcare rates in {name}</h1>
   <p class="meta">Updated {TODAY} · BLS {year} data</p>
@@ -200,7 +200,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
     <tr><td>Upper typical (75th)</td><td>{usd(h['p75'])}</td></tr>
     <tr><td>90th percentile</td><td>{usd(h['p90'])}</td></tr>
     <tr><td>Average (mean)</td><td>{usd(h['mean'])}</td></tr>
-  </table>
+  </table></div>
 
   <div class="tip"><strong>What these figures measure:</strong> BLS OEWS covers wage and salary jobs in surveyed establishments and excludes private household workers. This is childcare-industry wage context, not a measured nanny or private babysitter rate, a minimum wage, or a price recommendation. See the <a href="https://www.bls.gov/oes/oes_ques.htm">BLS survey coverage</a> and <a href="babysitter-hourly-rates">babysitting booking-rate guide</a>.</div>
 
@@ -233,7 +233,7 @@ def metro_page(slug: str, v: dict, meta: dict) -> tuple[str, str]:
   <a href="babysitter-hourly-rates">National babysitter rates</a> ·
   <a href="how-much-to-pay-a-nanny">How much to pay a nanny</a> ·
   <a href="nanny-pay-calculator">Pay calculator</a></p>
-</article>
+</main>
 
 {FOOTER}
 </body>
@@ -269,25 +269,25 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
     # href map so search results deep-link to featured pages where they exist.
     href_map = {s: featured_files[s] for s in FEATURED if s in metros}
 
-    body = f"""<article class="article">
+    body = f"""<main class="article" id="main">
   <div class="crumb"><a href="./">Paypr</a> · Rates by city</div>
   <h1>Babysitter &amp; childcare rates by city</h1>
   <p class="meta">Updated {TODAY} · {meta['metro_count']} US metros · BLS {year} data</p>
 
   <p>Search by metro name, state or BLS area code for childcare-worker wages. The table shows the median and middle 50% of wages in surveyed jobs. BLS excludes private household workers, so these are not nanny or babysitter booking prices. For those, see the <a href="babysitter-hourly-rates">babysitter rates guide</a>. Featured cities explain the distinction:</p>
 
-  <table class="res">
+  <div class="sage-table" role="region" aria-label="Scrollable data table" tabindex="0"><table class="res">
     <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
 {rows}
-  </table>
+  </table></div>
 
   <h2>Look up your city</h2>
   <input id="q" type="search" placeholder="Type a city, state or area code — e.g. Portland, OR or 38900" autocomplete="off" aria-label="Search metro areas">
   <p class="note" id="count"></p>
-  <table class="res">
+  <div class="sage-table" role="region" aria-label="Scrollable data table" tabindex="0"><table class="res">
     <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
     <tbody id="res"></tbody>
-  </table>
+  </table></div>
 
   <div class="cta">
     <h2>Track every sitter in one place</h2>
@@ -302,7 +302,7 @@ def lookup_page(metros: dict, meta: dict, featured_files: dict) -> tuple[str, st
   <a href="babysitter-hourly-rates">National babysitter rates</a> ·
   <a href="how-much-to-pay-a-nanny">How much to pay a nanny</a> ·
   <a href="nanny-pay-calculator">Pay calculator</a></p>
-</article>
+</main>
 
 {FOOTER}
 <script>

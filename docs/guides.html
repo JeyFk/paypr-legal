@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
 <title>Guides &amp; Tools for Household Employers — Pay, Rates &amp; Taxes | Paypr</title>
 <meta name="description" content="Free guides and calculators for anyone who pays a nanny, babysitter, tutor or house cleaner — 2026 pay rates, nanny taxes, and tools to work out what you owe.">
 <link rel="canonical" href="https://usepaypr.com/guides">
-<meta name="theme-color" content="#0B0D12">
+<meta name="theme-color" content="#faf9f3">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Guides &amp; Tools for Household Employers">
 <meta property="og:description" content="Free pay-rate guides, nanny-tax explainers and calculators for families who employ household help.">
@@ -179,6 +179,13 @@
   .final{text-align:center;background:linear-gradient(180deg,rgba(74,144,226,.14),transparent);border:1px solid var(--stroke);border-radius:26px;padding:48px 24px;margin:24px 0}
   footer{border-top:1px solid var(--stroke);padding:34px 0;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
   footer a{color:var(--muted)}
+  /* App Store badge CTA */
+  .btn-appstore{display:inline-block;line-height:0;border-radius:9px;
+    transition:transform .15s ease,opacity .15s ease}
+  .btn-appstore:hover{transform:translateY(-1px);opacity:.88}
+  .btn-appstore img{height:52px;width:auto;display:block}
+  .cta-row{align-items:center}
+  @media (max-width:520px){.btn-appstore img{height:46px}}
 </style>
 <script
   defer
@@ -186,16 +193,18 @@
   data-domain="usepaypr.com"
   src="https://datafa.st/js/script.js">
 </script>
+<link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
 </head>
-<body>
-<div class="bg-glow"></div>
+<body class="sage-content sage-guides"><a class="sage-skip" href="#main">Skip to content</a>
+<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
+<nav class="sage-nav" aria-label="Main navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a></nav>
+<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>
+<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header><main id="main">
 
-<div class="wrap">
-  <nav>
-    <div class="brand"><a class="brand" href="./" style="color:inherit"><img src="icon.png" alt="Paypr app icon"> Paypr</a></div>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download</a>
-  </nav>
-</div>
+
+
 
 <div class="wrap">
   <div class="crumb"><a href="./">Paypr</a> · Guides &amp; tools</div>
@@ -301,7 +310,7 @@
   <div class="final">
     <h2 style="border:0;margin-bottom:10px">Track what you owe — automatically</h2>
     <p class="lead" style="margin:0 auto 22px">Paypr keeps a running balance of what you owe every nanny, sitter, tutor or cleaner. Log the hours, settle up on payday, done.</p>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download Paypr on the App Store</a>
+    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
   </div>
 </div>
 
@@ -317,5 +326,5 @@
   </footer>
 </div>
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->
-</body>
+</main></body>
 </html>

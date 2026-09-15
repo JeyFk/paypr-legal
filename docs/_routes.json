@@ -1,6 +1,8 @@
 {
   "version": 1,
-  "include": ["/*"],
+  "include": [
+    "/*"
+  ],
   "exclude": [
     "/icons/*",
     "/shots/*",
@@ -12,6 +14,7 @@
     "/*.ico",
     "/*.css",
     "/*.js",
-    "/*.woff2"
+    "/*.woff2",
+    "/sage/*"
   ]
 }

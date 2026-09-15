@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
 <title>Babysitter Pay Calculator: Hours, Rate &amp; Extra Kids | Paypr</title>
 <meta name="description" content="Calculate babysitter pay for any booking. Enter your agreed hourly rate, hours and optional extra-child pay. Free, no signup, with totals to the cent.">
 <link rel="canonical" href="https://usepaypr.com/babysitter-rate-calculator">
-<meta name="theme-color" content="#0B0D12">
+<meta name="theme-color" content="#faf9f3">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Babysitter Pay Calculator: Hours, Rate &amp; Extra Kids | Paypr">
@@ -112,6 +112,13 @@
   footer{border-top:1px solid var(--stroke);padding:28px 0;color:var(--muted);font-size:14px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
   footer a{color:var(--muted)}
   @media(max-width:560px){.row,.out{grid-template-columns:1fr}}
+  /* App Store badge CTA */
+  .btn-appstore{display:inline-block;line-height:0;border-radius:9px;
+    transition:transform .15s ease,opacity .15s ease}
+  .btn-appstore:hover{transform:translateY(-1px);opacity:.88}
+  .btn-appstore img{height:52px;width:auto;display:block}
+  .cta-row{align-items:center}
+  @media (max-width:520px){.btn-appstore img{height:46px}}
 </style>
 <script
   defer
@@ -119,16 +126,20 @@
   data-domain="usepaypr.com"
   src="https://datafa.st/js/script.js">
 </script>
+<link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
 </head>
-<body>
-<div class="bg-glow"></div>
+<body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
+<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
+<nav class="sage-nav" aria-label="Main navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a></nav>
+<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>
+<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header>
 
-<nav class="wrap" style="max-width:1080px">
-  <a class="brand" href="./"><img src="icon.png" alt="Paypr icon"> Paypr</a>
-  <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Get the app</a>
-</nav>
 
-<main class="wrap">
+
+
+<main id="main" class="wrap">
   <h1>Babysitter pay &amp; rate calculator</h1>
   <p class="lead">Enter the hourly rate, how long the sitter worked and how many kids — see what you owe for the booking and across a typical week.</p>
 
@@ -173,7 +184,7 @@
   <div class="cta">
     <h2 style="margin-top:0">Track every sitter, every payment</h2>
     <p>Paypr keeps a running balance of what you owe each babysitter, nanny, tutor or cleaner — log the hours, settle up, done. No spreadsheet.</p>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download Paypr on the App Store</a>
+    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
   </div>
 
   <h2>Common questions</h2><details><summary>Does the rate include both children?</summary><p>Use the rate you agreed with the sitter. If that price covers all children, leave the extra-child add-on at zero.</p></details><details><summary>How do I enter hours and minutes?</summary><p>Divide minutes by 60 and add the full hours. Four hours and 30 minutes is 4.5 hours; four hours and 15 minutes is 4.25 hours.</p></details><details><summary>What does the weekly total mean?</summary><p>It is the price of two identical bookings. For a different schedule, multiply your booking total by the number of bookings yourself.</p></details>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
 <!-- ============================================================= -->
 <!-- Target query: "hours tracker for contractors" /                -->
@@ -13,7 +13,7 @@
 <title>Hours Tracker for Contractors — Clock In &amp; Know What You're Owed | Paypr</title>
 <meta name="description" content="Paid by the hour? Paypr's contractor view lets you clock in as you work, see what each client owes you, and share a clean statement of unpaid hours. Free to start.">
 <link rel="canonical" href="https://usepaypr.com/contractor-hours-tracker">
-<meta name="theme-color" content="#0B0D12">
+<meta name="theme-color" content="#faf9f3">
 <meta name="apple-itunes-app" content="app-id=6778970494">
 
 <!-- Open Graph / social sharing -->
@@ -137,6 +137,13 @@
     display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
   footer a{color:var(--muted)}
   footer nav{padding:0;gap:18px;display:flex;flex-wrap:wrap}
+  /* App Store badge CTA */
+  .btn-appstore{display:inline-block;line-height:0;border-radius:9px;
+    transition:transform .15s ease,opacity .15s ease}
+  .btn-appstore:hover{transform:translateY(-1px);opacity:.88}
+  .btn-appstore img{height:52px;width:auto;display:block}
+  .cta-row{align-items:center}
+  @media (max-width:520px){.btn-appstore img{height:46px}}
 </style>
 <script
   defer
@@ -144,25 +151,24 @@
   data-domain="usepaypr.com"
   src="https://datafa.st/js/script.js">
 </script>
+<link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
 </head>
-<body>
-<div class="bg-glow"></div>
+<body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
+<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
+<nav class="sage-nav" aria-label="Main navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a></nav>
+<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>
+<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header><main id="main">
 
-<div class="wrap">
-  <nav>
-    <div class="brand"><a href="./" style="display:flex;align-items:center;gap:12px;color:inherit"><img src="icon.png" alt="Paypr app icon"> Paypr</a></div>
-    <div style="display:flex;align-items:center;gap:20px">
-      <a href="guides" style="color:var(--muted);font-weight:600">Guides</a>
-      <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download</a>
-    </div>
-  </nav>
-</div>
+
+
 
 <header class="wrap">
   <h1>Track your hours. Know <span class="hl">who owes you</span>. Get paid.</h1>
   <p class="sub">Paypr's contractor view is for anyone paid by the hour. Clock in as you work, keep a separate tally for every client, and share a clean statement of unpaid hours when it's time to get paid.</p>
   <div class="cta-row">
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
+    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
     <a class="btn ghost" href="#how">See how it works</a>
   </div>
   <p class="fine">Free to start · No spreadsheets · Private by design</p>
@@ -260,7 +266,7 @@
   <div class="final">
     <h2>Stop chasing what you're owed</h2>
     <p class="lead" style="margin:12px auto 26px">Download Paypr, clock in on your next job, and keep a clean tally of every hour and every payment.</p>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download on the App Store</a>
+    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
   </div>
 </div>
 
@@ -277,5 +283,5 @@
 </div>
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->
-</body>
+</main></body>
 </html>

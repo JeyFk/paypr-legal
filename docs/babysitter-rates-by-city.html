@@ -7,9 +7,9 @@
 <title>Babysitter & Childcare Rates by City (2026) — Look Up Any US Metro | Paypr</title>
 <meta name="description" content="Search 384 US metro areas for local childcare hourly rates (BLS 2024). Find your city by name, state or area code.">
 <link rel="canonical" href="https://usepaypr.com/babysitter-rates-by-city">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
-<meta name="theme-color" content="#0B0D12">
+<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
+<meta name="theme-color" content="#faf9f3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Babysitter & Childcare Rates by City (2026) — Look Up Any US Metro | Paypr">
 <meta property="og:description" content="Search 384 US metro areas for local childcare hourly rates (BLS 2024). Find your city by name, state or area code.">
@@ -85,6 +85,13 @@
   .res th{background:rgba(255,255,255,.07)}
   .res td{background:rgba(255,255,255,.035);border-bottom:1px solid var(--stroke)}
   .res tr:nth-child(even) td{background:rgba(255,255,255,.075)}
+  /* App Store badge CTA */
+  .btn-appstore{display:inline-block;line-height:0;border-radius:9px;
+    transition:transform .15s ease,opacity .15s ease}
+  .btn-appstore:hover{transform:translateY(-1px);opacity:.88}
+  .btn-appstore img{height:52px;width:auto;display:block}
+  .cta-row{align-items:center}
+  @media (max-width:520px){.btn-appstore img{height:46px}}
 </style>
 <script
   defer
@@ -92,21 +99,25 @@
   data-domain="usepaypr.com"
   src="https://datafa.st/js/script.js">
 </script>
+<link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
+<link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
+<script src="/sage/navigation.js?v=sage-20260915" defer></script>
 </head>
-<body>
-<div class="bg-glow"></div>
-<nav class="wrap">
-  <a class="brand" href="./"><img src="icon.png" alt="Paypr icon"> Paypr</a>
-  <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Get the app</a>
-</nav>
-<article class="article">
+<body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
+<header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
+<nav class="sage-nav" aria-label="Main navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a></nav>
+<a class="sage-download" href="https://apps.apple.com/app/paypr/id6778970494">Get Paypr <span aria-hidden="true">↗</span></a>
+<details class="sage-menu"><summary>Menu <span aria-hidden="true">＋</span></summary><nav aria-label="Mobile navigation"><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/guides">Guides</a><a href="https://apps.apple.com/app/paypr/id6778970494">Download for iPhone ↗</a></nav></details></header>
+
+
+<main class="article" id="main">
   <div class="crumb"><a href="./">Paypr</a> · Rates by city</div>
   <h1>Babysitter &amp; childcare rates by city</h1>
   <p class="meta">Updated September 8, 2026 · 384 US metros · BLS 2024 data</p>
 
   <p>Search by metro name, state or BLS area code for childcare-worker wages. The table shows the median and middle 50% of wages in surveyed jobs. BLS excludes private household workers, so these are not nanny or babysitter booking prices. For those, see the <a href="babysitter-hourly-rates">babysitter rates guide</a>. Featured cities explain the distinction:</p>
 
-  <table class="res">
+  <div class="sage-table" role="region" aria-label="Scrollable data table" tabindex="0"><table class="res">
     <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
       <tr><td><a href="babysitter-rates-new-york-ny">New York, NY</a></td><td>$17.57/hr</td><td>$16.49–$20.23/hr</td></tr>
       <tr><td><a href="babysitter-rates-los-angeles-ca">Los Angeles, CA</a></td><td>$18.30/hr</td><td>$17.46–$21.42/hr</td></tr>
@@ -138,21 +149,21 @@
       <tr><td><a href="babysitter-rates-charlotte-nc">Charlotte, NC</a></td><td>$13.87/hr</td><td>$11.46–$16.42/hr</td></tr>
       <tr><td><a href="babysitter-rates-las-vegas-nv">Las Vegas, NV</a></td><td>$13.67/hr</td><td>$13.56–$15.96/hr</td></tr>
       <tr><td><a href="babysitter-rates-pittsburgh-pa">Pittsburgh, PA</a></td><td>$13.47/hr</td><td>$10.80–$14.65/hr</td></tr>
-  </table>
+  </table></div>
 
   <h2>Look up your city</h2>
   <input id="q" type="search" placeholder="Type a city, state or area code — e.g. Portland, OR or 38900" autocomplete="off" aria-label="Search metro areas">
   <p class="note" id="count"></p>
-  <table class="res">
+  <div class="sage-table" role="region" aria-label="Scrollable data table" tabindex="0"><table class="res">
     <tr><th>City</th><th>Childcare wage median</th><th>Middle 50% of wages</th></tr>
     <tbody id="res"></tbody>
-  </table>
+  </table></div>
 
   <div class="cta">
     <h2>Track every sitter in one place</h2>
     <p>Paypr keeps a running balance for each sitter, so you always know what you
     owe before you pay.</p>
-    <a class="btn" href="https://apps.apple.com/app/paypr/id6778970494">Download Paypr on the App Store</a>
+    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
   </div>
 
   <p class="note"><strong>Method &amp; sources.</strong> BLS OEWS 2024, Childcare Workers (SOC 39-9011). Median is the 50th percentile; the range is the 25th to 75th percentile. Household workers and self-employed workers are excluded. See <a href="https://www.bls.gov/oes/oes_ques.htm">BLS methodology</a>. No private-sitter prices have been inferred from these wages.</p>
@@ -161,7 +172,7 @@
   <a href="babysitter-hourly-rates">National babysitter rates</a> ·
   <a href="how-much-to-pay-a-nanny">How much to pay a nanny</a> ·
   <a href="nanny-pay-calculator">Pay calculator</a></p>
-</article>
+</main>
 
 <footer class="wrap">
   <div>© 2026 QAtion · Paypr</div>
