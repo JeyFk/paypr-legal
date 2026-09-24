@@ -1,3 +1,25 @@
+# Current production setup (September 24, 2026)
+
+The website source is this repository's `docs/` directory. The active Git integration
+is Cloudflare **Workers Builds**, deploying `master` to https://usepaypr.com/.
+The older Pages setup instructions below are historical; do not use them to
+reconfigure production or assume `functions/` runs in the active Worker.
+
+`docs/_redirects` defines explicit **301** redirects for all 54 historical `.html`
+page URLs to the extensionless sitemap URLs (`/index.html` goes to `/`). This
+overrides the default temporary HTML redirects for static assets. Keep these
+rules when updating the site. Unknown paths and the Google verification file
+are deliberately not included. Query strings must survive the redirect.
+
+After changing redirects, verify old URL → one permanent redirect → HTTP 200,
+matching canonical tags, query preservation, downloads, verification file,
+and true 404s. Google must recrawl before Search Console reflects the move;
+a deployment does not guarantee indexing.
+
+Reference: https://developers.cloudflare.com/workers/static-assets/redirects/
+
+---
+
 # Paypr SEO Foundation — Deploy Guide
 
 The `site/` folder now contains the full SEO foundation **plus** the content layer:
@@ -170,8 +192,8 @@ so `git push origin master` still deploys, exactly like before.
 
 ### URLs are extensionless — do not reintroduce `.html`
 
-Unlike GitHub Pages, Cloudflare Pages **307-redirects `/foo.html` to `/foo`**. There is no setting to
-turn this off, so the site's own URLs must match what Pages serves.
+Unlike GitHub Pages, Cloudflare Pages **307-redirects `/foo.html` to `/foo`**. The explicit `docs/_redirects` rules now replace these temporary redirects for
+known page URLs; the site's own URLs continue to match the canonical destinations.
 
 Files on disk keep their `.html` names (Pages resolves `/foo` to `foo.html`), but every *reference*
 is extensionless: `rel="canonical"`, `og:url`, JSON-LD `url`/`@id`/`mainEntityOfPage`, `sitemap.xml`,
