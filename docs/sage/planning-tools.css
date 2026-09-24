@@ -1,0 +1,16 @@
+[hidden] { display: none !important; }
+.calc button { font: inherit; cursor: pointer; margin: 16px 0; border: 0; }
+.calc button:disabled { cursor: wait; opacity: .6; }
+.calc input { max-width: 100%; }
+.calc [role="alert"] { color: #842c22; }
+.calc .out { margin-top: 16px; }
+.calc .v { overflow-wrap: anywhere; font-size: clamp(1.4rem, 4vw, 2rem); }
+.calc .note { line-height: 1.6; }
+.source-note { font-size: .875rem; }
+@media print {
+  .sage-header, .sage-skip, footer, .cta, .no-print { display: none !important; }
+  .sage-table, .table-wrap { overflow: visible !important; }
+  .print-sheet { width: 100%; font-size: 9pt; table-layout: fixed; }
+  .print-sheet th, .print-sheet td { padding: 4px; overflow-wrap: anywhere; }
+  a { color: #111 !important; }
+}

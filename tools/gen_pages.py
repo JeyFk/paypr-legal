@@ -151,6 +151,7 @@ def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
 <link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
 <link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
 <script src="/sage/navigation.js?v=sage-20260915" defer></script>
+<script src="/sage/conversions.js" defer></script>
 </head>
 <body class="sage-content sage-article">
 <div class="bg-glow"></div>

@@ -6,14 +6,14 @@
 <link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
 <link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
-<title>Nanny Tax Calculator — Estimate Your Employer Cost (2026) | Paypr</title>
-<meta name="description" content="Free nanny tax calculator. Estimate the employer taxes on top of a nanny's wages — Social Security, Medicare and an unemployment buffer — and your true total cost.">
+<title>Nanny Tax Calculator 2026: Employer FICA Estimate | Paypr</title>
+<meta name="description" content="Estimate employer Social Security and Medicare for a household employee using 2026 federal thresholds. Clearly scoped; state taxes and FUTA are not calculated.">
 <link rel="canonical" href="https://usepaypr.com/nanny-tax-calculator">
 <meta name="theme-color" content="#faf9f3">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Nanny Tax Calculator — Estimate Employer Cost">
-<meta property="og:description" content="Estimate the employer taxes on top of a nanny's wages and see your true total cost. A planning estimate, not tax advice.">
+<meta property="og:title" content="Nanny Tax Calculator 2026: Employer FICA Estimate | Paypr">
+<meta property="og:description" content="Estimate employer Social Security and Medicare for a household employee using 2026 federal thresholds. Clearly scoped; state taxes and FUTA are not calculated.">
 <meta property="og:url" content="https://usepaypr.com/nanny-tax-calculator">
 <meta property="og:image" content="https://usepaypr.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -21,32 +21,8 @@
 <meta property="og:image:alt" content="Paypr — track hours and pay for your nanny, sitter, tutor or cleaner">
 <meta name="twitter:card" content="summary_large_image">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Nanny Tax Calculator",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Any (web)",
-  "url": "https://usepaypr.com/nanny-tax-calculator",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "description": "Free calculator estimating the employer taxes (Social Security, Medicare and an unemployment buffer) on top of a household employee's wages."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "How much are nanny taxes for the employer?",
-      "acceptedAnswer": { "@type": "Answer", "text": "As an employer you generally owe your share of Social Security and Medicare — about 7.65% of cash wages — plus federal and state unemployment taxes, which vary by state. Budget roughly 10% or more over gross wages as a planning estimate, and confirm current figures with the IRS or a tax professional." } },
-    { "@type": "Question", "name": "Is a nanny a W-2 employee or 1099 contractor?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A nanny is almost always a household employee who should receive a W-2, not a 1099 contractor, because you control what work is done and how. Misclassifying a nanny as a contractor is a common and costly mistake." } },
-    { "@type": "Question", "name": "Do I have to pay nanny taxes?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Generally yes, if you pay a household employee more than the IRS annual cash-wage threshold (a figure a little under $3,000 in recent years — check the current year). A separate lower threshold triggers federal unemployment tax." } }
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Nanny Tax Calculator 2026: Employer FICA Estimate", "applicationCategory": "FinanceApplication", "operatingSystem": "Any (web)", "url": "https://usepaypr.com/nanny-tax-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Estimate employer Social Security and Medicare for a household employee using 2026 federal thresholds. Clearly scoped; state taxes and FUTA are not calculated."}</script>
+
 
 <style>
   :root{--bg:#0B0D12;--card:rgba(255,255,255,.05);--stroke:rgba(255,255,255,.10);
@@ -108,6 +84,10 @@
 <link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
 <link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
 <script src="/sage/navigation.js?v=sage-20260915" defer></script>
+<script src="/sage/pay-math.js" defer></script>
+<script src="/sage/calculators.js" defer></script>
+<link rel="stylesheet" href="/sage/planning-tools.css">
+<script src="/sage/conversions.js" defer></script>
 </head>
 <body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
 <header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
@@ -119,71 +99,32 @@
 
 
 <main id="main" class="wrap">
-  <h1>Nanny Tax Calculator</h1>
-  <p class="lead">Estimate the employer taxes on top of your nanny's wages — so the "nanny taxes" don't surprise you at filing time.</p>
-
-  <div class="disclaim"><strong>Planning estimate only — not tax advice.</strong> Tax rates, thresholds and state rules change every year. This gives a ballpark of the employer's added cost; confirm real figures with the <a href="https://www.irs.gov/taxtopics/tc756" rel="nofollow">IRS Household Employer rules</a> or a tax professional. See the <a href="nanny-taxes-explained">full nanny-tax guide</a>.</div>
-
-  <div class="calc">
-    <div class="row">
-      <div class="field">
-        <label for="rate">Hourly rate ($)</label>
-        <input id="rate" type="number" min="0" step="0.25" value="24" inputmode="decimal">
-      </div>
-      <div class="field">
-        <label for="hours">Hours per week</label>
-        <input id="hours" type="number" min="0" step="1" value="40" inputmode="numeric">
-      </div>
-    </div>
-    <div class="row">
-      <div class="field">
-        <label for="buffer">Unemployment &amp; state buffer (%)</label>
-        <input id="buffer" type="number" min="0" step="0.5" value="2" inputmode="decimal">
-      </div>
-      <div class="field">
-        <label for="cover">Also cover employee's FICA?</label>
-        <select id="cover">
-          <option value="0" selected>No — withheld from nanny's pay</option>
-          <option value="1">Yes — I pay the employee share too</option>
-        </select>
-      </div>
-    </div>
-    <div class="out">
-      <div class="stat"><div class="k">Gross wages / yr</div><div class="v" id="gross">$49,920</div></div>
-      <div class="stat"><div class="k">Employer taxes (est.)</div><div class="v" id="tax">$4,817</div></div>
-      <div class="stat"><div class="k">Your total cost / yr</div><div class="v" id="total">$54,737</div></div>
-    </div>
-    <p class="note" id="msg"></p>
-  </div>
-
-  <h2>What this includes</h2>
-  <p>The estimate is built from the parts of "nanny taxes" that fall on <strong>you, the employer</strong>:</p>
-  <ul style="margin:0 0 16px 22px;color:#c9d1dc">
-    <li><strong>Social Security &amp; Medicare (FICA) — 7.65%</strong> of cash wages. This is well-defined and applies once wages cross the annual threshold.</li>
-    <li><strong>Unemployment &amp; state buffer</strong> — a percentage you set (default 2%) standing in for federal unemployment (FUTA) plus state unemployment and any state-specific contributions. This one <em>genuinely varies by state</em>, so adjust it.</li>
-    <li>Optionally, the <strong>employee's 7.65% FICA share</strong> if you choose to cover it instead of withholding it.</li>
-  </ul>
-  <p>It does <em>not</em> include income tax withholding (optional) or payroll-service fees.</p>
-
-  <h2>Rough rule of thumb</h2>
-  <p>For quick budgeting, assume the employer's added tax cost is <strong>around 10% over gross wages</strong>. The exact number depends on your state and whether you cover the employee's share.</p>
-
-  <div class="cta">
-    <h2 style="margin-top:0">Keep tax-ready records automatically</h2>
-    <p>Every nanny-tax calculation depends on an accurate log of hours and payments. Paypr keeps that record for you and exports a clean CSV at tax time — track one person free.</p>
-    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
-  </div>
-
-  <h2>Common questions</h2>
-  <details open><summary>Do I really owe taxes if I pay cash?</summary>
-    <p>Paying cash doesn't remove the obligation. If cash wages to a household employee cross the IRS annual threshold, the employment taxes still apply.</p></details>
-  <details><summary>Is my nanny a W-2 employee or 1099 contractor?</summary>
-    <p>Almost always a W-2 household employee — you control the work and how it's done. A nanny is not a 1099 contractor, and misclassifying one is a costly mistake.</p></details>
-  <details><summary>Why is the state buffer a guess?</summary>
-    <p>Federal unemployment is small after the state credit, but state unemployment rates and rules vary widely — from well under 1% to several percent. Set the buffer to your state's figure for a closer estimate.</p></details>
-
-  <p style="margin-top:30px"><a href="nanny-taxes-explained">→ Full guide: Nanny taxes explained</a><br>
-  <a href="nanny-pay-calculator">→ Nanny pay calculator</a> · <a href="guides">→ All guides &amp; tools</a></p>
+<h1>Nanny tax calculator: 2026 employer FICA estimate</h1>
+<p class="lead">Estimate the employer's Social Security and Medicare contribution for one household employee. This is one part of employment cost, not a complete tax calculation or a take-home-pay calculator.</p>
+<p class="meta">US federal rules · Tax year 2026 · Sources checked September 18, 2026 · By <a href="about">Paypr</a></p>
+<p><strong>Use this example only for a household employee age 18 or older who is not your spouse, child, or parent.</strong> Family relationships, age, and other exceptions need a separate check in <a href="https://www.irs.gov/publications/p926">IRS Publication 926</a>. This tool does not determine whether someone is an employee.</p>
+<form class="calc" data-paypr-calculator="fica" novalidate>
+<div class="field"><label for="annual">Total cash wages paid to this employee in 2026 (USD)</label><input id="annual" name="annual" type="number" min="0" max="10000000" step="0.01" value="49920" inputmode="decimal" required></div>
+<p class="note">Include wages paid throughout the calendar year, including any overtime and taxable bonus wages. For future planning, enter your annual cash-wage estimate. Start with the <a href="nanny-pay-calculator">wage calculator</a> if you need a simple hours-based estimate. Cash wages include payments by check and similar methods; this does not mean only banknotes.</p>
+<button id="calc-button" class="btn" type="submit" disabled>Estimate employer FICA</button><p id="calc-error" role="alert"></p>
+<div id="calc-results" aria-live="polite" aria-atomic="true" hidden><div class="out">
+<div class="stat"><div class="k">Employer Social Security</div><div class="v" id="ss"></div></div>
+<div class="stat"><div class="k">Employer Medicare</div><div class="v" id="medicare"></div></div>
+<div class="stat"><div class="k">Employer FICA subtotal</div><div class="v" id="fica"></div></div>
+</div><p class="note" id="taxnote"></p></div>
+<noscript><p>Enable JavaScript to calculate your figures. The method and example below remain available.</p></noscript>
+</form>
+<h2>2026 federal calculation</h2>
+<p>Under the assumptions above, household FICA applies when cash wages to this employee reach $3,000 for the year. Once that threshold is reached, the calculation uses all covered cash wages, not just the amount above $3,000.</p>
+<ul><li>Employer Social Security: 6.2% of covered wages, up to the 2026 wage base of $184,500.</li><li>Employer Medicare: 1.45% of covered wages, without a wage-base cap.</li></ul>
+<p>Example: $49,920 in annual covered wages produces $3,095.04 of employer Social Security and $723.84 of employer Medicare: <strong>$3,818.88 in employer FICA</strong>. This is not the total employer tax bill.</p>
+<h2>Costs and obligations this does not calculate</h2>
+<p>Federal unemployment tax (FUTA) has a separate quarterly test across household employees. State unemployment and other state obligations can also apply. This estimator does not calculate FUTA, state taxes, employee withholding, income taxes, insurance, benefits, or service fees.</p>
+<p>It also excludes the cost of paying the employee's FICA share yourself. Additional Medicare withholding at higher wages has no employer match. A result of $0 here does not mean there are no filing, wage, or tax obligations.</p>
+<p>Read <a href="nanny-taxes-explained">nanny taxes explained</a> and confirm your circumstances with the IRS, the relevant state agencies, or a qualified household-employment tax professional.</p>
+<div class="cta"><h2>Keep the hours behind your wage records</h2><p>Paypr helps you record hourly work and paid or unpaid entries. Pro exports a supporting CSV summary. Keep payroll statements and payment receipts separately; Paypr does not withhold taxes, file returns, issue W-2s, or transfer money.</p><a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a></div>
+<h2>Sources and maintenance</h2><p class="source-note"><a href="https://www.irs.gov/publications/p926">IRS Publication 926 (2026)</a> and <a href="https://www.irs.gov/taxtopics/tc756">IRS Topic 756</a>, checked September 18, 2026. This estimator applies only to the stated tax year and assumptions. It is general information, not individualized tax advice. No independent professional review is claimed.</p>
+<p><a href="nanny-timesheet-template">Download a weekly timesheet and payment log</a> · <a href="paypr-vs-nanny-payroll-services">Decide what you need from a payroll provider</a></p>
 </main>
 
 <footer class="wrap" style="max-width:1080px">
@@ -191,30 +132,7 @@
   <div><a href="./">Home</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a></div>
 </footer>
 
-<script>
-  var f=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
-  function calc(){
-    var rate=parseFloat(document.getElementById('rate').value)||0;
-    var hours=parseFloat(document.getElementById('hours').value)||0;
-    var buffer=parseFloat(document.getElementById('buffer').value)||0;
-    var cover=document.getElementById('cover').value==='1';
-    var gross=rate*hours*52;
-    var employerFica=gross*0.0765;
-    var bufferAmt=gross*(buffer/100);
-    var employeeFica=cover?gross*0.0765:0;
-    var tax=employerFica+bufferAmt+employeeFica;
-    document.getElementById('gross').textContent=f(gross);
-    document.getElementById('tax').textContent=f(tax);
-    document.getElementById('total').textContent=f(gross+tax);
-    var pct=gross>0?Math.round(tax/gross*100):0;
-    document.getElementById('msg').textContent='Estimated employer add-on: about '+pct+'% over gross wages'+(cover?' (including the employee FICA share you’re covering).':'.');
-  }
-  ['rate','hours','buffer','cover'].forEach(function(id){
-    document.getElementById(id).addEventListener('input',calc);
-    document.getElementById(id).addEventListener('change',calc);
-  });
-  calc();
-</script>
+
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

@@ -2,16 +2,16 @@
 
 > Paypr is an iPhone app that tracks hours and pay for the people you hire by the hour — nanny, babysitter, tutor, house cleaner or housekeeper — and keeps a running balance of what you owe. It also has a contractor view for people who are *paid* by the hour and need to track hours across multiple clients. Records stay on the user's device and sync through their own private iCloud account.
 
-Paypr is made by QAtion. It is **not** a payroll service: it does not withhold taxes, file forms or move money. It is the record layer — hours worked, rate, payments made, running balance, CSV export — that payroll filing and tax time depend on.
+Paypr is made by QAtion. It is **not** a payroll service: it does not withhold taxes, file forms or move money. It records hourly entries and paid or unpaid status. Pro CSV exports are supporting records; payment dates, payroll statements, and tax records must be kept separately.
 
 ## What Paypr does
 
 - **Log hours in seconds.** Drag across a day timeline or tap a quick entry. No timesheet formatting, no formulas.
 - **Always-current balance.** Set each person's hourly rate once; the amount owed updates as hours are logged.
-- **Settle up.** Mark payments paid in full or in part; the balance carries the remainder forward.
+- **Mark work paid.** Review paid and unpaid entries; keep dated payment receipts separately.
 - **Per-person history.** Separate records for every nanny, sitter, tutor or cleaner.
-- **Overtime-aware math.** Weekly totals make it obvious when someone passed 40 hours.
-- **CSV export (Pro).** Clean year-end records of hours and payments per person, for Schedule H, a W-2, or an accountant.
+- **Weekly hours totals.** Review hours worked; overtime rates and legal obligations must be checked separately.
+- **CSV export (Pro).** Export hourly entries, rates, amounts, and paid or unpaid status. This is not a complete payment ledger or tax filing.
 - **Contractor view.** Clock in as you work, see what each client owes you, and share a statement of unpaid hours.
 - **Private by design.** Data lives on the device and syncs via the user's own iCloud. No ads, no data selling; analytics never include names, amounts or balances.
 
@@ -42,13 +42,13 @@ iPhone, iOS 17.0 or later. App Store: https://apps.apple.com/app/paypr/id6778970
 - [How much to pay a house cleaner](https://usepaypr.com/how-much-to-pay-a-house-cleaner): hourly vs per-visit, tipping norms.
 - [Tutor hourly rates](https://usepaypr.com/tutor-hourly-rates): by subject, level, online vs in-person.
 - [Nanny taxes explained](https://usepaypr.com/nanny-taxes-explained): when you owe them, the forms, the records to keep.
-- [How to track what you owe your nanny](https://usepaypr.com/how-to-track-what-you-owe-your-nanny): five methods compared.
+- [How to track what you owe your nanny](https://usepaypr.com/how-to-track-what-you-owe-your-nanny): worked balance examples, gross-versus-net reconciliation, and tracking methods compared.
 
 ## Free calculators
 
 - [Nanny pay calculator](https://usepaypr.com/nanny-pay-calculator): hourly rate into weekly, monthly and yearly cost, with overtime.
 - [Babysitter rate calculator](https://usepaypr.com/babysitter-rate-calculator): rate, hours and number of kids into a per-booking cost.
-- [Nanny tax calculator](https://usepaypr.com/nanny-tax-calculator): estimated employer taxes on top of wages.
+- [Nanny tax calculator](https://usepaypr.com/nanny-tax-calculator): 2026 employer Social Security and Medicare estimate; excludes FUTA and state taxes.
 
 ## Optional
 

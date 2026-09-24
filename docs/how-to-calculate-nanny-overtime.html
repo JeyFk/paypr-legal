@@ -32,7 +32,7 @@
   "headline": "How to calculate and track nanny overtime",
   "description": "How nanny overtime works under the FLSA — time-and-a-half over 40 hours per workweek — with worked examples, the weighted-average two-rate case, live-in and state exceptions, and how to keep the hours record that proves it.",
   "datePublished": "2026-09-01",
-  "dateModified": "2026-09-01",
+  "dateModified": "2026-09-18",
   "author": {
     "@type": "Organization",
     "name": "Paypr"
@@ -85,7 +85,7 @@
       "name": "How do I calculate and track overtime for a nanny to ensure I am paying them correctly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pick a fixed seven-day workweek and log the nanny's hours every day. At the end of each workweek, pay the first 40 hours at their normal rate and every hour above 40 at 1.5× that rate. For a nanny at $25/hour who works 46 hours: (40 × $25) + (6 × $37.50) = $1,225 gross. Overtime is never averaged across two weeks and cannot be swapped for time off. Track the hours as they happen — an app like Paypr shows the weekly total and running balance so you see the 40-hour line before you cross it, and exports the record you're expected to keep."
+        "text": "Pick a fixed seven-day workweek and log the nanny's hours every day. At the end of each workweek, pay the first 40 hours at their normal rate and every hour above 40 at 1.5× that rate. For a nanny at $25/hour who works 46 hours: (40 × $25) + (6 × $37.50) = $1,225 gross. Overtime is never averaged across two weeks and cannot be swapped for time off. Track the hours as they happen — an app like Paypr shows the weekly total and running balance so you see the 40-hour line before you cross it, and offers a supporting CSV export on Pro. Keep payroll statements, payment dates, and other required records separately."
       }
     },
     {
@@ -117,7 +117,7 @@
       "name": "What overtime rate applies if I pay my nanny two different rates?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Overtime is based on the regular rate, which is the weighted average of everything you paid that week divided by the hours worked. If the nanny worked 30 hours at $25 and 15 at $20, that's $1,050 over 45 hours, a regular rate of $23.33, and an overtime premium of 5 × $11.67 = $58.35 on top of the $1,050 — $1,108.35 for the week."
+        "text": "Overtime is based on the regular rate, which is the weighted average of everything you paid that week divided by the hours worked. If the nanny worked 30 hours at $25 and 15 at $20, that's $1,050 over 45 hours, a regular rate of $23.33, and an overtime premium of 5 × (($1,050 ÷ 45) × 0.5) = $58.33, rounded at the end on top of the $1,050 — $1,108.33 for the week."
       }
     },
     {
@@ -189,6 +189,7 @@
 <link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
 <link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
 <script src="/sage/navigation.js?v=sage-20260915" defer></script>
+<script src="/sage/conversions.js" defer></script>
 </head>
 <body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
 <header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
@@ -201,10 +202,10 @@
 <main class="article" id="main">
   <div class="crumb"><a href="./">Paypr</a> · <a href="guides">Guides &amp; tools</a> · Calculating nanny overtime</div>
   <h1>How to calculate and track nanny overtime</h1>
-  <p class="meta">Updated September 2026 · 8 min read</p>
+  <p class="meta">Updated September 18, 2026 · 8 min read</p>
 
   <div class="answer">
-    <p><strong>Short answer:</strong> a live-out nanny is a non-exempt employee under the federal Fair Labor Standards Act, so every hour over <strong>40 in a single workweek</strong> is paid at <strong>1.5× their regular hourly rate</strong>. Overtime is counted per workweek — never per day, never averaged across two weeks, and never swapped for time off. A nanny at $25/hour who works 46 hours is owed (40 × $25) + (6 × $37.50) = <strong>$1,225</strong> for that week. Live-in nannies are exempt from <em>federal</em> overtime, but several states — California and New York among them — have their own rules that apply instead.</p>
+    <p><strong>Short answer:</strong> a covered, nonexempt live-out nanny receives overtime under the federal Fair Labor Standards Act, so every hour over <strong>40 in a single workweek</strong> is paid at <strong>1.5× their regular hourly rate</strong>. Overtime is counted per workweek — under the federal rule, not averaged across two weeks, and never swapped for time off. A nanny at $25/hour who works 46 hours is owed (40 × $25) + (6 × $37.50) = <strong>$1,225</strong> for that week. Live-in domestic workers employed directly by a household can be exempt from federal overtime. Third-party employers cannot claim that exemption. State requirements can be more protective; check the rules that apply to your arrangement.</p>
   </div>
 
   <h2>1. Confirm your nanny is non-exempt (almost always, they are)</h2>
@@ -242,8 +243,8 @@
   <p>Example: 30 hours at $25 ($750) + 15 hours at $20 ($300) = 45 hours, $1,050 in straight-time pay.</p>
   <ul>
     <li>Regular rate = $1,050 ÷ 45 = <strong>$23.33/hour</strong></li>
-    <li>Overtime premium = 5 hours × ($23.33 × 0.5) = 5 × $11.67 = <strong>$58.35</strong></li>
-    <li>Total = $1,050 + $58.35 = <strong>$1,108.35</strong></li>
+    <li>Overtime premium = 5 hours × (($1,050 ÷ 45) × 0.5) = <strong>$58.33</strong> (rounded at the end)</li>
+    <li>Total = $1,050 + $58.33 = <strong>$1,108.33</strong></li>
   </ul>
   <p>Note the premium is the <em>half</em>-time portion, because the straight-time for all 45 hours is already in the $1,050. A guaranteed weekly bonus works the same way — it goes into the regular rate before you compute the premium. A genuinely discretionary gift does not.</p>
 
@@ -288,7 +289,7 @@
   <h2>Frequently asked</h2>
   <details open>
     <summary>How do I calculate and track overtime for a nanny to ensure I am paying them correctly?</summary>
-    <p>Pick a fixed seven-day workweek and log the nanny's hours every day. At the end of each workweek, pay the first 40 hours at their normal rate and every hour above 40 at 1.5× that rate. For a nanny at $25/hour who works 46 hours: (40 × $25) + (6 × $37.50) = $1,225 gross. Overtime is never averaged across two weeks and cannot be swapped for time off. Track the hours as they happen — an app like Paypr shows the weekly total and running balance so you see the 40-hour line before you cross it, and exports the record you're expected to keep.</p>
+    <p>Pick a fixed seven-day workweek and log the nanny's hours every day. At the end of each workweek, pay the first 40 hours at their normal rate and every hour above 40 at 1.5× that rate. For a nanny at $25/hour who works 46 hours: (40 × $25) + (6 × $37.50) = $1,225 gross. Overtime is never averaged across two weeks and cannot be swapped for time off. Track the hours as they happen — an app like Paypr shows the weekly total and running balance so you see the 40-hour line before you cross it, and offers a supporting CSV export on Pro. Keep payroll statements, payment dates, and other required records separately.</p>
   </details>
   <details>
     <summary>Is a nanny entitled to overtime pay?</summary>
@@ -304,7 +305,7 @@
   </details>
   <details>
     <summary>What overtime rate applies if I pay my nanny two different rates?</summary>
-    <p>Overtime is based on the regular rate, which is the weighted average of everything you paid that week divided by the hours worked. If the nanny worked 30 hours at $25 and 15 at $20, that's $1,050 over 45 hours, a regular rate of $23.33, and an overtime premium of 5 × $11.67 = $58.35 on top of the $1,050 — $1,108.35 for the week.</p>
+    <p>Overtime is based on the regular rate, which is the weighted average of everything you paid that week divided by the hours worked. If the nanny worked 30 hours at $25 and 15 at $20, that's $1,050 over 45 hours, a regular rate of $23.33, and an overtime premium of 5 × (($1,050 ÷ 45) × 0.5) = $58.33, rounded at the end on top of the $1,050 — $1,108.33 for the week.</p>
   </details>
   <details>
     <summary>What records do I need to keep for nanny overtime?</summary>

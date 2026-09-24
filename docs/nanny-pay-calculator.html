@@ -6,14 +6,14 @@
 <link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
 <link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
-<title>Nanny Pay &amp; Cost Calculator: Weekly, Monthly, Yearly | Paypr</title>
-<meta name="description" content="Calculate nanny pay from an hourly rate and weekly hours, with an optional overtime estimate. See weekly, monthly and yearly wages before taxes and benefits.">
+<title>Nanny Pay Calculator: Weekly, Monthly &amp; Annual Wages | Paypr</title>
+<meta name="description" content="Calculate nanny gross wages with a federal overtime example. Enter a rate, weekly hours, and paid weeks. See the formula, limits, and a worked example.">
 <link rel="canonical" href="https://usepaypr.com/nanny-pay-calculator">
 <meta name="theme-color" content="#faf9f3">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Nanny Pay &amp; Cost Calculator: Weekly, Monthly, Yearly | Paypr">
-<meta property="og:description" content="Calculate nanny pay from an hourly rate and weekly hours, with an optional overtime estimate. See weekly, monthly and yearly wages before taxes and benefits.">
+<meta property="og:title" content="Nanny Pay Calculator: Weekly, Monthly &amp; Annual Wages | Paypr">
+<meta property="og:description" content="Calculate nanny gross wages with a federal overtime example. Enter a rate, weekly hours, and paid weeks. See the formula, limits, and a worked example.">
 <meta property="og:url" content="https://usepaypr.com/nanny-pay-calculator">
 <meta property="og:image" content="https://usepaypr.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -21,32 +21,8 @@
 <meta property="og:image:alt" content="Paypr — track hours and pay for your nanny, sitter, tutor or cleaner">
 <meta name="twitter:card" content="summary_large_image">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Nanny Pay Calculator",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Any (web)",
-  "url": "https://usepaypr.com/nanny-pay-calculator",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "description": "Free calculator that turns a nanny's hourly rate and weekly hours into weekly, monthly and yearly cost, including overtime."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "How do you calculate nanny pay?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Multiply the hourly rate by hours worked in the week. For hours over 40 in a week, most household employees are owed overtime at 1.5x the hourly rate. Weekly pay times 52 gives the yearly cost; divide the yearly figure by 12 for a monthly average." } },
-    { "@type": "Question", "name": "Do nannies get overtime?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Under the US Fair Labor Standards Act, live-out nannies are non-exempt and must be paid 1.5x their regular hourly rate for hours worked beyond 40 in a workweek. Rules for live-in nannies and some states differ, so check your state's law." } },
-    { "@type": "Question", "name": "What is the average nanny hourly rate in 2026?",
-      "acceptedAnswer": { "@type": "Answer", "text": "US averages in 2026 land roughly between $21 and $26 per hour depending on the source, city, experience and number of children. High-cost cities like San Francisco, Seattle and New York run higher." } }
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Nanny Pay Calculator: Weekly, Monthly & Annual Wages", "applicationCategory": "FinanceApplication", "operatingSystem": "Any (web)", "url": "https://usepaypr.com/nanny-pay-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Calculate nanny gross wages with a federal overtime example. Enter a rate, weekly hours, and paid weeks. See the formula, limits, and a worked example."}</script>
+
 
 <style>
   :root{--bg:#0B0D12;--card:rgba(255,255,255,.05);--stroke:rgba(255,255,255,.10);
@@ -107,6 +83,10 @@
 <link rel="stylesheet" href="/sage/sage-content.css?v=sage-20260915">
 <link rel="stylesheet" href="/sage/sage-nav.css?v=sage-20260915">
 <script src="/sage/navigation.js?v=sage-20260915" defer></script>
+<script src="/sage/pay-math.js" defer></script>
+<script src="/sage/calculators.js" defer></script>
+<link rel="stylesheet" href="/sage/planning-tools.css">
+<script src="/sage/conversions.js" defer></script>
 </head>
 <body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
 <header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
@@ -118,66 +98,37 @@
 
 
 <main id="main" class="wrap">
-  <h1>Nanny pay &amp; cost calculator</h1>
-  <p class="lead">Enter an hourly rate and the hours worked in a week — see what your nanny costs weekly, monthly and yearly, with overtime included.</p>
-
-  <div class="calc">
-    <div class="row">
-      <div class="field">
-        <label for="rate">Hourly rate ($)</label>
-        <input id="rate" type="number" min="0" step="0.25" value="25" inputmode="decimal">
-      </div>
-      <div class="field">
-        <label for="hours">Hours per week</label>
-        <input id="hours" type="number" min="0" step="1" value="40" inputmode="numeric">
-      </div>
-    </div>
-    <div class="field">
-      <label for="ot">Overtime after 40 hrs/week (1.5×)</label>
-      <select id="ot">
-        <option value="1">Yes — apply time-and-a-half (typical for live-out nannies)</option>
-        <option value="0">No — flat rate for all hours</option>
-      </select>
-    </div>
-    <div class="out">
-      <div class="stat"><div class="k">Weekly</div><div class="v" id="wk">$1,000</div></div>
-      <div class="stat"><div class="k">Monthly</div><div class="v" id="mo">$4,333</div></div>
-      <div class="stat"><div class="k">Yearly</div><div class="v" id="yr">$52,000</div></div>
-    </div>
-    <p class="note" id="otnote"></p>
-  </div>
-
-  <h2>What this nanny cost estimate includes</h2><p>The result is wages before taxes and benefits. Monthly cost is the weekly amount × 52 ÷ 12, not simply four weeks. Paid leave, reimbursements and employer taxes can change your actual budget. Use the <a href="nanny-tax-calculator">tax estimator</a> separately and keep actual shifts in a <a href="nanny-timesheet-template">weekly nanny timesheet</a>.</p><h2>How nanny pay is calculated</h2>
-  <p>The math is simple: <strong>hourly rate × hours worked = weekly pay</strong>. Where it gets missed is overtime. Under the US Fair Labor Standards Act, live-out nannies are non-exempt household employees and are owed <strong>1.5× their regular rate for every hour over 40 in a workweek</strong>. This calculator applies that automatically. Weekly pay × 52 gives the yearly cost; the monthly figure is that annual total divided by 12 (so it accounts for months with an extra pay period).</p>
-
-  <h2>Average nanny hourly rates in 2026</h2>
-  <p>National averages cluster between about <strong>$21 and $26 per hour</strong> in 2026, depending on the source, city, experience and number of children. Use these as a starting point, then adjust for your area:</p>
-  <div class="sage-table" role="region" aria-label="Scrollable data table" tabindex="0"><table>
-    <tr><th>Situation</th><th>Typical hourly rate (2026)</th></tr>
-    <tr><td>US national average</td><td>$21–$26</td></tr>
-    <tr><td>High-cost metros (SF, Seattle, NYC)</td><td>$28–$35+</td></tr>
-    <tr><td>Lower-cost metros (San Antonio, Columbus)</td><td>$18–$22</td></tr>
-    <tr><td>Two children</td><td>+$2–$5 over one-child rate</td></tr>
-    <tr><td>Newborn / infant specialist</td><td>+$2–$4</td></tr>
-  </table></div>
-  <p class="note">Rates are approximate, drawn from public 2025–2026 industry surveys (Care.com, UrbanSitter, Sittercity, ZipRecruiter). Always check current local rates and your state's labor rules.</p>
-
-  <div class="cta">
-    <h2 style="margin-top:0">Stop doing this math every payday</h2>
-    <p>Paypr tracks the hours automatically and keeps a running balance of exactly what you owe — nanny, sitter, tutor or cleaner. Log time in seconds, settle up on payday.</p>
-    <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
-  </div>
-
-  <h2>Common questions</h2>
-  <details open><summary>Do nannies get overtime?</summary>
-    <p>Yes — live-out nannies are non-exempt under the FLSA and must be paid 1.5× their regular rate for hours over 40 in a workweek. Live-in nannies and some state rules differ, so check your state.</p></details>
-  <details><summary>Is nanny pay taxable?</summary>
-    <p>If you pay a household employee above the IRS threshold in a year, you generally owe "nanny taxes" (Social Security, Medicare, and often unemployment). Keeping clean records of hours and payments makes this far easier — Paypr Pro exports a CSV for exactly this.</p></details>
-  <details><summary>Hourly or salary?</summary>
-    <p>Household employees should be paid hourly (or a guaranteed weekly rate based on hours), not a fixed salary that hides overtime — paying "salary" doesn't remove the overtime obligation.</p></details>
-
-  <p style="margin-top:30px"><a href="how-much-to-pay-a-nanny">→ Full guide: How much to pay a nanny per hour</a><br>
-  <a href="how-to-track-what-you-owe-your-nanny">→ How to track what you owe your nanny</a></p>
+<h1>Nanny pay calculator: weekly, monthly, and annual wages</h1>
+<p class="lead">Enter an agreed hourly rate and hours actually worked in a typical week. This example applies time-and-a-half after 40 hours and shows wages before deductions, employer taxes, and benefits.</p>
+<p class="meta">US federal planning example · Updated September 18, 2026 · By <a href="about">Paypr</a></p>
+<p><strong>Scope:</strong> a covered, nonexempt worker with one regular hourly rate and the same schedule each paid week. State or local requirements, live-in arrangements, bonuses, multiple rates, and paid time off can change the calculation. Check the <a href="how-to-calculate-nanny-overtime">overtime guide</a> before using this for payroll.</p>
+<form class="calc" data-paypr-calculator="wages" novalidate>
+<div class="row"><div class="field"><label for="rate">Hourly rate (USD)</label><input id="rate" name="rate" type="number" min="0" max="10000" step="0.01" value="25" inputmode="decimal" required></div>
+<div class="field"><label for="hours">Hours actually worked per week</label><input id="hours" name="hours" type="number" min="0" max="168" step="0.01" value="40" inputmode="decimal" required></div></div>
+<div class="field"><label for="weeks">Paid weeks at this schedule per year</label><input id="weeks" name="weeks" type="number" min="0" max="52" step="1" value="52" inputmode="numeric" required></div>
+<p class="note">Do not include paid leave as hours actually worked. If leave weeks, guaranteed-hours payments, or your schedule differ, calculate those amounts separately. The default rate is an illustration, not a market-rate recommendation.</p>
+<button id="calc-button" class="btn" type="submit" disabled>Calculate wages</button>
+<p id="calc-error" role="alert"></p>
+<div id="calc-results" aria-live="polite" aria-atomic="true" hidden><div class="out">
+<div class="stat"><div class="k">Weekly gross wages</div><div class="v" id="wk"></div></div>
+<div class="stat"><div class="k">Monthly average</div><div class="v" id="mo"></div></div>
+<div class="stat"><div class="k">Annual wages</div><div class="v" id="yr"></div></div>
+</div><p class="note" id="otnote"></p></div>
+<noscript><p>Enable JavaScript to calculate your own figures. The formula and worked example below remain available.</p></noscript>
+</form>
+<h2>How the calculation works</h2>
+<p>Weekly wages = (up to 40 hours × regular hourly rate) + (hours over 40 × regular hourly rate × 1.5). Annual wages = weekly wages × the number of paid weeks entered. Monthly average = annual wages ÷ 12. Calculate each workweek separately when actual hours vary.</p>
+<h2>Example: $25 per hour for a 46-hour week</h2>
+<div class="sage-table" role="region" aria-label="Weekly wage calculation" tabindex="0"><table><thead><tr><th scope="col">Item</th><th scope="col">Calculation</th><th scope="col">Amount</th></tr></thead><tbody>
+<tr><th scope="row">Regular pay</th><td>40 × $25.00</td><td>$1,000.00</td></tr><tr><th scope="row">Overtime pay</th><td>6 × $37.50</td><td>$225.00</td></tr><tr><th scope="row">Weekly gross wages</th><td>$1,000 + $225</td><td>$1,225.00</td></tr><tr><th scope="row">Annual wages, 52 identical weeks</th><td>$1,225 × 52</td><td>$63,700.00</td></tr><tr><th scope="row">Monthly average</th><td>$63,700 ÷ 12</td><td>$5,308.33</td></tr></tbody></table></div>
+<p>Figures are rounded for display at the end of each calculation. Actual payroll rounding and adjustments may differ. Four weekly paydays and five weekly paydays produce different calendar-month totals.</p>
+<h2>What to add to a household budget</h2>
+<p>This result is gross wages, not take-home pay or total employer cost. Account separately for employer taxes, payroll-service fees, insurance, benefits, reimbursements, bonuses, and backup care. Avoid adding paid leave twice if it is already included in your annual wage budget.</p>
+<p>Start with the <a href="nanny-tax-calculator">2026 employer FICA estimator</a> for one federal component. It does not calculate all employment taxes. If you have not agreed on a rate, use the <a href="how-much-to-pay-a-nanny">nanny pay guide</a> to evaluate local evidence and duties.</p>
+<h2>Keep actual hours after planning the budget</h2>
+<p>A typical-week estimate will not record a late finish or a payment. Use the <a href="nanny-timesheet-template">free weekly timesheet and payment log</a>, or follow our <a href="how-to-track-what-you-owe-your-nanny">weekly tracking routine</a>.</p>
+<div class="cta"><h2>Keep a daily hours log on your iPhone</h2><p>Paypr records hourly work and paid or unpaid entries. One person is free; Pro adds summaries and CSV export. Payroll calculations and filings remain separate.</p><a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a></div>
+<h2>Method and sources</h2><p class="source-note">Federal overtime method checked September 18, 2026 against <a href="https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay">US Department of Labor Fact Sheet 23</a>. See also the <a href="https://www.dol.gov/agencies/whd/fact-sheets/79b-flsa-live-in-domestic-workers">live-in domestic-worker guidance</a>. This calculator does not decide worker classification, exemptions, or state rules. No independent legal review is claimed.</p>
 </main>
 
 <footer class="wrap" style="max-width:1080px">
@@ -185,29 +136,7 @@
   <div><a href="./">Home</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a></div>
 </footer>
 
-<script>
-  var f=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
-  function calc(){
-    var rate=parseFloat(document.getElementById('rate').value)||0;
-    var hours=parseFloat(document.getElementById('hours').value)||0;
-    var ot=document.getElementById('ot').value==='1';
-    var reg=Math.min(hours,40), over=Math.max(hours-40,0);
-    var weekly= ot ? reg*rate + over*rate*1.5 : hours*rate;
-    var yearly=weekly*52, monthly=yearly/12;
-    document.getElementById('wk').textContent=f(weekly);
-    document.getElementById('mo').textContent=f(monthly);
-    document.getElementById('yr').textContent=f(yearly);
-    var note=document.getElementById('otnote');
-    if(ot && over>0){ note.textContent=over+' overtime hour'+(over>1?'s':'')+' paid at $'+(rate*1.5).toFixed(2)+'/hr (1.5×).'; }
-    else if(hours>40 && !ot){ note.textContent='Heads up: '+(hours-40)+' hours over 40 would normally require overtime pay.'; }
-    else { note.textContent=''; }
-  }
-  ['rate','hours','ot'].forEach(function(id){
-    document.getElementById(id).addEventListener('input',calc);
-    document.getElementById(id).addEventListener('change',calc);
-  });
-  calc();
-</script>
+
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
