@@ -132,7 +132,7 @@ def head(title: str, desc: str, canon: str, jsonld: dict) -> str:
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canon}">
-<link rel="icon" type="image/png" href="/icon.png?v=mascot-20260915">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png?v=circle-20260928">
 <link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 <meta name="theme-color" content="#faf9f3">
 <meta property="og:type" content="article">
