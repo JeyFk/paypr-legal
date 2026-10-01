@@ -20,6 +20,7 @@ import datetime as _dt
 import json
 import re
 from pathlib import Path
+from gen_localized import decorate_english
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 DATA = DOCS / "data" / "babysitter-rates.json"
@@ -373,11 +374,11 @@ def main() -> None:
         if slug not in metros:
             continue
         fname, html = metro_page(slug, metros[slug], meta)
-        (DOCS / fname).write_text(html)
+        (DOCS / fname).write_text(decorate_english(html, '/' + fname.removesuffix('.html')))
         written.append(fname)
 
     lf, lhtml = lookup_page(metros, meta, featured_files)
-    (DOCS / lf).write_text(lhtml)
+    (DOCS / lf).write_text(decorate_english(lhtml, '/' + lf.removesuffix('.html')))
     written.append(lf)
 
     added = patch_sitemap(written)

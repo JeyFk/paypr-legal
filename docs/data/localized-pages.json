@@ -1,0 +1,274 @@
+[
+  {
+    "path": "/es/",
+    "language": "es",
+    "market": "global",
+    "page": "home",
+    "title": "Registra las horas. Ten claro cuánto debes.",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/support",
+    "language": "es",
+    "market": "global",
+    "page": "support",
+    "title": "Ayuda con Paypr",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/privacy",
+    "language": "es",
+    "market": "global",
+    "page": "privacy",
+    "title": "Política de privacidad",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/terms",
+    "language": "es",
+    "market": "global",
+    "page": "terms",
+    "title": "Condiciones de uso",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/about",
+    "language": "es",
+    "market": "global",
+    "page": "about",
+    "title": "Sobre Paypr y estas guías",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/guides",
+    "language": "es",
+    "market": "global",
+    "page": "guides",
+    "title": "Guías",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/how-to-track-what-you-owe-your-nanny",
+    "language": "es",
+    "market": "global",
+    "page": "tracking",
+    "title": "Cómo llevar las horas y los pagos de tu niñera",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/nanny-timesheet-template",
+    "language": "es",
+    "market": "global",
+    "page": "template",
+    "title": "Plantilla gratuita de horas y pagos de niñera",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/",
+    "language": "fr",
+    "market": "global",
+    "page": "home",
+    "title": "Notez les heures. Sachez ce qu’il reste à payer.",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/support",
+    "language": "fr",
+    "market": "global",
+    "page": "support",
+    "title": "Assistance Paypr",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/privacy",
+    "language": "fr",
+    "market": "global",
+    "page": "privacy",
+    "title": "Politique de confidentialité",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/terms",
+    "language": "fr",
+    "market": "global",
+    "page": "terms",
+    "title": "Conditions d’utilisation",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/about",
+    "language": "fr",
+    "market": "global",
+    "page": "about",
+    "title": "À propos de Paypr et de nos guides",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/guides",
+    "language": "fr",
+    "market": "global",
+    "page": "guides",
+    "title": "Guides",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/how-to-track-what-you-owe-your-nanny",
+    "language": "fr",
+    "market": "global",
+    "page": "tracking",
+    "title": "Comment suivre les heures et paiements de votre nounou",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/fr/nanny-timesheet-template",
+    "language": "fr",
+    "market": "global",
+    "page": "template",
+    "title": "Feuille d’heures et registre des paiements pour nounou",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/",
+    "language": "de",
+    "market": "global",
+    "page": "home",
+    "title": "Stunden erfassen. Wissen, was noch offen ist.",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/support",
+    "language": "de",
+    "market": "global",
+    "page": "support",
+    "title": "Hilfe zu Paypr",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/privacy",
+    "language": "de",
+    "market": "global",
+    "page": "privacy",
+    "title": "Datenschutzerklärung",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/terms",
+    "language": "de",
+    "market": "global",
+    "page": "terms",
+    "title": "Nutzungsbedingungen",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/about",
+    "language": "de",
+    "market": "global",
+    "page": "about",
+    "title": "Über Paypr und unsere Ratgeber",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/guides",
+    "language": "de",
+    "market": "global",
+    "page": "guides",
+    "title": "Ratgeber",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/how-to-track-what-you-owe-your-nanny",
+    "language": "de",
+    "market": "global",
+    "page": "tracking",
+    "title": "Babysitter-Stunden und Zahlungen übersichtlich erfassen",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/de/nanny-timesheet-template",
+    "language": "de",
+    "market": "global",
+    "page": "template",
+    "title": "Kostenloser Stundenzettel und Zahlungsliste für Babysitter",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/",
+    "language": "ar",
+    "market": "global",
+    "page": "home",
+    "title": "سجّل الساعات. واعرف ما تبقّى للدفع.",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/support",
+    "language": "ar",
+    "market": "global",
+    "page": "support",
+    "title": "المساعدة في Paypr",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/privacy",
+    "language": "ar",
+    "market": "global",
+    "page": "privacy",
+    "title": "سياسة الخصوصية",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/terms",
+    "language": "ar",
+    "market": "global",
+    "page": "terms",
+    "title": "شروط الاستخدام",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/about",
+    "language": "ar",
+    "market": "global",
+    "page": "about",
+    "title": "عن Paypr وأدلته",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/guides",
+    "language": "ar",
+    "market": "global",
+    "page": "guides",
+    "title": "الأدلة",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/how-to-track-what-you-owe-your-nanny",
+    "language": "ar",
+    "market": "global",
+    "page": "tracking",
+    "title": "كيفية تسجيل ساعات المربية ومدفوعاتها",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/ar/nanny-timesheet-template",
+    "language": "ar",
+    "market": "global",
+    "page": "template",
+    "title": "جدول ساعات وسجل مدفوعات مجاني للمربية",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/espana/horas-y-pagos-en-casa",
+    "language": "es-ES",
+    "market": "ES",
+    "title": "Horas y pagos de canguro y ayuda en casa en España",
+    "page": "country-guide",
+    "lastmod": "2026-09-30"
+  },
+  {
+    "path": "/es/mexico/horas-y-pagos-en-casa",
+    "language": "es-MX",
+    "market": "MX",
+    "title": "Cómo llevar las horas y pagos de ayuda en casa en México",
+    "page": "country-guide",
+    "lastmod": "2026-09-30"
+  }
+]

@@ -3,11 +3,20 @@
   'use strict';
   if (location.hostname !== 'usepaypr.com' && location.hostname !== 'www.usepaypr.com') return;
   var allowedPages = new Set(['/', '/nanny-pay-calculator', '/nanny-tax-calculator', '/nanny-timesheet-template', '/how-to-track-what-you-owe-your-nanny']);
-  function pageName() { return allowedPages.has(location.pathname) ? location.pathname : 'other_resource'; }
+  var localizedSlugs = new Set(['', 'support', 'privacy', 'terms', 'about', 'guides', 'how-to-track-what-you-owe-your-nanny', 'nanny-timesheet-template']);
+  var markets = {'/es/espana/horas-y-pagos-en-casa': 'ES', '/es/mexico/horas-y-pagos-en-casa': 'MX'};
+  function pageContext() {
+    var path = location.pathname;
+    var localized = path.match(/^\/(es|fr|de|ar)\/(.*)$/);
+    if (localized && (localizedSlugs.has(localized[2]) || Object.prototype.hasOwnProperty.call(markets, path))) {
+      return {page: path, language: localized[1], content_market: markets[path] || 'global'};
+    }
+    return {page: allowedPages.has(path) ? path : 'other_resource', language: 'en', content_market: 'global'};
+  }
   var allowedGoals = new Set(['app_store_click', 'template_download', 'calculator_completed']);
   window.payprGoal = function (goal, details) {
     if (!allowedGoals.has(goal) || typeof window.datafast !== 'function') return;
-    var metadata = {page: pageName()};
+    var metadata = pageContext();
     if (details && ['wages', 'fica'].includes(details.tool)) metadata.tool = details.tool;
     if (details && ['header', 'content', 'footer'].includes(details.placement)) metadata.placement = details.placement;
     if (details && ['timesheet', 'example', 'payment_log', 'other'].includes(details.asset)) metadata.asset = details.asset;
