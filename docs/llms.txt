@@ -18,7 +18,7 @@ Paypr is made by QAtion. It is **not** a payroll service: it does not withhold t
 ## Pricing
 
 - Free forever — track 1 person.
-- Paypr Pro — $2.99/month after a 7-day free trial, or $7.99 once for lifetime. Unlocks unlimited people, weekly/monthly/yearly summaries and CSV export.
+- Paypr Pro — U.S. prices: $1.99/month or $8.99 once for lifetime. Eligible monthly subscribers can start with a 7-day free trial. Current local prices and eligibility are shown in the app. Unlocks unlimited people, weekly/monthly/yearly summaries and CSV export.
 
 ## Platform
 
