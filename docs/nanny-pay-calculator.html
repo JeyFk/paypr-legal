@@ -90,6 +90,8 @@
 <!-- intl-head -->
 <link rel="stylesheet" href="/sage/international.css?v=20260929">
 <!-- /intl-head -->
+<link rel="stylesheet" href="/sage/tool-updates.css">
+<script src="/sage/tool-export.js" defer></script>
 </head>
 <body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
 <header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
@@ -103,20 +105,20 @@
 <main id="main" class="wrap">
 <h1>Nanny pay calculator: weekly, monthly, and annual wages</h1>
 <p class="lead">Enter an agreed hourly rate and hours actually worked in a typical week. This example applies time-and-a-half after 40 hours and shows wages before deductions, employer taxes, and benefits.</p>
-<p class="meta">US federal planning example · Updated September 18, 2026 · By <a href="about">Paypr</a></p>
+<p class="meta">US federal planning example · Updated October 29, 2026 · By <a href="about">Paypr</a></p>
 <p><strong>Scope:</strong> a covered, nonexempt worker with one regular hourly rate and the same schedule each paid week. State or local requirements, live-in arrangements, bonuses, multiple rates, and paid time off can change the calculation. Check the <a href="how-to-calculate-nanny-overtime">overtime guide</a> before using this for payroll.</p>
 <form class="calc" data-paypr-calculator="wages" novalidate>
 <div class="row"><div class="field"><label for="rate">Hourly rate (USD)</label><input id="rate" name="rate" type="number" min="0" max="10000" step="0.01" value="25" inputmode="decimal" required></div>
-<div class="field"><label for="hours">Hours actually worked per week</label><input id="hours" name="hours" type="number" min="0" max="168" step="0.01" value="40" inputmode="decimal" required></div></div>
+<div class="field"><label for="hours">Hours actually worked per week (decimal)</label><input id="hours" name="hours" type="number" min="0" max="168" step="0.01" value="40" inputmode="decimal" required></div></div>
 <div class="field"><label for="weeks">Paid weeks at this schedule per year</label><input id="weeks" name="weeks" type="number" min="0" max="52" step="1" value="52" inputmode="numeric" required></div>
-<p class="note">Do not include paid leave as hours actually worked. If leave weeks, guaranteed-hours payments, or your schedule differ, calculate those amounts separately. The default rate is an illustration, not a market-rate recommendation.</p>
+<p class="note">40 hours 30 minutes = 40.5 hours. Add daily start and end times with the <a href="nanny-timesheet-template#weekly-builder">weekly timesheet builder</a>. Do not include paid leave as hours actually worked. If leave weeks, guaranteed-hours payments, or your schedule differ, calculate those amounts separately. The default rate is an illustration, not a market-rate recommendation.</p>
 <button id="calc-button" class="btn" type="submit" disabled>Calculate wages</button>
 <p id="calc-error" role="alert"></p>
 <div id="calc-results" aria-live="polite" aria-atomic="true" hidden><div class="out">
 <div class="stat"><div class="k">Weekly gross wages</div><div class="v" id="wk"></div></div>
 <div class="stat"><div class="k">Monthly average</div><div class="v" id="mo"></div></div>
 <div class="stat"><div class="k">Annual wages</div><div class="v" id="yr"></div></div>
-</div><p class="note" id="otnote"></p></div>
+</div><p class="note" id="otnote"></p><div class="tool-actions no-print"><button class="btn" type="button" id="download-result">Download summary CSV</button><button class="btn" type="button" id="print-result">Print calculation</button></div></div>
 <noscript><p>Enable JavaScript to calculate your own figures. The formula and worked example below remain available.</p></noscript>
 </form>
 <h2>How the calculation works</h2>

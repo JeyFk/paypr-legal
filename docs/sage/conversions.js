@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   if (location.hostname !== 'usepaypr.com' && location.hostname !== 'www.usepaypr.com') return;
-  var allowedPages = new Set(['/', '/nanny-pay-calculator', '/nanny-tax-calculator', '/nanny-timesheet-template', '/how-to-track-what-you-owe-your-nanny']);
+  var allowedPages = new Set(['/', '/babysitter-rate-calculator', '/nanny-pay-calculator', '/nanny-tax-calculator', '/nanny-timesheet-template', '/how-to-track-what-you-owe-your-nanny']);
   var localizedSlugs = new Set(['', 'support', 'privacy', 'terms', 'about', 'guides', 'how-to-track-what-you-owe-your-nanny', 'nanny-timesheet-template']);
   var markets = {'/es/espana/horas-y-pagos-en-casa': 'ES', '/es/mexico/horas-y-pagos-en-casa': 'MX'};
   function pageContext() {
@@ -17,7 +17,7 @@
   window.payprGoal = function (goal, details) {
     if (!allowedGoals.has(goal) || typeof window.datafast !== 'function') return;
     var metadata = pageContext();
-    if (details && ['wages', 'fica'].includes(details.tool)) metadata.tool = details.tool;
+    if (details && ['wages', 'fica', 'babysitter', 'timesheet'].includes(details.tool)) metadata.tool = details.tool;
     if (details && ['header', 'content', 'footer'].includes(details.placement)) metadata.placement = details.placement;
     if (details && ['timesheet', 'example', 'payment_log', 'other'].includes(details.asset)) metadata.asset = details.asset;
     try { window.datafast(goal, metadata); } catch (_) { /* Navigation must still work. */ }

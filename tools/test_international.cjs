@@ -40,4 +40,11 @@ old.context.window.datafast=()=>{throw Error('blocked');};assert.doesNotThrow(()
 for (const host of ['localhost','127.0.0.1','preview.example.com']) {
   const state=app(host,'/es/');assert.equal(state.context.window.payprGoal,undefined);checks++;
 }
+for (const [pathname,tool] of [['/babysitter-rate-calculator','babysitter'],['/nanny-timesheet-template','timesheet']]) {
+  const state=app('usepaypr.com',pathname);
+  state.context.window.payprGoal('calculator_completed',{tool,rate:123,hours:456,name:'PRIVATE',week:'2026-10-19'});
+  assert.deepEqual(JSON.parse(JSON.stringify(state.emitted[0])),['calculator_completed',{page:pathname,language:'en',content_market:'global',tool}]);checks++;
+  state.context.window.payprGoal('calculator_completed',{tool:'PRIVATE'});
+  assert.equal(state.emitted[1][1].tool,undefined);checks++;
+}
 console.log(`International goal tests passed: ${checks} scenarios.`);

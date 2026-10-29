@@ -7,13 +7,13 @@
 <link rel="apple-touch-icon" href="/icon.png?v=mascot-20260915">
 
 <title>Babysitter Pay Calculator: Hours, Rate &amp; Extra Kids | Paypr</title>
-<meta name="description" content="Calculate babysitter pay for any booking. Enter your agreed hourly rate, hours and optional extra-child pay. Free, no signup, with totals to the cent.">
+<meta name="description" content="Calculate babysitter pay for a booking in hours and minutes. Enter your agreed rate and optional extra-child pay. Free, no signup, with totals to the cent.">
 <link rel="canonical" href="https://usepaypr.com/babysitter-rate-calculator">
 <meta name="theme-color" content="#faf9f3">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Babysitter Pay Calculator: Hours, Rate &amp; Extra Kids | Paypr">
-<meta property="og:description" content="Calculate babysitter pay for any booking. Enter your agreed hourly rate, hours and optional extra-child pay. Free, no signup, with totals to the cent.">
+<meta property="og:description" content="Calculate babysitter pay for a booking in hours and minutes. Enter your agreed rate and optional extra-child pay. Free, no signup, with totals to the cent.">
 <meta property="og:url" content="https://usepaypr.com/babysitter-rate-calculator">
 <meta property="og:image" content="https://usepaypr.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -55,7 +55,7 @@
       "name": "How do I enter hours and minutes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Divide minutes by 60 and add the full hours. Four hours and 30 minutes is 4.5 hours; four hours and 15 minutes is 4.25 hours."
+        "text": "Enter whole hours and additional minutes separately. Four hours and 30 minutes becomes 4.5 hours in the calculation."
       }
     },
     {
@@ -63,7 +63,7 @@
       "name": "What does the weekly total mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is the price of two identical bookings. For a different schedule, multiply your booking total by the number of bookings yourself."
+        "text": "It is the booking total multiplied by your selected number of identical bookings. Calculate different bookings separately; check weekly overtime separately."
       }
     }
   ]
@@ -133,6 +133,10 @@
 <!-- intl-head -->
 <link rel="stylesheet" href="/sage/international.css?v=20260929">
 <!-- /intl-head -->
+<link rel="stylesheet" href="/sage/tool-updates.css">
+<script src="/sage/pay-math.js" defer></script>
+<script src="/sage/tool-export.js" defer></script>
+<script src="/sage/booking-calculator.js" defer></script>
 </head>
 <body class="sage-content sage-article"><a class="sage-skip" href="#main">Skip to content</a>
 <header class="sage-header"><a class="sage-brand" href="/" aria-label="Paypr home">paypr<span>.</span></a>
@@ -145,53 +149,43 @@
 
 <main id="main" class="wrap">
   <h1>Babysitter pay &amp; rate calculator</h1>
-  <p class="lead">Enter the hourly rate, how long the sitter worked and how many kids — see what you owe for the booking and across a typical week.</p>
+  <p class="lead">Enter the hourly rate, how long the sitter worked and how many kids — see what you owe for the booking and for the number of bookings you choose.</p>
 
-  <div class="calc">
-    <div class="row">
-      <div class="field">
+  <form class="calc" data-paypr-booking novalidate>
+    <div class="tool-fields"><div class="field">
         <label for="rate">Hourly rate ($)</label>
-        <input id="rate" type="number" min="0" step="0.5" value="20" inputmode="decimal">
-      </div>
-      <div class="field">
-        <label for="hours">Hours</label>
-        <input id="hours" type="number" min="0" step="0.5" value="4" inputmode="decimal">
-      </div>
-      <div class="field">
+        <input id="rate" name="rate" type="number" min="0" max="10000" step="0.01" value="20" inputmode="decimal">
+      </div><div class="field">
         <label for="kids">Children</label>
-        <input id="kids" type="number" min="1" step="1" value="1" inputmode="numeric">
-      </div>
-    </div>
-    <div class="field">
+        <input id="kids" name="kids" max="20" type="number" min="1" step="1" value="1" inputmode="numeric">
+      </div><div class="field">
+        <label for="hours">Whole hours</label>
+        <input id="hours" name="hours" type="number" min="0" max="24" step="1" value="4" inputmode="numeric">
+      </div><div class="field"><label for="minutes">Additional minutes</label><input id="minutes" name="minutes" type="number" min="0" max="59" step="1" value="0" inputmode="numeric"></div><div class="field">
       <label for="perkid">Agreed extra per additional child</label><p class="note">Leave at zero if your hourly rate already covers all children.</p>
-      <select id="perkid">
-        <option value="0" selected>No per-child add-on</option>
-        <option value="1">+$1 / hour per extra child</option>
-        <option value="2">+$2 / hour per extra child</option>
-        <option value="3">+$3 / hour per extra child</option>
-      </select>
-    </div>
-    <div class="out" aria-live="polite" aria-atomic="true">
+      <input id="perkid" name="perkid" type="number" min="0" max="10000" step="0.01" value="0" inputmode="decimal">
+    </div><div class="field"><label for="bookings">Identical bookings per week</label><input id="bookings" name="bookings" type="number" min="1" max="31" step="1" value="1" inputmode="numeric"></div></div>
+<p class="note">Example rate in USD. Hours × rate, with only an agreed child add-on. No overtime, taxes or reimbursements included. Values are calculated in this browser and are not included in analytics events.</p><button id="calc-button" class="btn" type="submit" disabled>Calculate babysitter pay</button><p id="calc-error" role="alert"></p><div id="calc-results" aria-live="polite" aria-atomic="true" hidden><div class="out">
       <div class="stat"><div class="k">Effective /hr</div><div class="v" id="eff">$20</div></div>
       <div class="stat"><div class="k">This booking</div><div class="v" id="book">$80</div></div>
-      <div class="stat"><div class="k">Weekly ×2</div><div class="v" id="wk">$160</div></div>
+      <div class="stat"><div class="k">Weekly estimate</div><div class="v" id="wk">$80</div></div>
     </div>
-    <p class="note" id="msg"></p>
-  </div>
+    <p class="note" id="booking-detail"></p><div class="tool-actions no-print"><button class="btn" type="button" id="download-result">Download summary CSV</button><button class="btn" type="button" id="print-result">Print calculation</button></div></div><noscript><p>Enable JavaScript to calculate and export. The examples below work without it.</p></noscript>
+  </form>
 
-  <h2>How to calculate babysitter pay</h2>
-  <p>Multiply the agreed hourly rate by hours worked. This tool uses decimal hours: 4 hours 30 minutes is 4.5 hours, not 4.30. At $20/hour, that booking costs $90. The weekly total assumes two identical bookings.</p>
+  <p class="meta">Updated October 29, 2026 · By <a href="about">Paypr</a></p><h2>How to calculate babysitter pay</h2>
+  <p>Multiply the agreed hourly rate by hours worked. Enter 4 whole hours and 30 additional minutes for a 4½-hour booking. At $20/hour, that booking costs $90. Choose the number of identical bookings to estimate a week. This is straight-time arithmetic; weekly overtime may apply separately.</p>
   <p>If you agreed on a separate child add-on, the formula is (base hourly rate + extra-child rate × additional children) × hours. For two children at a $20 base plus an agreed $2/hour add-on, four hours costs $88. If $20 already covers both children, the same booking costs $80.</p>
   <h2>Choosing a rate</h2>
   <p>Enter the price you and the sitter agreed. The $20 starting value is an example, not a claimed national average. See <a href="babysitter-hourly-rates">2026 babysitter rates and source notes</a>, including <a href="babysitter-rates-dallas-tx">Dallas</a>, <a href="babysitter-rates-miami-fl">Miami</a> and <a href="babysitter-rates-new-york-ny">New York</a>.</p>
   <p>This booking tool calculates the amount before any taxes or other adjustments. For weekly nanny hours, use the <a href="nanny-pay-calculator">nanny pay calculator</a>. Keep an ongoing record with the <a href="nanny-timesheet-template">free nanny timesheet</a>.</p>
   <div class="cta">
-    <h2 style="margin-top:0">Track every sitter, every payment</h2>
-    <p>Paypr keeps a running balance of what you owe each babysitter, nanny, tutor or cleaner — log the hours, settle up, done. No spreadsheet.</p>
+    <h2 style="margin-top:0">Keep the hours and paid status together</h2>
+    <p>Paypr records hourly work and paid or unpaid entries on your iPhone. Track one person free. Keep payment dates, receipts and payroll adjustments separately.</p>
     <a class="btn-appstore" href="https://apps.apple.com/app/paypr/id6778970494"><img src="app-store-badge.svg" alt="Download Paypr on the App Store" width="156" height="52"></a>
   </div>
 
-  <h2>Common questions</h2><details><summary>Does the rate include both children?</summary><p>Use the rate you agreed with the sitter. If that price covers all children, leave the extra-child add-on at zero.</p></details><details><summary>How do I enter hours and minutes?</summary><p>Divide minutes by 60 and add the full hours. Four hours and 30 minutes is 4.5 hours; four hours and 15 minutes is 4.25 hours.</p></details><details><summary>What does the weekly total mean?</summary><p>It is the price of two identical bookings. For a different schedule, multiply your booking total by the number of bookings yourself.</p></details>
+  <h2>Common questions</h2><details><summary>Does the rate include both children?</summary><p>Use the rate you agreed with the sitter. If that price covers all children, leave the extra-child add-on at zero.</p></details><details><summary>How do I enter hours and minutes?</summary><p>Enter whole hours and additional minutes separately. Four hours and 30 minutes becomes 4.5 hours in the calculation.</p></details><details><summary>What does the weekly total mean?</summary><p>It is the booking total multiplied by your selected number of identical bookings. Calculate different bookings separately; check weekly overtime separately.</p></details>
 </main>
 
 <footer class="wrap" style="max-width:1080px">
@@ -199,28 +193,7 @@
   <div><a href="./">Home</a> · <a href="privacy">Privacy</a> · <a href="terms">Terms</a></div>
 </footer>
 
-<script>
-  var f=function(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD'});};
-  function calc(){
-    var rate=Math.max(0,parseFloat(document.getElementById('rate').value)||0);
-    var hours=Math.max(0,parseFloat(document.getElementById('hours').value)||0);
-    var kids=Math.max(parseInt(document.getElementById('kids').value)||1,1);
-    var perkid=parseFloat(document.getElementById('perkid').value)||0;
-    var eff=rate + perkid*(kids-1);
-    var booking=eff*hours;
-    document.getElementById('eff').textContent=f(eff);
-    document.getElementById('book').textContent=f(booking);
-    document.getElementById('wk').textContent=f(booking*2);
-    var msg=document.getElementById('msg');
-    if(kids>1 && perkid>0){ msg.textContent=kids+' kids at +$'+perkid+'/hr each = $'+eff.toFixed(2)+'/hr effective.'; }
-    else { msg.textContent=''; }
-  }
-  ['rate','hours','kids','perkid'].forEach(function(id){
-    document.getElementById(id).addEventListener('input',calc);
-    document.getElementById(id).addEventListener('change',calc);
-  });
-  calc();
-</script>
+
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "0a79256628664b25bdf9093c0c977cf2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
